@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Raza's Portfolio</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <script src="js/hamburgermenu.js" defer></script>
+    <script src="js/clicktocopy.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+  </head>
+
+    <body>
+      <header> 
+        <nav class="navbar"> <!-- Element for Website Navigation-->
+          <div class="brand-title">RAZA</div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="about-me.html">About Me</a></li>
+              <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="banner">
+          <img src="src/Banner-Image.svg" alt="Banner" class="banner-img rellax" data-rellax-speed="11">
+          <div class="banner-text rellax" data-rellax-speed="2">
+            <h1>RAZA</h1>
+            <h2 style="
+            font-size: 1.85rem;">Shabih-ul-Hassan</h2>
+            <h4 style="
+            font-weight: bold">Graphic Designer & Video Editor</h4>
+          </div>
+        </div>
+      </header>
+
+      <div class="content-grid"> <!--For aligning content in the middle of the screen-->
+        <div class="emptybox1"></div>
+        <div class="process-content">
+          <div  class="span-content">
+            <h1>DERMAPAY</h1>
+            <div class="iframe-container">
+              <iframe width="704" height="464" src="https://www.youtube.com/embed/njBNjh015KI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div>
+            <h4>Type:</h4> <p>Group Project</p>
+            <h4>Role:</h4> <p>Concept Art, Ideation, Illustration</p>
+            <h4>Tools:</h4> <p>Adobe Illustrator, figma</p>
+            <h4>Duration:</h4> <p>1 week</p>
+          </div>
+          <div>
+            <p>An animation made to advertise a speculative design product ‘DermaPay’. The animation showcases a fictional advertisement made by the city of Vancouver. For this assignment, I was responsible for the creative direction, storyboard, and creation of animation assets.</p>
+          </div>
+          <div>
+            <h2>STORYBOARD</h2>
+            <p>The process began with storyboarding the animation. Storyboards guide the animators through the various scenes that they animate. I storyboarded the animation using a standard storyboarding template consisting of 6 shots per page. Any effective storyboard must use a variety of shots to tell a story. I made sure the movements were easy for the animator to interpret easily.</p>
+          </div>
+          <div class="txtover">
+            <img src="src/dermapay/storyboard-1.png" alt="image of Storyboard" width="305" height="188">
+            <figcaption>Figure.1: Storyboard</figcaption>
+          </div>
+          <div>
+            <h2>IDEATION</h2>
+            <p>The next step was sketching out the various designs for the characters. Here is an example of the ideation involved in crafting the character design. The visuals were inspired by ads made by the City of Vancouver youtube channel. I chose this style as they were relatively straightforward to make, simple enough to remember, and economical given how much time we had to make them.</p>
+            <p>Finally, the individual assets were crafted on Adobe Illustrator. The scenes were straightforward to make as they required combining simple geometric shapes to create an idea of the location where they take place.  Backgrounds consisted of solid colors so that all attention would be squarely on the characters.</p>
+          </div>
+          <div class="txtover">
+            <img src="src/dermapay/sketch.png" alt="Sketch Sample" width="240" height="250">
+            <figcaption>Figure.2: Concept Sketches</figcaption>
+          </div>
+          <div>
+            <h2>Challenges</h2>
+            <p>One challenge in creating these assets was figuring out how to have the characters move body parts without having to draw them frame by frame. To remedy this, character assets were created disjointed so that the animator had more freedom in moving them. Multiple versions of the same assets were created to provide the animator with a more diverse array of actions and tasks to work with.</p>
+          </div>
+          <div class="txtover">
+            <img src="src/dermapay/cut-outs.png" alt="Cut-out Sample" width="240" height="250">
+            <figcaption>Figure.3: Cut-outs of animation assets</figcaption>
+          </div>
+          <div class="span-content">
+            <h2>REFLECTION</h2>
+            <p>For this project, I had to deliberately mimic the style of another aesthetic ('City of Vancouver'). It asked me to break down elements that made the original designs work and adapt them to this project. I worked on this project with a strict deadline and also in the middle of shifting homes so I learned some rather valuable lessons in time management as a bonus.</p>
+          </div>
+        </div>
+        <div class="emptybox2"></div>
+      </div>
+
+      <div class="footer-container">
+        <div class="emptybox1"></div>
+        <div class="footer">
+          <div class="footer-contacts">
+            <h4>Contact</h4>
+            <img  class="icon"  src="src/Mail-Icon.svg" alt="mail icon" width="20" height="20"> 
+            <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br> <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
+            <img  class="icon"  src="src/Insta-Icon.svg" alt="instagram icon" width="20" height="20">
+            <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
+            <img  class="icon"  src="src/Linkedin-Icon.svg" alt="linkedin icon" width="20" height="20">
+            <a href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">@shabih-ul-hassanraza</a>
+          </div>
+          <div class="footer-links">
+            <h4>Useful Links</h4>
+            <a href="#top">Back to Top</a><br>
+            <a href="src/Resume.pdf" target="_blank">Resume</a><br>
+            <a href="index.html">Home</a>
+          </div>
+        </div>
+        <div class="emptybox2"></div>
+      </div>
+      <script src="js/rellax.min.js"></script> <!--For parallax effect-->
+      <script>
+        var rellax = new Rellax('.rellax');
+      </script>
+      <script> /*Animation message learned from https://www.youtube.com/watch?v=l1iOjH544K4&ab_channel=Tech%26TravelwithRiz*/
+        $('#sweetalert2').on('click',function(){
+          Swal.fire({
+            icon: 'success',
+            title: 'Copied!',
+            showConfirmButton: false,
+            timer: 1500
+          })
+        })
+      </script>
+    </body>
+</html>

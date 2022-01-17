@@ -1,0 +1,502 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Righteous';
+    color: rgb(99, 63, 167);
+    line-height: 0.8;
+}
+
+h2 {
+    color: rgb(99, 63, 167);
+    font-size: large;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: medium;
+}
+
+h4 {
+    font-weight: normal;
+    color: rgb(99, 63, 167);
+}
+
+li {
+    margin-bottom: 2rem;
+}
+
+a:hover {
+    transition: 0.2s;
+    color: rgb(255, 219, 57);
+}
+
+button {
+    background-color: rgb(99, 63, 167);
+    color: white;
+    text-decoration: none;
+    border: none;
+    transition: 0.3s;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+button:hover {
+    background-color: rgb(255, 219, 57);
+    color: rgb(99, 63, 167);
+} 
+
+/*Learned from
+https://code-boxx.com/image-zoom-css-javascript/*/
+.zoom {
+    height: auto;
+    transition: transform ease-in-out 0.3s;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
+/*iframe responsiveness learned from
+https://www.benmarshall.me/responsive-iframes/*/
+.iframe-container { 
+    margin-top: 2rem;
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+}
+  
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*Scrollbar learned from
+https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp*/
+::-webkit-scrollbar { 
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(235, 235, 235);
+}  
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(99, 63, 167);
+    border-radius: 10px;
+}
+
+/* Navbar learned from
+https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
+.navbar {    
+    display: flex;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    justify-content: right;
+    background-color: rgb(99, 63, 167);
+    color: white;
+}
+
+.brand-title {
+    display: none;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: rgb(255, 219, 57);
+    font-family: 'Righteous';
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    margin-bottom: 0rem;
+    padding-bottom:0rem;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    background-color:rgb(255, 219, 57);
+    color: rgb(99, 63, 167);
+    transition: 0.3s;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+ /*Banner Set-up*/
+.banner-img {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner-text {
+    padding: 2rem 0 0.8rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2rem;
+}
+
+.banner-text h1{
+    margin-top: 0.5rem;
+    font-size: 7rem; 
+    margin-bottom: 0rem;
+    letter-spacing: 1rem;
+}
+
+.content-grid {
+    padding-top: 2rem;
+    position: relative;
+    background-color: white;
+    z-index: 4;
+    margin-bottom: 1rem;
+}
+
+/*Card styling learned from 
+https://www.w3schools.com/howto/howto_css_cards.asp*/
+.card { 
+    position: relative;
+    background: rgb(235, 235, 235);
+    max-width: 250px;
+    border-radius: 30px;
+    margin-bottom: 0rem;
+    height: 29rem;
+    text-align: center;
+}
+
+.card p {
+    color: black;
+    margin-top: 0.5rem;
+}
+
+.card figcaption {
+    position: absolute;
+    color: black;
+    padding: 5rem 1rem 1rem 1rem;
+    display: none;
+}
+
+.card h2 {   
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-content{
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.card:hover img {
+    background: rgb(255, 219, 57);
+    opacity: 0.15;
+    transition: 0.3s;
+}
+
+.card:hover figcaption {
+    display: initial;
+}
+
+/*set up footer elements here*/
+.footer-container { 
+    background: rgb(235, 235, 235);
+    padding: 1rem 0rem 2rem;
+    display: block;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+} 
+
+.footer-container a {
+    line-height: 2;
+    color: rgb(104, 104, 104);
+}
+
+.footer-container h4 {
+    margin-bottom: 0.5rem;
+}
+
+.footer-container a:hover {
+    color: rgb(255, 219, 57);
+}
+
+.footer-contacts {
+    float: left;
+}
+
+.footer-links {
+    float: right;
+}
+
+.footer img {
+    margin-right: 0.5rem;
+}
+
+.icon {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+/*Set up about page*/
+.about-content { 
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.about-content img {
+    width:100%; 
+    height:100%;
+    padding-bottom: 2rem;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+}
+
+/*Set up process for different projects*/
+.process-content { 
+    position: relative;
+    line-height: 2;
+    gap: 2rem;
+}
+
+.process-content .txtover {
+    position: relative;
+}
+
+.process-content .txtover figcaption { 
+    position: absolute; 
+    bottom: 0px;
+    right: 0px;
+    padding: 1rem;
+    background-color: rgb(255, 219, 57, 0.7);
+}
+
+.process-content .txtover:hover figcaption { 
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.process-content img {
+    height: 100%; 
+    width: 100%;
+    object-fit: contain;
+}
+
+.process-content p {
+    margin-bottom: 1.5rem;
+}
+
+/*Menus for illustration*/
+.sub-menu .card { 
+    height: 25rem;
+    margin: 0;
+}
+
+.sub-menu .info {
+    height: 100%;
+    max-width: 50%;
+}
+
+/*masonry set up*/
+.image-gallery { 
+    width: 100;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+}
+
+.image-gallery .image-box {
+    position: relative; 
+    background-color: white;
+    overflow: hidden;
+}
+
+.image-gallery .image-box:nth-child(7n+1) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.image-gallery .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.5s ease;
+}
+
+.image-gallery .image-box:hover img {
+    transform: scale(1.1);
+}
+
+.image-gallery .image-box .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.image-gallery .image-box:hover .overlay {
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0.8;
+}
+
+.image-gallery .image-box .details .title{
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    top: -5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.image-gallery .image-box .details .category {
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    bottom: -5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.image-gallery .image-box:hover .details .title {
+    top: 0px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s 0.2s ease;
+}
+
+.image-gallery .image-box:hover .details .category {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s 0.2s ease;
+}
+
+.image-gallery .image-box .details .title a {
+    color:rgb(99, 63, 167);
+}
+
+.image-gallery .image-box .details .category a{
+    color:black;
+}
+
+/*Carousel*/
+.carousel {
+    position: relative;
+}
+  
+.carousel__item {
+    padding: 3em;
+    display: none;
+}
+
+.carousel__item--selected {
+    display: block;
+}
+  
+.carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+  
+.carousel__button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgb(190, 190, 190);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+  
+.carousel__button--selected {
+    background: rgb(255, 219, 57);
+}
+  
+/* \/ miscellaneous \/ */
+.gotchi-misc {
+    display: flex;
+}
+
+.gotchi-misc .col {
+    flex: 50%;
+    padding: 5px;
+} 
+
+.scaledown img {
+    width: 50%;
+    height: 50%;
+}

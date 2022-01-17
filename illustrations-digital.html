@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Raza's Portfolio</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <script src="js/hamburgermenu.js" defer></script>
+    <script src="js/clicktocopy.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+  </head>
+
+    <body>
+      <header> 
+        <nav class="navbar"> <!-- Element for Website Navigation-->
+          <div class="brand-title">RAZA</div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="about-me.html">About Me</a></li>
+              <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="banner">
+          <img src="src/Banner-Image.svg" class="banner-img rellax" alt="Banner" data-rellax-speed="11">
+          <div class="banner-text rellax" data-rellax-speed="2">
+            <h1>RAZA</h1>
+            <h2 style="
+            font-size: 1.85rem;">Shabih-ul-Hassan</h2>
+            <h4 style="
+            font-weight: bold">Graphic Designer & Video Editor</h4>
+          </div>
+        </div>
+      </header>
+
+      <div class="content-grid"> <!--For aligning content in the middle of the screen-->
+        <div class="emptybox1"></div>
+          <div class="image-gallery"> <!--Masonry learned from https://www.youtube.com/watch?v=tSyYU0I9gYU&ab_channel=DesignTorch-->
+            <div class="image-box">
+              <img src="https://pbs.twimg.com/media/FJQ2wNBVgAElInJ?format=jpg&name=4096x4096" alt="img.jpg">
+              <div class="overlay">
+                <div class="details">
+                  <h3 class="title">
+                    <a href="#">Brochure</a>
+                  </h3>
+                  <span class="category">
+                    <a href="#">Side A</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="image-box">
+              <img src="https://pbs.twimg.com/media/FJQ2wOYVcAQCQNl?format=jpg&name=4096x4096" alt="img.jpg">
+              <div class="overlay">
+                <div class="details">
+                  <h3 class="title">
+                    <a href="#">Brochure</a>
+                  </h3>
+                  <span class="category">
+                    <a href="#">Side B</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="image-box">
+              <a href="https://www.google.com" target="_blank"><img src="https://pbs.twimg.com/media/FFaobr0UcAYjrPv?format=png&name=900x900" alt="img.jpg"></a>
+              <div class="overlay">
+                <div class="details">
+                  <h3 class="title">
+                    <a href="#">Rough Comic Sketch</a>
+                  </h3>
+                  <span class="category">
+                    <a href="#">A drawing from an old project that never took off</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="image-box">
+              <img src="https://pbs.twimg.com/media/FJQ3HlAUcAMOYNq?format=jpg&name=4096x4096" alt="img.jpg">
+              <div class="overlay">
+                <div class="details">
+                  <h3 class="title">
+                    <a href="#">Rajdhani</a>
+                  </h3>
+                  <span class="category">
+                    <a href="#">Type Specimen Poster</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="image-box">
+              <img src="https://pbs.twimg.com/media/D6q5FYOU8AAEkYM?format=jpg&name=4096x4096" alt="img.jpg">
+              <div class="overlay">
+                <div class="details">
+                  <h3 class="title">
+                    <a href="#">Kamala & Emara</a>
+                  </h3>
+                  <span class="category">
+                    <a href="#">Fanart of my two favourite superheros</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="image-box">
+              <img src="https://pbs.twimg.com/media/D7AGaLZU8AE6W2A?format=png&name=900x900" alt="img.jpg">
+              <div class="overlay">
+                <div class="details">
+                  <h3 class="title">
+                    <a href="#">Volin</a>
+                  </h3>
+                  <span class="category">
+                    <a href="#">Character Concept Art</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="image-box">
+              <img src="https://pbs.twimg.com/media/D7J0y74V4AY4Du0?format=png&name=900x900" alt="img.jpg">
+              <div class="overlay">
+                <div class="details">
+                  <h3 class="title">
+                    <a href="#">Euphoria</a>
+                  </h3>
+                  <span class="category">
+                    <a href="#">Character Concept Art</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="image-box">
+              <img src="https://pbs.twimg.com/media/EWKDNIVVAAAsTTR?format=jpg&name=4096x4096" alt="img.jpg">
+              <div class="overlay">
+                <div class="details">
+                  <h3 class="title">
+                    <a href="#">Comic</a>
+                  </h3>
+                  <span class="category">
+                    <a href="#">Monochrome color scheme comic of DnD campaign moment</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="image-box">
+              <img src="https://pbs.twimg.com/media/E6hzxtNUUAEPnPb?format=png&name=900x900" alt="img.jpg">
+              <div class="overlay">
+                <div class="details">
+                  <h3 class="title">
+                    <a href="#">Art Deco</a>
+                  </h3>
+                  <span class="category">
+                    <a href="#">Practise with Illustrator</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="image-box">
+              <img src="https://pbs.twimg.com/media/FFaoFYsVgAI5IB0?format=jpg&name=large" alt="img.jpg">
+              <div class="overlay">
+                <div class="details">
+                  <h3 class="title">
+                    <a href="#">Yves Behar</a>
+                  </h3>
+                  <span class="category">
+                    <a href="#">Poster for hypothetical event</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="image-box">
+              <img src="https://pbs.twimg.com/media/FFau72QVkAMMB4c?format=png&name=small" alt="img.jpg">
+              <div class="overlay">
+                <div class="details">
+                  <h3 class="title">
+                    <a href="#">Recreation of Illustration</a>
+                  </h3>
+                  <span class="category">
+                    <a href="#">Link to the Original:
+                      https://drawkit-dev.webflow.io/illustrations/education-online-3</a>
+                  </span>
+                </div>
+              </div>
+            </div> 
+          </div>
+        <div class="emptybox2"></div>   
+      </div>
+
+      <div class="footer-container">
+        <div class="emptybox1"></div>
+        <div class="footer">
+          <div class="footer-contacts">
+            <h4>Contact</h4>
+            <img  class="icon"  src="src/Mail-Icon.svg" alt="mail icon" width="20" height="20"> 
+            <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br> <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
+            <img  class="icon"  src="src/Insta-Icon.svg" alt="instagram icon" width="20" height="20">
+            <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
+            <img  class="icon"  src="src/Linkedin-Icon.svg" alt="linkedin icon" width="20" height="20">
+            <a href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">@shabih-ul-hassanraza</a>
+          </div>
+          <div class="footer-links">
+            <h4>Useful Links</h4>
+            <a href="#top">Back to Top</a><br>
+            <a href="src/Resume.pdf" target="_blank">Resume</a><br>
+            <a href="index.html">Home</a>
+          </div>
+        </div>
+        <div class="emptybox2"></div>
+      </div>
+      <script src="js/rellax.min.js"></script> <!--For parallax effect-->
+      <script>
+        var rellax = new Rellax('.rellax');
+      </script>
+      <script> /*Animation message learned from https://www.youtube.com/watch?v=l1iOjH544K4&ab_channel=Tech%26TravelwithRiz*/
+        $('#sweetalert2').on('click',function(){
+          Swal.fire({
+            icon: 'success',
+            title: 'Copied!',
+            showConfirmButton: false,
+            timer: 1500
+          })
+        })
+      </script>
+    </body>
+</html>

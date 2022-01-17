@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-bbox="-3.14 0 365.71 360" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" data-type="color">
+    <g>
+        <path fill="#fcf7c2" d="M362.57 0v360H-3.14V0h365.71z" data-color="1"/>
+        <path fill="#cebc73" d="M114.29 22.57v102.57H8.86V22.57h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M232.72 22.57v102.57H127.29V22.57h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M351.72 22.57v102.57H246.29V22.57h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M114.29 191.43V294H8.86V191.43h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M114.29 136.29v8.29H8.86v-8.29h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M114.29 154.29v8.29H8.86v-8.29h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M232.43 136.29v8.29H127v-8.29h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M232.43 154.29v8.29H127v-8.29h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M351.72 136.29v8.29H246.29v-8.29h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M351.72 154.29v8.29H246.29v-8.29h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M351.72 304.86v8.29H246.29v-8.29h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M351.72 322.86v8.29H246.29v-8.29h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M232.72 304.86v8.29H127.29v-8.29h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M232.72 322.86v8.29H127.29v-8.29h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M114.29 304.86v8.29H8.86v-8.29h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M114.29 322.86v8.29H8.86v-8.29h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M232.72 191.43V294H127.29V191.43h105.43z" data-color="2"/>
+        <path fill="#cebc73" d="M351.72 191.43V294H246.29V191.43h105.43z" data-color="2"/>
+    </g>
+</svg>
