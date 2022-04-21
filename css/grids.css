@@ -20,7 +20,7 @@
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
-	.process-content, .sub-menu{
+	.process-content {
 		grid-template-columns: 1fr 1fr;
 	}
 
@@ -38,7 +38,7 @@
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.about-content, .sub-menu {
+	.about-content {
 		grid-template-columns: 1fr;
 	}
 
