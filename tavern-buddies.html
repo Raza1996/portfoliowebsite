@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Raza's Portfolio</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <script src="js/hamburgermenu.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+    <script src="js/clicktocopy.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+  </head>
+
+    <body>
+      <header> 
+        <nav class="navbar"> <!-- Element for Website Navigation-->
+          <div class="brand-title">RAZA</div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="about-me.html">About Me</a></li>
+              <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        
+        <div class="banner">
+          <img src="src/Banner-Image.svg" alt="Banner" class="banner-img rellax" data-rellax-speed="11">
+          <div class="banner-text rellax" data-rellax-speed="2">
+            <h1>RAZA</h1>
+            <h2 style="
+            font-size: 1.85rem;">Shabih-ul-Hassan</h2>
+            <h4 style="
+            font-weight: bold">UI/UX Designer & Graphic Designer</h4>
+          </div>
+        </div>
+      </header>
+
+      <div class="content-grid"> <!--For aligning content in the middle of the screen-->
+        <div class="emptybox1"></div>
+        <div class="process-content">
+          <div  class="span-content">
+            <h1>TAVERN BUDDIES</h1>
+          </div>
+          <div>
+            <h4>Type:</h4> <p>Group Project</p>
+            <h4>Credits</h4> <p>Jason Tran, Naod Asaye, Raymond Chan</p>
+            <h4>Role:</h4> <p>Team Lead, Researcher, Copywriter, Interviewer, UI Designer, Visual Designer, Graphic Designer</p>
+            <h4>Tools:</h4> <p>Figma, Discord</p>
+            <h4>Duration:</h4> <p>6 weeks</p>
+          </div>
+          <div>
+            <p>Tavern Buddies is a platform that connects Dungeon and Dragons (DnD) players in your area to create a communal experience for similar enthusiasts. <br>The user can check out the app's features at the<a href="https://www.sfu.ca/siat/student_projects/iat339_2022_summer/mht6/projects/IAT334-TavernBuddies/index.html" target="_blank"> dedicated website</a> and try it out for themself with the feature-ready <a href="https://www.figma.com/proto/2NPCWP6RoxjqDHd0MHEVEj/Project-2%3A-Tavern-Buddies?page-id=229%3A523&node-id=271%3A934&viewport=270%2C634%2C0.3&scaling=min-zoom&starting-point-node-id=271%3A934&show-proto-sidebar=1" target="_blank">App Demo</a>.</p>
+          </div>
+         
+          <div class="span-content"> 
+            <h2>Research</h2>
+            <p>Before ideating on what Tavern Buddies would eventually become, the team started researching the community that revolves around Dungeons & Dragons (DnD). After conducting several surveys (iterated throughout the developmental process), the team came across some pertinent conclusions:</p>
+          </div>
+          <div class="txtover">
+            <img src="src\tavernbuddies/research1.png">
+            <figcaption>Figure.1a: DnD player preferences</figcaption>
+          </div>
+          <div class="txtover">
+            <img src="src\tavernbuddies/research2.png">
+            <figcaption>Figure.1b: DnD player demographics</figcaption>
+          </div>
+          <div>
+            <p>
+              75% prefer playing with friends online vs real life. <br>
+              88% would meet their online friends in real life if they had a chance. <br>
+              They posit anxiety and safety concerns as major reasons for playing online. <br>
+              Otherwise they are more than happy to play DnD face-to-face with people who have similar interests.
+            </p>
+          </div>
+          <div>
+            <p>
+              Even though men mostly play Dungeon & Dragons, the number of women playing has been on a stratospheric rise though there is still a massive disparity between the genders. <br> Women have different concerns than men when it comes to their goals. The most major concern relates to privacy and safety issues. Women simply have more things to be worried about when meeting new people.
+            </p>
+          </div>
+          <div  class="span-content">
+            <p>
+              From these findings the team extrapolated that if certain factors were mitigated, DnD players would be happy to play the game in person. This was pertinent as studies show that people with social anxiety can use DnD to practise social interactions in a low-stakes environment. From these findings, this project's current iteration seemed obvious in hindsight. <br> Before proceeding to development, however, the team used additional UX tools to achieve a greater understanding of this undertaking.
+            </p>
+          </div>
+          <div>
+            <h2>Personas</h2>
+            <p>
+              Before prototyping, artifacts that would represent the typical user base of the app were crafted. While not defintive, the team kept them in mind as the target demographic as we developed the features of the app.
+            </p>
+            <h2>Experience map</h2>
+            <p>
+              An experience map of one of the Persona characters was created in order to flesh out the user journey from beginning to end. This allowed us to flesh out all the interactions the user would have to go through in order to achieve their goals. 
+            </p>
+            <p>In addition, a user scenario was crafted to further flesh out the needs of a new user.</p>
+          </div>
+          <div class="txtover">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2NPCWP6RoxjqDHd0MHEVEj%2FProject-2%253A-Tavern-Buddies%3Fnode-id%3D1274%253A3830" allowfullscreen></iframe>
+            <figcaption>Figure.2: Applied UX Research Tools</figcaption>
+          </div>
+          <div>
+            <h2>Greyscale Wireframe</h2>
+            <p>The first prototype involved the team figuring out what the flow of the app would be. The team wanted to block in the design features first while observing core principles of UI design, most importantly the principle of user autonamy. Users had to be made aware of the fact that their data was being used. Failing to consider this would have been a major breach in their privacy. More information on Tavern Buddies's features can be found on the dedicated <a href="https://www.sfu.ca/siat/student_projects/iat339_2022_summer/mht6/projects/IAT334-TavernBuddies/index.html" target="_blank">website</a>.</p>
+          </div>
+          <div class="txtover">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2NPCWP6RoxjqDHd0MHEVEj%2FProject-2%253A-Tavern-Buddies%3Fnode-id%3D1367%253A3929" allowfullscreen></iframe>
+            <figcaption>Figure.3: Greyscale Mockup</figcaption>
+          </div>
+          <div>
+            <h2>Visual Elements</h2>
+            <p>The team decided to go against the grain when coming up with what the visuals of Tavern Buddies would later become. It was a goal for Tavern Buddies to stand out from the more subdued color schemes of websites like facebook or twitter. The color palette was inspired by the colors that Wizards of the Coast (the proprietors is DnD) used in the books they publish. Red with gold trims gave the app a subdued regal look that distinguished it from other apps.</p>
+          </div>          
+          <div class="txtover">
+            <img src="src\tavernbuddies/visualbible.png">
+            <figcaption>Figure.4: Color Bible</figcaption>
+          </div>
+          <div>
+            <h2>Refinement</h2>
+            <p>Having finished all the prep work, the team finally began to work on polishing the visuals of our app. Following that, we made additional changes to the app features after recieving professional critique from industry experts. The most pertinent changes included refining the colored chips in the user profile so that that they had more contrast with the typeface's color. In addition, map visuals were updated to a darker pallete so that users wouldn't get whiplash from the the screen changing to a brighter screen color after accessing the map feature.</p>
+          </div>  
+          
+          <div  class="txtover">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2NPCWP6RoxjqDHd0MHEVEj%2FProject-2%253A-Tavern-Buddies%3Fnode-id%3D229%253A523" allowfullscreen></iframe>
+            
+            <figcaption>Figure.5: Refined Prototype</figcaption>
+          </div>  
+          
+          <div class="span-content">
+            <h2>Reflection</h2>
+            <p>The development of this app was not a linear process. The team went back and forth on various aspects of research and prototyping so that we could fine tune the final product. While the end product was satidfactory, for future considerations, the team wanted to add an onboarding feature, but decided against it to avoid feature bloat. The team also considered scaling back on social features like group creation, letting people simply use their social media platforms of choice to figure out how they would play together.</p>
+          </div>   
+        </div>
+        <div class="emptybox2"></div>
+      </div>
+
+      <div class="footer-container">
+        <div class="emptybox1"></div>
+        <div class="footer">
+          <div class="footer-contacts">
+            <h4>Contact</h4>
+            <img  class="icon"  src="src/Mail-Icon.svg" alt="mail icon" width="20" height="20"> 
+            <a id="sweetalert2" onclick="copy(this)">razar@sfu.ca</a><br> <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
+            <img  class="icon"  src="src/Insta-Icon.svg" alt="instagram icon" width="20" height="20">
+            <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
+            <img  class="icon"  src="src/Linkedin-Icon.svg" alt="linkedin icon" width="20" height="20">
+            <a href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">@shabih-ul-hassanraza</a>
+          </div>
+          <div class="footer-links">
+            <h4>Useful Links</h4>
+            <a href="#top">Back to Top</a><br>
+            <a href="src/Resume.pdf" target="_blank">Resume</a><br>
+            <a href="index.html">Home</a>
+          </div>
+        </div>
+        <div class="emptybox2"></div>
+      </div>
+      <script src="js/rellax.min.js"></script> <!--For parallax effect-->
+      <script>
+        var rellax = new Rellax('.rellax');
+      </script>
+      <script> /*Animation message learned from https://www.youtube.com/watch?v=l1iOjH544K4&ab_channel=Tech%26TravelwithRiz*/
+        $('#sweetalert2').on('click',function(){
+          Swal.fire({
+            icon: 'success',
+            title: 'Copied!',
+            showConfirmButton: false,
+            timer: 1500
+          })
+        })
+      </script>  
+      <script src="js/turn.js"></script> 
+      <script> 
+        $('#hotelcalifornia').turn({gradients: true, acceleration: true});
+      </script> 
+    </body>
+</html>
