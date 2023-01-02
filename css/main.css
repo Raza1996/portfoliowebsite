@@ -3,46 +3,97 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color1: white;
+    --secondary-color1: black;
+    --primary-color2: rgb(99, 63, 167);
+    --secondary-color2: rgb(255, 219, 57);
+    --primary-color3: rgb(40, 25, 66);
+    --secondary-color3: rgb(255, 249, 225);
+    ;
+}
+
+#darkmode {
+    width: 20px;
+    cursor: pointer;
+    display: inline;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.dark-theme {
+    --primary-color1: black;
+    --secondary-color1: white;
+    --primary-color2: rgb(255, 219, 57);
+    --secondary-color2: rgb(99, 63, 167);
+    --primary-color3: rgb(255, 249, 225);
+    --secondary-color3: rgb(40, 25, 66);
+}
+
+.hidden {
+    display: none;
 }
 
 body {
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Helvetica", sans-serif;
+    background: var(--primary-color1);
+    color: var(--secondary-color1);
+    line-height: 2rem;
 }
 
 h1 {
-    font-family: 'Righteous';
-    color: rgb(99, 63, 167);
-    line-height: 0.8;
+    font-family: "Helvetica", sans-serif;
+    color: var(--primary-color2);
+    line-height: 1.3rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
 h2 {
-    color: rgb(99, 63, 167);
+    color: var(--primary-color2);
+    font-weight: bold;
     font-size: large;
 }
 
+.mobile h2 {
+    color: var(--primary-color3);
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
 h3 {
+    line-height: 10px;
     font-weight: normal;
     font-size: medium;
 }
 
 h4 {
     font-weight: normal;
-    color: rgb(99, 63, 167);
+    color: var(--primary-color2);
 }
 
 li {
     margin-bottom: 2rem;
 }
 
+.about-text a {
+    color: var(--primary-color2);
+}
+
 a:hover {
     transition: 0.2s;
-    color: rgb(255, 219, 57);
+    color: var(--secondary-color2);
 }
 
 button {
-    background-color: rgb(99, 63, 167);
-    color: white;
+    background-color: var(--primary-color3);
+    color: var(--secondary-color3);
     text-decoration: none;
     border: none;
     transition: 0.3s;
@@ -51,9 +102,9 @@ button {
 }
 
 button:hover {
-    background-color: rgb(255, 219, 57);
-    color: rgb(99, 63, 167);
-} 
+    background-color: var(--secondary-color3);
+    color: var(--primary-color3);
+}
 
 /*Learned from
 https://code-boxx.com/image-zoom-css-javascript/*/
@@ -66,15 +117,15 @@ https://code-boxx.com/image-zoom-css-javascript/*/
     transform: scale(1.2);
 }
 
-/*iframe responsiveness learned from
+/*iframe responsiveness learned from chatGPT &
 https://www.benmarshall.me/responsive-iframes/*/
-.iframe-container { 
+.iframe-container {
     margin-top: 2rem;
     overflow: hidden;
     padding-top: 56.25%;
     position: relative;
 }
-  
+
 .iframe-container iframe {
     border: 0;
     height: 100%;
@@ -86,43 +137,24 @@ https://www.benmarshall.me/responsive-iframes/*/
 
 /*Scrollbar learned from
 https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp*/
-::-webkit-scrollbar { 
-    width: 20px;
+::-webkit-scrollbar {
+    width: 7px;
 }
-
-::-webkit-scrollbar-track {
-    background: rgb(235, 235, 235);
-}  
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(99, 63, 167);
-    border-radius: 10px;
 }
 
 /* Navbar learned from
 https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
-.navbar {    
+.navbar {
     display: flex;
-    position: relative;
-    z-index: 3;
+    position: fixed;
     width: 100%;
     justify-content: right;
-    background-color: rgb(99, 63, 167);
+    background-color: rgb(40, 25, 66);
     color: white;
-}
-
-.brand-title {
-    display: none;
-    font-size: 1.5rem;
-    margin: 0.5rem;
-    color: rgb(255, 219, 57);
-    font-family: 'Righteous';
-}
-
-.navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
+    z-index: 3;
 }
 
 .navbar-links ul {
@@ -132,142 +164,341 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
 }
 
 .navbar-links li {
+    position: relative;
     list-style: none;
     margin-bottom: 0rem;
-    padding-bottom:0rem;
+    padding-bottom: 0rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
 }
 
 .navbar-links li a {
     text-decoration: none;
     color: white;
     padding: 1rem;
+    padding-top: 0.7em;
+    padding-bottom: 0.5rem;
     display: block;
 }
 
-.navbar-links li a:hover {
-    background-color:rgb(255, 219, 57);
-    color: rgb(99, 63, 167);
-    transition: 0.3s;
+.navbar-links a:hover {
+    color: rgb(255, 219, 57);
 }
 
-.toggle-button {
+.navbar-links a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background: rgb(255, 219, 57);
+    top: 0;
+    transition: all ease-in-out 250ms;
     position: absolute;
-    top: 0.75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
 }
 
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
+.navbar-links a:hover::before {
+    width: 70%;
 }
 
- /*Banner Set-up*/
+/*Banner Set-up*/
+.brand-title {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 1.5rem;
+    color: rgb(255, 219, 57);
+    font-family: 'Righteous';
+}
+
+.brand-title:hover {
+    transition: all 0.5s ease-out;
+    color: white;
+}
+
+#landing-banner {
+    margin-bottom: -6rem;
+    z-index: 1
+}
+
 .banner-img {
     position: absolute;
     width: 100%;
     z-index: 1;
 }
 
+#landing-banner iframe {
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    border: none;
+    overflow: auto;
+    justify-content: space-around;
+    width: 75%;
+    height: 53rem;
+    margin-top: -9%;
+    margin-left: 20%;
+    margin-bottom: 5rem;
+}
+
 .banner-text {
     padding: 2rem 0 0.8rem;
     text-align: center;
     position: relative;
+    overflow: hidden;
     z-index: 2;
     margin-bottom: 2rem;
 }
 
-.banner-text h1{
-    margin-top: 0.5rem;
-    font-size: 7rem; 
-    margin-bottom: 0rem;
+.banner-text h1 {
+    font-family: 'Righteous';
+    margin-top: 6rem;
+    font-size: 10rem;
+    margin-bottom: 0.5rem;
     letter-spacing: 1rem;
+    color: var(--primary-color3);
+}
+
+.banner-text h2 {
+    font-family: 'Righteous';
+    font-size: 1.5rem;
+    letter-spacing: 14.2px;
+    margin-top: 15px;
+}
+
+.banner-text h4 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+    color: var(--primary-color3);
 }
 
 .content-grid {
-    padding-top: 2rem;
+    background: var(--primary-color);
     position: relative;
-    background-color: white;
-    z-index: 4;
-    margin-bottom: 1rem;
+    margin: 0rem;
+    z-index: 1;
 }
 
 /*Card styling learned from 
 https://www.w3schools.com/howto/howto_css_cards.asp*/
-.card { 
+
+#card-content,
+.secondary-card-content {
+    width: 75vw;
+    margin: auto;
+    gap: 2rem;
+}
+
+.secondary-card-content {
+    margin-top: 2rem; 
+    justify-items: center;
+}
+
+.secondary-card-content .card {
+    transform: translate(-50%, 0);
     position: relative;
-    background: rgb(235, 235, 235);
     max-width: 250px;
     border-radius: 30px;
     margin-bottom: 0rem;
     height: 29rem;
     text-align: center;
+    display: block;
+    box-shadow: 0 8px 5px rgba(128, 128, 128, 0.5);
+    background-color: var(--primary-color3);
 }
 
-.card p {
-    color: black;
-    margin-top: 0.5rem;
+.secondary-card-content .ux-card {
+    height: 22rem;
 }
 
-.card figcaption {
+.secondary-card-content .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-top: 10px;
+}
+
+.secondary-card-content .card p {
+    padding-top: 0.4rem;
+    text-decoration: none;
+    color: var(--secondary-color3);
+}
+
+.secondary-card-content .card figcaption {
     position: absolute;
-    color: black;
+    color: var(--secondary-color2);
     padding: 5rem 1rem 1rem 1rem;
     display: none;
 }
 
-.card h2 {   
-    padding-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.card-content{
-    margin: 0 auto;
-    gap: 2rem;
-}
-
-.card:hover img {
-    background: rgb(255, 219, 57);
+.secondary-card-content .card:hover img {
     opacity: 0.15;
     transition: 0.3s;
+}
+
+.secondary-card-content .card:hover img {
+    opacity: 0.15;
+    transition: 0.3s;
+}
+
+
+.secondary-card-content .card h2 {
+    padding-left: 0px;
+    color: var(--secondary-color3);
+    top: 50%;
 }
 
 .card:hover figcaption {
     display: initial;
 }
 
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 525px;
+    border: 1px;
+}
+
+.card p {
+    line-height: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.card h2 {
+    color: var(--primary-color);
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.card button {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Helvetica", sans-serif;
+}
+
+.project-card {
+    position: relative;
+}
+
+#card-content iframe {
+    justify-content: space-around;
+    gap: 2rem;
+    display: grid;
+    -webkit-overflow-scrolling: touch;
+    border: none;
+    overflow: auto;
+    height: 24rem;
+    width: 100%;
+    cursor: pointer;
+    z-index: 10;
+    pointer-events: visible;
+}
+
+.containerA {
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    width: 50%;
+    height: 100%;
+}
+
+.containerB {
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.containerB h1 {
+    line-height: 4rem;
+    padding-left: 5rem;
+}
+
+.containerA h1,
+.containerB h1 {
+    line-height: 2rem;
+}
+
+
+.containerA h1,
+.containerA p {
+    padding-left: 3rem;
+}
+
+.containerA p {
+    margin-right: 7rem;
+}
+
+.containerB p {
+    padding-left: 5rem;
+    padding-right: 4rem;
+}
+
+.containerA h2,
+.containerB h2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 4rem;
+    margin-right: 9rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.containerB h2 {
+    margin-right: 4rem;
+}
+
+.containerA h2 {
+    margin-right: 10rem;
+}
+
+.containerA h2:hover,
+.containerB h2:hover {
+    opacity: 0.5;
+}
+
+
 /*set up footer elements here*/
-.footer-container { 
-    background: rgb(235, 235, 235);
+.footer-container {
+    background: var(--secondary-color3);
     padding: 1rem 0rem 2rem;
-    display: block;
+    display: flex;
     position: relative;
     bottom: 0;
     width: 100%;
-    z-index: 3;
-} 
+
+}
 
 .footer-container a {
     line-height: 2;
-    color: rgb(104, 104, 104);
+    color: var(--primary-color3);
+    cursor: pointer;
 }
 
 .footer-container h4 {
     margin-bottom: 0.5rem;
+    transition-duration: 0.4s;
 }
 
 .footer-container a:hover {
-    color: rgb(255, 219, 57);
+    color: rgb(255, 199, 59);
 }
 
 .footer-contacts {
     float: left;
+    margin-bottom: 2rem;
 }
 
 .footer-links {
@@ -278,56 +509,64 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     margin-right: 0.5rem;
 }
 
-.icon {
-    position: relative;
-    top: 5px;
-    left: 5px;
+.mobile-footer {
+    padding-bottom: 3rem;
 }
 
-/*Set up about page*/
-.about-content { 
-    margin-top: 2rem;
-    gap: 2rem;
+/*Set up about section*/
+
+.mobile-about-content img,
+#about-content img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 25px;
 }
 
-.about-content img {
-    width:100%; 
-    height:100%;
-    padding-bottom: 2rem;
+.mobile-about-content p,
+#about-content p {
+    margin-top: 1rem;
 }
 
-.about-content p {
-    margin-bottom: 1.5rem;
+#about-content h2 {
+    font-size: 2rem;
+    color: var(--primary-color3);
 }
 
 /*Set up process for different projects*/
-.process-content { 
+.process-content {
+    width: 75vw;
     position: relative;
-    line-height: 2;
+    margin: auto;
     gap: 2rem;
+    line-height: 2;
+}
+
+.process {
+    background-color: var(--primary-color1);
 }
 
 .process-content .txtover {
     position: relative;
 }
 
-.process-content .txtover figcaption { 
-    position: absolute; 
+.process-content .txtover figcaption {
+    position: absolute;
     bottom: 0px;
     right: 0px;
     padding: 1rem;
     background-color: rgb(255, 219, 57, 0.7);
 }
 
-.process-content .txtover:hover figcaption { 
+.process-content .txtover:hover figcaption {
     opacity: 0;
     transition: 0.3s;
 }
 
 .process-content img {
-    height: 100%; 
+    height: 100%;
     width: 100%;
     object-fit: contain;
+    box-shadow: 0 5px 20px rgb(228, 228, 228);
 }
 
 .process-content p {
@@ -335,19 +574,14 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 }
 
 /*Menus for illustration*/
-.sub-menu .card { 
-    height: 25rem;
-    margin: 0;
-}
-
 .sub-menu .info {
     height: 100%;
     max-width: 50%;
 }
 
 /*masonry set up*/
-.image-gallery { 
-    width: 100;
+.image-gallery {
+    width: 100%;
     max-width: 950px;
     margin: 0 auto;
     padding: 50px 20px;
@@ -358,12 +592,12 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     grid-gap: 20px;
     text-align: center;
     text-decoration: none;
-    background-color: white;
+    background-color: var(--primary-color);
 }
 
 .image-gallery .image-box {
-    position: relative; 
-    background-color: white;
+    position: relative;
+    background-color: var(--primary-color);
     overflow: hidden;
 }
 
@@ -385,11 +619,11 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 
 .image-gallery .image-box .overlay {
     position: absolute;
+    background-color: white;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -406,7 +640,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     opacity: 0.8;
 }
 
-.image-gallery .image-box .details .title{
+.image-gallery .image-box .details .title {
     margin-bottom: 8px;
     font-size: 24px;
     font-weight: 600;
@@ -438,52 +672,59 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     bottom: 0;
     opacity: 1;
     visibility: visible;
-    transition: all 0.3s 0.2s ease;
 }
 
 .image-gallery .image-box .details .title a {
-    color:rgb(99, 63, 167);
+    color: rgb(99, 63, 167);
 }
 
-.image-gallery .image-box .details .category a{
-    color:black;
+.image-gallery .image-box .details .category a {
+    color: var(--secondary-color);
 }
 
-/*Carousel*/
-.carousel {
+/*Cards in Phone screen size*/
+.mobile-card {
     position: relative;
+    max-width: 300px;
+    border-radius: 25px;
+    width: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(255, 233, 143, 1);
 }
-  
-.carousel__item {
-    padding: 3em;
+
+.mobile-card p {
+    color: var(--secondary-color);
+    margin-top: 0.6rem;
+}
+
+.mobile-card figcaption {
+    position: absolute;
+    color: var(--primary-color3);
+    padding: 5rem 1rem 1rem 1rem;
     display: none;
 }
 
-.carousel__item--selected {
-    display: block;
+.mobile-card:hover {
+    background-color: rgb(255, 233, 143, 0.3);
 }
-  
-.carousel__nav {
-    width: 100%;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center;
+
+.mobile-card img:hover {
+    background-color: #000;
+    opacity: 1;
 }
-  
-.carousel__button {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    background: rgb(190, 190, 190);
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
+
+.mobile-card:hover img {
+    opacity: 0.2;
+    transition: 0.3s;
 }
-  
-.carousel__button--selected {
-    background: rgb(255, 219, 57);
+
+.mobile-card:hover figcaption {
+    display: initial;
 }
 
 /* \/ miscellaneous \/ */
@@ -491,27 +732,157 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     display: flex;
 }
 
-#mockingbird  {
+#mockingbird {
     background: rgb(235, 235, 235);
     width: 1280px;
     height: 828px;
-    margin: 5% auto; 
+    margin: 5% auto;
 }
 
-#hotelcalifornia  {
+#hotelcalifornia {
     background: rgb(235, 235, 235);
     width: 100%;
     height: 555px;
-    margin: 5% auto; 
+    margin: 5% auto;
 }
 
 .gotchi-misc .col {
     flex: 50%;
     padding: 5px;
-} 
+}
 
 .scaledown img {
     width: 50%;
     height: 50%;
 }
 
+#top-page {
+    /* Button that scrolls top of page. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 90%;
+    z-index: 1;
+    margin-top: 10rem;
+    margin-bottom: -157rem;
+}
+
+.mobile-logo {
+    color: var(--primary-color2);
+    position: absolute;
+    font-size: 25px;
+    z-index: 2;
+    top: 5px;
+    left: 5px;
+    margin-left: 20px;
+    font-family: 'Righteous';
+}
+
+#project-title {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.prototype-link {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    display: block;
+    text-align: center;
+    top: 25%;
+    transition: transform ease-in-out 0.3s;
+}
+
+.prototype-link h3 {
+    padding: 2rem;
+    display: block;
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background: var(--primary-color3);
+    color: var(--secondary-color3);
+    border-radius: 10px;
+}
+
+.prototype-link h3:hover {
+    background: var(--secondary-color3);
+    color: var(--primary-color3);
+}
+
+/*Carousel*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color:  var(--secondary-color3);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background:  var(--primary-color3);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color:  var(--secondary-color1);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--secondary-color2);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

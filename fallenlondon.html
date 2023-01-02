@@ -1,154 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Raza's Portfolio</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/grids.css" rel="stylesheet">
-    <script src="js/hamburgermenu.js" defer></script>
-    <script src="js/carousel.js" defer></script>
-    <script src="js/clicktocopy.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fallen London Study</title>
+  <script src="js/clicktocopy.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
+  <link rel="icon" type="image/svg" href="src/tab-logo.svg">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grids.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;1,8..144,100;1,8..144,200;1,8..144,300&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+</head>
 
-    <body>
-      <header> 
-        <nav class="navbar"> <!-- Element for Website Navigation-->
-          <div class="brand-title">RAZA</div>
-          <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
-          <div class="navbar-links">
-            <ul>
-              <li><a href="index.html">Portfolio</a></li>
-              <li><a href="about-me.html">About Me</a></li>
-              <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
-            </ul>
-          </div>
-        </nav>
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+  <header>
+    <nav class="navbar"> <!-- Element for Website Navigation-->
+      <a href="index.html">
+        <div class="brand-title">RAZA</div>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li class="swap1"><a href="index.html#about">About Me</a></li>
+          <li class="swap2"><a href="about-me.html">About Me</a></li>
+          <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+      <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
+    </nav>
+    <div id="light-mode-element">
+      <div class="rellax" data-rellax-speed="11">
+        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+      </div>
+    </div>
+    <div id="dark-mode-element" class="hidden">
+      <div class="rellax" data-rellax-speed="11">
+        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner-text" data-rellax-speed="2" style="transform: translate3d(0px, -19px, 0px);">
+        <h1>RAZA</h1>
+        <h2>SHABIH-UL-HASSAN</h2>
+        <h4 style="font-weight: bold">UX Designer & Media Artist</h4>
+      </div>
+    </div>
+  </header>
 
-        <div class="banner">
-          <img src="src/Banner-Image.svg" alt="Banner" class="banner-img rellax" data-rellax-speed="11">
-          <div class="banner-text rellax" data-rellax-speed="2">
-            <h1>RAZA</h1>
-            <h2 style="
-            font-size: 1.85rem;">Shabih-ul-Hassan</h2>
-            <h4 style="
-            font-weight: bold">UI/UX Designer & Graphic Designer</h4>
-          </div>
+  <div class="process content-grid"> <!--For aligning content in the middle of the screen-->
+    <div class="emptybox1"></div>
+    <div class="process-content">
+      <div class="span-content">
+        <h1 data-aos="fade-down" id="project-title">FALLEN LONDON STUDY</h1>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content txtover">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="500"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvElB2qS6mUukhRMjrFCR0B%2FUntitled%3Fnode-id%3D2%253A12"
+          allowfullscreen></iframe>
+        <figcaption>Figure.1: Social Media Add-on</figcaption>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100">
+        <h4>Type:</h4>
+        <p data-aos="fade-right" data-aos-delay="100">Individual Project</p>
+        <h4>Role:</h4>
+        <p data-aos="fade-right" data-aos-delay="100">Prototyping, Ideation, UX Research</p>
+        <h4>Tools:</h4>
+        <p data-aos="fade-right" data-aos-delay="100">Adobe Illustrator, Figma</p>
+        <h4>Duration:</h4>
+        <p data-aos="fade-right" data-aos-delay="100">1 day</p>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="100">
+        <p><a
+            href="https://www.sfu.ca/siat/student_projects/iat339_2022_summer/mht6/projects/IAT334-TavernBuddies/index.html"
+            target="_blank"> Fallen London</a> is an text-based browser roleplaying game with an avid online following.
+          However, players who like acting out their characters in homebrewed stories (or roleplaying) need to flock to
+          third party websites like Discord to act out their in-game characters. Therefore, developing a hypothetical
+          social media feature for Fallen London’s active roleplay community felt like a good challenge.</p>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100">
+        <h2>Analyzing Social Media Websites</h2>
+        <p>Before prototyping, popular social media sights were analysed to gain a deeper understanding of how their
+          design features worked. Among them were Discord, Linkedin, and Twitter. <br> Getting a nuanced understand of
+          social media was integral to figuring out what features were to be added onto Fallen London's UI.</p>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="100" class="txtover zoom">
+        <img src="src/fl-smf/Discord.svg">
+        <figcaption>Figure.2(a): Discord Study</figcaption>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100" class="txtover zoom">
+        <img src="src/fl-smf/Twitter.svg">
+        <figcaption>Figure.2(b): Twitter Study</figcaption>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100" class="txtover zoom">
+        <img src="src/fl-smf/Linkedin.svg">
+        <figcaption>Figure.2(c): Linkedin Study</figcaption>
+      </div>
+      <div>
+        <p>Fallen London's own UI was sedulously studied. The greatest consideration was given to how the features would
+          be incorporated into the UI without hampering the core narrative experience of the game.</p>
+      </div>
+      <div>
+        <div class="txtover zoom">
+          <img src="src/fl-smf/FallenLondon.svg">
+          <figcaption>Figure.3: Fallen London</figcaption>
         </div>
-      </header>
-
-      <div class="content-grid"> <!--For aligning content in the middle of the screen-->
-        <div class="emptybox1"></div>
-        <div class="process-content">
-          <div  class="span-content">
-            <h1>FALLEN LONDON FEATURE DESIGN</h1>
-          </div>
-          <div class="span-content txtover">
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="500" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvElB2qS6mUukhRMjrFCR0B%2FUntitled%3Fnode-id%3D2%253A12" allowfullscreen></iframe>
-            <figcaption>Figure.1: Social Media Add-on</figcaption>
-          </div>
-          <div>
-            <h4>Type:</h4> <p>Individual Project</p>
-            <h4>Role:</h4> <p>Prototyping, Ideation, UX Research</p>
-            <h4>Tools:</h4> <p>Adobe Illustrator, Figma</p>
-            <h4>Duration:</h4> <p>1 day</p>
-          </div>
-          <div>
-            <p><a href="https://www.sfu.ca/siat/student_projects/iat339_2022_summer/mht6/projects/IAT334-TavernBuddies/index.html" target="_blank"> Fallen London</a> is an text-based browser roleplaying game with an avid online following. However, players who like acting out their characters in homebrewed stories (or roleplaying) need to flock to third party websites like Discord to act out their in-game characters. Therefore, developing a hypothetical social media feature for Fallen London’s active roleplay community felt like a good challenge.</p>
-          </div>
-          <div>
-            <h2>Analyzing Social Media Websites</h2>
-            <p>Before prototyping, popular social media sights were analysed to gain a deeper understanding of how their design features worked. Among them were Discord, Linkedin, and Twitter. <br> Getting a nuanced understand of social media was integral to figuring out what features were to be added onto Fallen London's UI.</p>
-          </div>
-          <div class="txtover zoom">
-            <img src="src/fl-smf/Discord.svg">
-            <figcaption>Figure.2(a): Discord Study</figcaption>
-          </div>
-          <div class="txtover zoom">
-            <img src="src/fl-smf/Twitter.svg">
-            <figcaption>Figure.2(b): Twitter Study</figcaption>
-          </div>
-          <div class="txtover zoom">
-            <img src="src/fl-smf/Linkedin.svg">
-            <figcaption>Figure.2(c): Linkedin Study</figcaption>
-          </div>
-          <div>
-            <p>Fallen London's own UI was sedulously studied. The greatest consideration was given to how the features would be incorporated into the UI without hampering the core narrative experience of the game.</p>
-          </div>
-          <div>
-            <div class="txtover zoom">
-              <img src="src/fl-smf/FallenLondon.svg">
-              <figcaption>Figure.3: Fallen London</figcaption>
-            </div>
-          </div>
-          <div>
-            <h2>Process</h2>
-            <p>
-            Initial ideation saw several iterations of the website in quickfire succession. Some iterations looked like exisiting social media websites like Reddit and Twitter asthey held aspects of the final design.<br> The iteration was structured so that users can have open accebility to various roleplay groups or games as well as a chat function. <br> The final iteration borrows heavily from Discord for roleplay, Facebook for direct messages, and Twitter for profile structuring. <br> Next was a matter of a creating the wireframe on figma. The first iteration was simple black and white to block in the features and where they could be accessed. After, graphics were polished so they would look one-to-one with Fallen London's aesthetic. Some icons I had to make from scratch in Adobe Illustrator, but aside from that I was pleased with the final product (Figure.1)
-            </p>
-            <div class="txtover">
-              <img src="src/fl-smf/gw.png">
-              <figcaption>Figure.4: Ideation Sketches</figcaption>
-            </div>
-          </div>
-          <div class="txtover">
-           <img src="src/fl-smf/Sketch.png">
-           <figcaption>Figure5: Greyscale Wireframe</figcaption>
-          </div>
-          <div class="span-content">
-            <h2>Reflection</h2>
-            <p>
-              This piece was cobbled together in one day while learning the ins and outs of figma. The execution was straightforward so no major hurdles were experienced. The end result kept the vibe of the original Fallen London game without looking too much like any social media competitor.
-            </p>
-          </div>
-        </div>
-        <div class="emptybox2"></div>
+      </div>
+      <div class="span-content" data-aos="fade-up" data-aos-delay="100">
+        <h2>Process</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+          Initial ideation saw several iterations of the website in quickfire succession. Some iterations looked like
+          exisiting social media websites like Reddit and Twitter asthey held aspects of the final design. The
+          iteration was structured so that users can have open accebility to various roleplay groups or games as well as
+          a chat function. The final iteration borrows heavily from Discord for roleplay, Facebook for direct
+          messages, and Twitter for profile structuring. <br> Next was a matter of a creating the wireframe on figma.
+          The first iteration was simple black and white to block in the features and where they could be accessed.
+          After, graphics were polished so they would look one-to-one with Fallen London's aesthetic. Some icons I had
+          to make from scratch in Adobe Illustrator, but aside from that I was pleased with the final product (Figure.1)
+        </p>
       </div>
 
-      <div class="footer-container">
-        <div class="emptybox1"></div>
-        <div class="footer">
-          <div class="footer-contacts">
-            <h4>Contact</h4>
-            <img  class="icon"  src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon"> 
-            <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br> <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
-            <img  class="icon"  src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
-            <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
-            <img  class="icon"  src="src/Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
-            <a href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">@shabih-ul-hassanraza</a>
-          </div>
-          <div class="footer-links">
-            <h4>Useful Links</h4>
-            <a href="#top">Back to Top</a><br>
-            <a href="src/Resume.pdf" target="_blank">Resume</a><br>
-            <a href="index.html">Home</a>
-          </div>
-        </div>
-        <div class="emptybox2"></div>
+      <div class="txtover" data-aos="fade-right" data-aos-delay="100">
+        <img src="src/fl-smf/Sketch.png">
+        <figcaption>Figure5: Greyscale Wireframe</figcaption>
       </div>
-      <script src="js/rellax.min.js"></script> <!--For parallax effect-->
-      <script>
-        var rellax = new Rellax('.rellax');
-      </script>
-      <script> /*Animation message learned from https://www.youtube.com/watch?v=l1iOjH544K4&ab_channel=Tech%26TravelwithRiz*/
-        $('#sweetalert2').on('click',function(){
-          Swal.fire({
-            icon: 'success',
-            title: 'Copied!',
-            showConfirmButton: false,
-            timer: 1500
-        })
-      })
-    </script>
-  </body>
+      <div class="txtover" data-aos="fade-left" data-aos-delay="100">
+        <img src="src/fl-smf/gw.png">
+        <figcaption>Figure.4: Ideation Sketches</figcaption>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content">
+        <h2>Reflection</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+          This piece was cobbled together in one day while learning the ins and outs of figma. The execution was
+          straightforward so no major hurdles were experienced. The end result kept the vibe of the original Fallen
+          London game without looking too much like any social media competitor.
+        </p>
+      </div>
+    </div>
+    <div class="emptybox2"></div>
+  </div>
+
+  <div class="footer-container">
+    <div class="emptybox1"></div>
+    <div class="footer">
+      <div class="footer-contacts">
+        <h4>Contact</h4>
+        <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
+        <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+        <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
+        <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
+        <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
+        <img class="icon" src="src/Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
+        <a href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">@shabih-ul-hassanraza</a>
+      </div>
+      <div class="footer-links">
+        <h4>Useful Links</h4>
+        <a href="#top">Back to Top ▲</a><br>
+        <a href="src/Resume.pdf" target="_blank">Resume</a><br>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+    <div class="emptybox2"></div>
+  </div>
+  <script src="js/sweetalert.js"></script> <!--For copy message-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/rellax.min.js"></script> <!--For parallax effect-->
+  <script>var rellax = new Rellax('.rellax');</script>
+  <script>AOS.init();</script>
+  <script src="js/darkModeIconSwitch.js"></script>
+  <script src="js/darkModeElementSwitch.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+
 </html>

@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Raza's Portfolio</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/grids.css" rel="stylesheet">
-    <script src="js/hamburgermenu.js" defer></script>
-    <script src="js/clicktocopy.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pen & Ink</title>
+  <script src="js/clicktocopy.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
+  <link rel="icon" type="image/svg" href="src/tab-logo.svg">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grids.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;1,8..144,100;1,8..144,200;1,8..144,300&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+</head>
 
-    <body>
-      <header> 
-        <nav class="navbar"> <!-- Element for Website Navigation-->
-          <div class="brand-title">RAZA</div>
-          <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
-          <div class="navbar-links">
-            <ul>
-              <li><a href="index.html">Portfolio</a></li>
-              <li><a href="about-me.html">About Me</a></li>
-              <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
-            </ul>
-          </div>
-        </nav>
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+  <header>
+    <nav class="navbar"> <!-- Element for Website Navigation-->
+      <a href="index.html">
+        <div class="brand-title">RAZA</div>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li class="swap1"><a href="index.html#about">About Me</a></li>
+          <li class="swap2"><a href="about-me.html">About Me</a></li>
+          <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+      <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
+    </nav>
+    <div id="light-mode-element">
+      <div class="rellax" data-rellax-speed="11">
+        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+      </div>
+    </div>
+    <div id="dark-mode-element" class="hidden">
+      <div class="rellax" data-rellax-speed="11">
+        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner-text" data-rellax-speed="2" style="transform: translate3d(0px, -19px, 0px);">
+        <h1>RAZA</h1>
+        <h2>SHABIH-UL-HASSAN</h2>
+        <h4 style="font-weight: bold">UX Designer & Media Artist</h4>
+      </div>
+    </div>
+  </header>
 
-        <div class="banner">
-          <img src="src/Banner-Image.svg" alt="Banner" class="banner-img rellax" data-rellax-speed="11">
-          <div class="banner-text rellax" data-rellax-speed="2">
-            <h1>RAZA</h1>
-            <h2 style="
-            font-size: 1.85rem;">Shabih-ul-Hassan</h2>
-            <h4 style="
-            font-weight: bold">UI/UX Designer & Graphic Designer</h4>
-          </div>
+      <div class="process content-grid"> <!--For aligning content in the middle of the screen-->
+        <div class="emptybox1"></div>
+        <div>
+        <h1 data-aos="fade-down" data-aos-delay="100" id="project-title">Pen & Ink Drawings</h1>
+        <p style="display: inline;">You can find my most recent work on my</p>
+        <a href="https://www.instagram.com/unravelingraza/" style="display: inline;">Instagram</a>
         </div>
-      </header>
-
-      <div class="content-grid"> <!--For aligning content in the middle of the screen-->
+        <div class="emptybox2"> 
+        </div>
         <div class="emptybox1"></div>
           <div class="image-gallery"> <!--Masonry learned from https://www.youtube.com/watch?v=tSyYU0I9gYU&ab_channel=DesignTorch-->
-            <div class="image-box">
+            <div class="image-box"  data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFZe0ZyVEAI0r9C?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -62,7 +81,7 @@
                 </div>
               </div>
             </div>
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaQkVGVgAEaVVX?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -75,7 +94,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaLVzOVQAElRw2?format=jpg&name=medium" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -88,7 +107,7 @@
                 </div>
               </div>
             </div>  
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaNtMNVcAIDJRD?format=jpg&name=large" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -101,7 +120,7 @@
                 </div>
               </div>
             </div>           
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaLcQZVkAEXmdK?format=jpg&name=medium" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -114,7 +133,7 @@
                 </div>
               </div>
             </div>            
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaLhDyVgAMQlA4?format=jpg&name=medium" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -127,7 +146,7 @@
                 </div>
               </div>
             </div>            
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaMKmPVcAYrAfC?format=jpg&name=medium" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -140,7 +159,7 @@
                 </div>
               </div>
             </div>    
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaPySMUcAQFLxv?format=jpg&name=large" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -153,7 +172,7 @@
                 </div>
               </div>
             </div>         
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaMS0sUUAgBdmm?format=jpg&name=medium" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -166,7 +185,7 @@
                 </div>
               </div>
             </div>                      
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaMe1WVUAgSKX_?format=jpg&name=4096x4096" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -179,7 +198,7 @@
                 </div>
               </div>
             </div>            
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaMaaTUUAYj-PC?format=jpg&name=medium" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -192,7 +211,7 @@
                 </div>
               </div>
             </div>            
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaMkr4VEAEpP9S?format=jpg&name=large" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -205,7 +224,7 @@
                 </div>
               </div>
             </div>  
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaMsHEVEAAYKiU?format=jpg&name=large" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -218,7 +237,7 @@
                 </div>
               </div>
             </div>    
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaM3PtVkAArQ4x?format=jpg&name=large" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -231,7 +250,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaM-W6UYAInuVr?format=jpg&name=large" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -244,7 +263,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaN9ZwUUAYXg1H?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -257,7 +276,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaOD0QVQAA5P4k?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -270,7 +289,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaOLQBVcAMEPUZ?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -283,7 +302,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaOVHXVkAAZwcY?format=jpg&name=large" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -296,7 +315,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaOZa4UYAMVdtB?format=jpg&name=large" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -309,7 +328,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaOf73UcAUIEko?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -322,7 +341,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaOvvXVQAYhaHf?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -335,7 +354,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaO5acVQAkAET2?format=jpg&name=large" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -348,7 +367,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaO_liUYAYxeTk?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -361,7 +380,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaPcuUVUAogG7h?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -374,7 +393,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaP5IWVkAEwC6o?format=jpg&name=large" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -387,7 +406,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaP-UoVQAA2ley?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -400,7 +419,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaQEA2UUAACXRv?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -413,7 +432,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaQGZ7VkAANb-k?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -426,7 +445,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaQMJ1VgAkelQ3?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -439,7 +458,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaQRgeVEAcNu1E?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -452,7 +471,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaQeQiVQAAsnno?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -465,7 +484,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaQogBVcAULkqR?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -478,7 +497,7 @@
                 </div>
               </div>
             </div> 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-up" data-aos-delay="200">
               <img src="https://pbs.twimg.com/media/FFaQ2R9VUAs5etL?format=jpg&name=900x900" alt="img.jpg">
               <div class="overlay">
                 <div class="details">
@@ -492,43 +511,43 @@
               </div>
             </div> 
           </div>
-        <div class="emptybox2"></div>   
+        <div class="emptybox2">
+          <a id="top-page">
+            <img src="src/Top-screen-arrow.svg" onclick="window.scrollTo(0, 0)" width="50" height="50"
+              alt="Button that brings you to top of page">
+          </a></div>   
       </div>
 
-      <div class="footer-container">
+      <div class="footer-container" style="margin-top: 4rem;">
         <div class="emptybox1"></div>
         <div class="footer">
           <div class="footer-contacts">
             <h4>Contact</h4>
-            <img  class="icon"  src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon"> 
-            <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br> <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
-            <img  class="icon"  src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
+            <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
+            <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+            <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
+            <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
             <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
-            <img  class="icon"  src="src/Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
+            <img class="icon" src="src/Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
             <a href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">@shabih-ul-hassanraza</a>
           </div>
           <div class="footer-links">
             <h4>Useful Links</h4>
-            <a href="#top">Back to Top</a><br>
+            <a href="#top">Back to Top ▲</a><br>
             <a href="src/Resume.pdf" target="_blank">Resume</a><br>
             <a href="index.html">Home</a>
           </div>
         </div>
         <div class="emptybox2"></div>
       </div>
+      <script src="js/sweetalert.js"></script> <!--For copy message-->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script src="js/rellax.min.js"></script> <!--For parallax effect-->
-      <script>
-        var rellax = new Rellax('.rellax');
-      </script>
-      <script> /*Animation message learned from https://www.youtube.com/watch?v=l1iOjH544K4&ab_channel=Tech%26TravelwithRiz*/
-        $('#sweetalert2').on('click',function(){
-          Swal.fire({
-            icon: 'success',
-            title: 'Copied!',
-            showConfirmButton: false,
-            timer: 1500
-        })
-      })
-    </script>
-  </body>
-</html>
+      <script>var rellax = new Rellax('.rellax');</script>
+      <script>AOS.init();</script>
+      <script src="js/darkModeIconSwitch.js"></script>
+      <script src="js/darkModeElementSwitch.js"></script>
+      <script src="js/carousel.js"></script>
+    </body>
+    
+    </html>

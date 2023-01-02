@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asana Branches</title>
+  <script src="js/clicktocopy.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
+  <link rel="icon" type="image/svg" href="src/tab-logo.svg">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grids.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;1,8..144,100;1,8..144,200;1,8..144,300&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+  <header>
+    <nav class="navbar"> <!-- Element for Website Navigation-->
+      <a href="index.html">
+        <div class="brand-title">RAZA</div>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li class="swap1"><a href="index.html#about">About Me</a></li>
+          <li class="swap2"><a href="about-me.html">About Me</a></li>
+          <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+      <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
+    </nav>
+    <div class="banner">
+      <div id="light-mode-element">
+        <div class="rellax" data-rellax-speed="11">
+          <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+        </div>
+      </div>
+      <div id="dark-mode-element" class="hidden">
+        <div class="rellax" data-rellax-speed="11">
+          <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+        </div>
+      </div>
+      <div class="banner-text" data-rellax-speed="2" style="transform: translate3d(0px, -19px, 0px);">
+        <h1>RAZA</h1>
+        <h2>SHABIH-UL-HASSAN</h2>
+        <h4 style="font-weight: bold">UX Designer & Media Artist</h4>
+      </div>
+    </div>
+  </header>
+
+  <div class="process content-grid"> <!--For aligning content in the middle of the screen-->
+    <div class="emptybox1"></div>
+    <div class="process-content"  data-aos="fade-down" data-aos-delay="100">
+      <div class="span-content">
+        <h1 data-aos="fade-down" id="project-title">ASANA BRANCHES</h1>
+      </div>
+
+      <!-- Slideshow container -->
+      <div data-aos="fade-up" data-aos-delay="200" class="slideshow-container span-content">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="src/asana-feature/1.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/2.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/3.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/4.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/5.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/6.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/7.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/8.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/9.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/10.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/11.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/12.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/13.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/14.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <div class="mySlides fade">
+          <img src="src/asana-feature/15.png" width="1200" height="900" alt="Asana Feature Slide">
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+        <span class="dot" onclick="currentSlide(13)"></span>
+        <span class="dot" onclick="currentSlide(14)"></span>
+        <span class="dot" onclick="currentSlide(15)"></span>
+      </div>
+
+    
+    </div>
+    <div class="emptybox2">
+      <a id="top-page">
+        <img src="src/Top-screen-arrow.svg" onclick="window.scrollTo(0, 0)" width="50" height="50"
+          alt="Button that brings you to top of page">
+      </a>
+    </div>
+  </div>
+
+  <div id="projects" class="content-grid" style="background-color: transparent;">
+    <!--Top Page Button-->
+    <div class="emptybox1"></div>
+    <h1 class="heading" data-aos="fade-right" style="margin-bottom: 0rem;">ALSO CHECK OUT</h1>
+    <div class="emptybox2"></div>
+    <!--Cards-->
+    <div class="emptybox1"></div>
+    <div id="card-content" style="margin-bottom: 2rem;">
+      <a href="ux-experiments.html" style="pointer-events:all;">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA"></div>
+          <div class="containerB">
+            <h1 style="color: rgb(209, 232, 255)">UX Experiments</h1>
+            <p style="color: rgb(49, 66, 83)">I like to play with design tools to create interesting solutions.</p>
+            <h2 style="background:rgb(49, 66, 83); color:rgb(209, 232, 255)">View Case
+              Studies</h2>
+          </div>
+          <div class="screen-to-portable-1">
+            <iframe src="src/card-ux-experiment.html" scrolling="no"></iframe>
+          </div>
+          <div class="screen-to-portable-2">
+            <img src="src/mobile-card-ux-experiment.svg" alt="Vancouver Tool Library Tile">
+          </div>
+        </div>
+      </a>
+      <a href="gotchi-project.html" style="pointer-events:all;">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA">
+            <h1 style="color: rgb(255, 255, 255)">Gotchi</h1>
+            <p style="color: rgb(83, 83, 83)">A speculative user experience project with the purpose of helping users
+              manage electronic waste.</p>
+            <h2 style="background:rgb(233, 144, 180); color:rgb(255, 255, 255)">View
+              Case Study</h2>
+          </div>
+          <div class="containerB"></div>
+          <div class="screen-to-portable-1">
+            <iframe src="src/card-gotchi.html" scrolling="no"></iframe>
+          </div>
+          <div class="screen-to-portable-2">
+            <img src="src/mobile-card-gotchi.svg" alt="Gotchi Tile">
+          </div>
+        </div>
+      </a>
+
+      <a href="tavern-buddies.html" style="pointer-events:all;">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA"></div>
+          <div class="containerB">
+            <h1 style="color: rgb(255, 203, 203)">Tavern Buddies</h1>
+            <p style="color: rgb(1, 0, 0)">A mobile app that connects Dungeon and Dragons (DnD) players in your area.
+            </p>
+            <h2 style="background:rgb(39, 13, 13); color:rgb(255, 203, 203)">View Case
+              Study</h2>
+          </div>
+          <div class="screen-to-portable-1">
+            <iframe src="src/card-tavern-buddy.html" scrolling="no"></iframe>
+          </div>
+          <div class="screen-to-portable-2">
+            <img src="src/mobile-card-tavern-buddy.svg" alt="Tavern Buddy Tile">
+          </div>
+        </div>
+        <div class="emptybox2"></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-container">
+    <div class="emptybox1"></div>
+    <div class="footer">
+      <div class="footer-contacts">
+        <h4>Contact</h4>
+        <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
+        <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+        <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
+        <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
+        <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
+        <img class="icon" src="src/Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
+        <a href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">@shabih-ul-hassanraza</a>
+      </div>
+      <div class="footer-links">
+        <h4>Useful Links</h4>
+        <a href="#top">Back to Top ▲</a><br>
+        <a href="src/Resume.pdf" target="_blank">Resume</a><br>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+    <div class="emptybox2"></div>
+  </div>
+  <script src="js/sweetalert.js"></script> <!--For copy message-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/rellax.min.js"></script> <!--For parallax effect-->
+  <script>var rellax = new Rellax('.rellax');</script>
+  <script>AOS.init();</script>
+  <script src="js/darkModeIconSwitch.js"></script>
+  <script src="js/darkModeElementSwitch.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+
+</html>

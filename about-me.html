@@ -1,97 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Raza's Portfolio</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/grids.css" rel="stylesheet">
-    <script src="js/hamburgermenu.js" defer></script>
-    <script src="js/clicktocopy.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
-  </head>
+<head>
+  <title>Raza, Shabih-ul-Hassan</title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/svg" href="src/tab-logo.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grids.css" rel="stylesheet">
+  <script src="js/clicktocopy.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css2?family=Helvetica' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+</head>
 
-    <body>
-      <header> 
-        <nav class="navbar"> <!-- Element for Website Navigation-->
-          <div class="brand-title">RAZA</div>
-          <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
-          <div class="navbar-links">
-            <ul>
-              <li><a href="index.html">Portfolio</a></li>
-              <li><a href="about-me.html">About Me</a></li>
-              <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
-            </ul>
-          </div>
-        </nav>
-
-        <div class="banner">
-          <img src="src/Banner-Image.svg" class="banner-img rellax" alt="banner" data-rellax-speed="5">
-          <div class="banner-text rellax" data-rellax-speed="11">
-            <h1>RAZA</h1>
-            <h2 style="
-            font-size: 1.85rem;">Shabih-ul-Hassan</h2>
-          </div>
-        </div>
-      </header>
-
-      <div class="content-grid" style="background-color:transparent;"> <!--For aligning content in the middle of the screen-->
-        <div class="emptybox1"></div>
-        <div class="about-content">
-          <img src="src/Portfolio-Portrait.svg" alt="A suave looking fellow in a suit sitting on a drafting chair." width="300" height="750">
-          <div class="about-text">
-            <h1 style="margin-bottom: 1.2rem;">Hi there!</h1>
-            <p>I'm a UI/UX Designer & Graphic Designer based in Vancouver, British Columbia. I'm also open to working remotely.</p>
-            <p>I believe that any effective design comes from a strong understanding of fundamental principals and their repetitive practice. This applies to all manner of art from how a painter understands all the planes on the human face to a web designer understanding how much white space should come between walls of text.</p>
-            <p>Fundamentals are key in developing and iterating ideas in our minds before we even execute them.</p>          
-          </div>
-        </div>
-        <div class="emptybox2"></div>
+<body>
+  <header>
+    <nav class="navbar"> <!-- Element for Website Navigation-->
+      <a href="index.html">
+        <div class="brand-title">RAZA</div>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li class="swap1"><a href="index.html#about">About Me</a></li>
+          <li class="swap2"><a href="about-me.html">About Me</a></li>
+          <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
       </div>
+      <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
+    </nav>
 
-     <div class="footer-container">
-        <div class="emptybox1"></div>
-        <div class="footer">
-          <div class="footer-contacts">
-            <h4>Contact</h4>
-            <img  class="icon"  src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon"> 
-            <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br> <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
-            <img  class="icon"  src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
-            <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
-            <img  class="icon"  src="src/Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
-            <a href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">@shabih-ul-hassanraza</a>
-          </div>
-          <div class="footer-links">
-            <h4>Useful Links</h4>
-            <a href="#top">Back to Top</a><br>
-            <a href="src/Resume.pdf" target="_blank">Resume</a><br>
-            <a href="index.html">Home</a>
-          </div>
+    <div class="emptybox1"></div>
+    <div id="landing-banner">
+      <div class="mobile-logo">RAZA</div>
+      <div id="light-mode-element">
+        <div class="rellax" data-rellax-speed="11">
+          <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
         </div>
-        <div class="emptybox2"></div>
       </div>
-      <script src="js/rellax.min.js"></script> <!--For parallax effect-->
-      <script>
-        var rellax = new Rellax('.rellax');
-      </script>
-      <script> /*Animation message learned from https://www.youtube.com/watch?v=l1iOjH544K4&ab_channel=Tech%26TravelwithRiz*/
-        $('#sweetalert2').on('click',function(){
-          Swal.fire({
-            icon: 'success',
-            title: 'Copied!',
-            showConfirmButton: false,
-            timer: 1500
-        })
-      })
-    </script>
-  </body>
+      <div id="dark-mode-element" class="hidden">
+        <div class="rellax" data-rellax-speed="11">
+          <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+        </div>
+      </div>
+    </div>
+    <div class="emptybox2"></div>
+  </header>
+
+  <div class="content-grid" style="background-color:transparent;">
+    <!--For aligning content in the middle of the screen-->
+    <div class="emptybox1"></div>
+    <div class="mobile-about-content">
+      <img src="src/portfolio-portrait.jpg" data-aos="fade-right" data-aos-delay="200"
+        alt="A suave looking fellow in a suit." width="300" height="300">
+      <div class="about-text" id="about">
+        <h2 style="display: inline;" data-aos="fade-up">Hi, I'm </h2>
+        <h2 style="display: inline; font-family: Righteous;" data-aos="fade-up" data-aos-delay="50">RAZA</h2>
+        <h2 style="display: inline;" data-aos="fade-up">!✌</h2>
+        <p data-aos="fade-up" data-aos-delay="100">I’m a UX Designer & Media Artist pursuing a degree in Media Arts &
+          Design. I am currently working as a freelance UX designer.</p>
+        <p data-aos="fade-up" data-aos-delay="150">For me, the thrill of UX design lies in crafting elegant and
+          <b>inclusive</b> design solutions that allow frictionless interaction with the interface. It is my priority to
+          understand and empathize with people in each step of the design process in order to synthesize a true
+          <b>user-centered</b> product.
+        </p>
+        <p data-aos="fade-up" data-aos-delay="200">I spend my leisure hours honing my various crafts and spending time
+          with friends in <b>Vancouver</b>.</p>
+        <p style="display: inline;" data-aos="fade-up" data-aos-delay="300">Let’s <a
+            href="mailto:raza1996.go@gmail.com">get in touch!</a></p>
+        <h2 style="display: inline;" data-aos="fade-left" data-aos-delay="400">🤙</h2>
+      </div>
+    </div>
+    <div class="emptybox2"></div>
+  </div>
+
+  <script src="js/sweetalert.js"></script> <!--For copy message-->
+  <script src="js/rellax.min.js"></script> <!--For parallax effect-->
+  <script src="js/sweetalert.js"></script> <!--For copy message-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/rellax.min.js"></script> <!--For parallax effect-->
+  <script>var rellax = new Rellax('.rellax');</script>
+  <script>AOS.init();</script>
+  <script src="js/darkModeIconSwitch.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax');
+  </script>
+  <script>
+    function navigateOnResize() {
+      if (window.innerWidth > 550) {
+        window.location.href = "index.html#about";
+      }
+    }
+    window.addEventListener("resize", navigateOnResize);
+  </script>
+  <script src="js/darkModeElementSwitch.js"></script>
+</body>
+
 </html>

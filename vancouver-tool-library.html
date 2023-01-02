@@ -1,190 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Raza's Portfolio</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/grids.css" rel="stylesheet">
-    <script src="js/hamburgermenu.js" defer></script>
-    <script src="js/carousel.js" defer></script>
-    <script src="js/clicktocopy.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vancouver Tool Library</title>
+  <script src="js/clicktocopy.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
+  <link rel="icon" type="image/svg" href="src/tab-logo.svg">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grids.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;1,8..144,100;1,8..144,200;1,8..144,300&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+</head>
 
-    <body>
-      <header> 
-        <nav class="navbar"> <!-- Element for Website Navigation-->
-          <div class="brand-title">RAZA</div>
-          <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
-          <div class="navbar-links">
-            <ul>
-              <li><a href="index.html">Portfolio</a></li>
-              <li><a href="about-me.html">About Me</a></li>
-              <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
-            </ul>
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+  <header>
+    <nav class="navbar"> <!-- Element for Website Navigation-->
+      <a href="index.html">
+        <div class="brand-title">RAZA</div>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li class="swap1"><a href="index.html#about">About Me</a></li>
+          <li class="swap2"><a href="about-me.html">About Me</a></li>
+          <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+      <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
+    </nav>
+    <div class="banner">
+      <div id="light-mode-element">
+        <div class="rellax" data-rellax-speed="11">
+          <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+        </div>
+      </div>
+      <div id="dark-mode-element" class="hidden">
+        <div class="rellax" data-rellax-speed="11">
+          <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+        </div>
+      </div>
+      <div class="banner-text" data-rellax-speed="2" style="transform: translate3d(0px, -19px, 0px);">
+        <h1>RAZA</h1>
+        <h2>SHABIH-UL-HASSAN</h2>
+        <h4 style="font-weight: bold">UX Designer & Media Artist</h4>
+      </div>
+    </div>
+  </header>
+
+  <div class="process content-grid"> <!--For aligning content in the middle of the screen-->
+    <div class="emptybox1"></div>
+    <div class="process-content">
+      <div class="span-content">
+        <h1 data-aos="fade-down" id="project-title">VANCOUVER TOOL LIBRARY</h1>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 1rem;" class="txtover">
+        <img src="src/vtl/mockup1.png" width="100%" height="100%" alt="Mock-up 1">
+        <figcaption>Updated Website</figcaption>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="100" class="prototype-link">
+        <p>Check out website</p>
+        <a target="_blank"
+          href="https://www.figma.com/proto/iCubNfyVoRzsSUOoVgelwZ/Ethnography-Poster?page-id=259%3A22&node-id=326%3A23&viewport=-8247%2C-11194%2C0.27&scaling=contain&starting-point-node-id=326%3A23&show-proto-sidebar=1">
+          <h3>PROTOTYPE</h3>
+        </a>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 1rem;" class="txtover">
+        <img src="src/vtl/mockup2.png" width="100%" height="100%" alt="Mock-up 2">
+        <figcaption>Kiosk Mockup</figcaption>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="100" class="prototype-link">
+        <p>Check out kiosk</p>
+        <a target="_blank"
+          href="https://www.figma.com/proto/iCubNfyVoRzsSUOoVgelwZ/Ethnography-Poster?page-id=259%3A22&node-id=294%3A204&viewport=-545%2C-1080%2C0.03&scaling=contain&starting-point-node-id=294%3A204&show-proto-sidebar=1">
+          <h3>PROTOTYPE</h3>
+        </a>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100">
+        <h4>Type:</h4>
+        <p data-aos="fade-right" data-aos-delay="100">Group Project</p>
+        <h4>Credits</h4>
+        <p data-aos="fade-right" data-aos-delay="100">Parampreet Sran, Mubarak Adebowale, Soraya Elchehimi, Fathima Tabassim</p>
+        <h4>Role:</h4>
+        <p data-aos="fade-right" data-aos-delay="100">UX Researcher, Prototyper, Interviewer, Copywriter, UI Designer,
+          Visual Designer, Graphic Designer</p>
+        <h4>Tools:</h4>
+        <p data-aos="fade-right" data-aos-delay="100">Figma, Discord, Adobe Illustrator</p>
+        <h4>Duration:</h4>
+        <p data-aos="fade-right" data-aos-delay="100">12 weeks</p>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="100">
+        <p>The Vancouver Tool Library (VTL) is a sustainable, community-driven organization that provides customers with
+          rental tools for home improvement, gardening, maintenance and more. They educate and engage their members
+          through workshops on tool-related skills and projects. Their garage sales also allow members to purchase
+          affordable tools they need. <br> The team aimed to solve efficiency related problems in the Tool Library.
+          Eliminating potential lengthy wait times caused by short-staffing or disorganization were an obvious points of
+          focus. The team believed a faster experience in Tool Library would greatly improve the user experience.
+        </p>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
+        <h2 data-aos="fade-right" data-aos-delay="100">
+          Personas
+        </h2>
+        <p>Before ideating on a solution, the team wanted to figure out the needs of the individual users of VTL. For
+          this purpose, user personas were created from various walks of life. After establishing their needs and
+          background, triangular diagrams were crafted to group them in terms of technological know-how, experience with
+          tools, and support network for their crafts. This allowed the team to understand where potential users came
+          from and how to accomodate for their idiosyncratic needs.</p>
+      </div>
+      <div class="gotchi-misc span-content">
+        <div data-aos="fade-up" data-aos-delay="100" class="zoom col txtover">
+          <img src="src/vtl/persona1.png" alt="poster" width="2104" height="3163">
+          <figcaption>Figure.1(a): Stakeholder Persona</figcaption>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" class="zoom col txtover">
+          <img src="src/vtl/persona2.png" alt="Mobile UI mock-up" width="1644" height="2584">
+          <figcaption>Figure.1(b): New User Persona</figcaption>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300" class="zoom col txtover">
+          <img src="src/vtl/persona3.png" alt="emotes" width="2530" height="2596">
+          <figcaption>Figure.1(c): Frequent User Persona</figcaption>
+        </div>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
+        <h2 data-aos="fade-right" data-aos-delay="100">Experience Map</h2>
+        <p>The next order of business was to visit VTL and get a first hand experience of user interactions with their
+          services. The team met the volunteers who talked about the areas of improvement that VTL needed to work on.
+          Taking all those facts into account, the team created a User Journey Map of the sign-up and check out process.
+          This map outlined what worked with the user journey, area of improvement, and painpoints that the team could
+          actively build upon.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content zoom txtover">
+        <img src="src/vtl/journeymap1.png" width="100%" height="100%" alt="Journey Map 1">
+        <figcaption>Figure.2(a): New User's Journey</figcaption>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
+        <p>Two pain points were noted: Mainly that the user was overwhelmed by the sheer variety of tools on display,
+          which made the process of finding their own tool very confusing and stress inducing. Additionally, the sign up
+          process was laborious and had too many steps. The user had to fill out a physical sign up form and the
+          volunteer had to add them in the organization's data server.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content zoom txtover">
+        <img src="src/vtl/journeymap2.png" width="100%" height="100%" alt="Journey Map 2">
+        <figcaption>Figure.2(b): Frequent User's Journey</figcaption>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
+        <p>Frequent users of VTL did not have the same problem with sytem logging as they were already signed in.
+          However, they also had concerns regarding VTL's draconic filing system. From these insights, the path moving
+          forward was much clearer.</p>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
+        <h2 data-aos="fade-right" data-aos-delay="100">Participatory Workshop</h2>
+        <p>With initial ideas patched together, the team reached out to VTL to get greater insight into the problems
+          that were being tackled. To this end, VTL's general manager was contacted and a meeting was set up where he
+          would perform various activities devised by the team that would get him to extrapolate further on his
+          painpoints. The following activities were conducted in the span of 1 hour.</p>
+        <h4 data-aos="fade-right" data-aos-delay="100">Survey</h4>
+        <p>The introdoctory activity, the participant was asked to answer a variety of question to gain a more diverse
+          palette of perspectives</p>
+        <h4 data-aos="fade-right" data-aos-delay="100">Rose, Bud, Thorn</h4>
+        <p>The participant wrote his thoughts on a number of prompts pertaining to scenarios in the VTL, for aspects
+          that are currently positive (rose), problematic (thorn), or have potential to improve (bud).</p>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
+        <h4 data-aos="fade-right" data-aos-delay="100">Priority Matrix</h4>
+        <p>The Participant takes 5 minutes to plot the best ideas on a chart with x-axis representing usefulness and
+          y-axis stating difficulty of implementation.</p>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
+        <h2 data-aos="fade-right" data-aos-delay="100">Final Design Concept</h2>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
+        <h4 data-aos="fade-right" data-aos-delay="100">Storyboards</h4>
+        <p>The following storyboards were created to present to VTL stakeholders.</p>
+      </div>
+      <!-- Slideshow container -->
+      <div data-aos="fade-up" data-aos-delay="100" class="slideshow-container span-content">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="src/vtl/storyboard1.png" width="1200" height="900" alt="Storyboard">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="src/vtl/storyboard2.png" width="1200" height="900" alt="Storyboard">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="src/vtl/storyboard3.png" width="1200" height="900" alt="Storyboard">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <div class="span-content" data-aos="fade-right" data-aos-delay="100">
+        <h4 data-aos="fade-right" data-aos-delay="100">Design Artifacts</h4>
+        <p>Many high fidelity mockups were designed and prototyped for presentation. The following are the most
+          pertinent of them all.</p>
+        <button onclick="window.scrollTo(0, 0)">CHECK THEM OUT AT THE TOP</button>
+      </div>
+
+      <div data-aos="fade-right" data-aos-delay="100" class="zoom txtover">
+        <img src="src/vtl/mockup3.png" width="100%" height="100%" alt="website sample 1">
+        <figcaption>Figure.3(a): Updated Website 1</figcaption>
+      </div>
+
+      <div data-aos="fade-left" data-aos-delay="100" class="zoom txtover">
+        <img src="src/vtl/mockup4.png" width="100%" height="100%" alt="website sample 2">
+        <figcaption>Figure.3(b): Updated Website 2</figcaption>
+      </div>
+
+      <div class="zoom txtover"></div>
+
+      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
+        <h2 data-aos="fade-right" data-aos-delay="100">Reflection</h2>
+        <p>While the team was pleased with the final iteration of the project, it was agreed that the process would have
+          been significantly expedited if the participatory workshop was done first. Certain insights regarding VTL's
+          restructuring efforts were made which would have been particularly helpful if the team knew about them before
+          hand. Nonetheless, the final iteration was completed and polished with great anticipation. Currently,
+          Vancouver Tool Library's short staff has made is difficult for the team to pitch the design concept in the
+          near future. Once an appointment with the stakeholders can be made, this article will be updated to share
+          results.</p>
+      </div>
+    </div>
+    <div class="emptybox2">
+      <a id="top-page">
+        <img src="src/Top-screen-arrow.svg" onclick="window.scrollTo(0, 0)" width="50" height="50"
+          alt="Button that brings you to top of page">
+      </a>
+    </div>
+  </div>
+
+  <div id="projects" class="content-grid" style="background-color: transparent;">
+    <!--Top Page Button-->
+    <div class="emptybox1"></div>
+    <h1 class="heading" data-aos="fade-right" style="margin-bottom: 0rem;">ALSO CHECK OUT</h1>
+    <div class="emptybox2"></div>
+    <!--Cards-->
+    <div class="emptybox1"></div>
+    <div id="card-content" style="margin-bottom: 2rem;">
+      <a href="ux-experiments.html" style="pointer-events:all;">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA"></div>
+          <div class="containerB">
+            <h1 style="color: rgb(209, 232, 255)">UX Experiments</h1>
+            <p style="color: rgb(49, 66, 83)">I like to play with design tools to create interesting solutions.</p>
+            <h2 style="background:rgb(49, 66, 83); color:rgb(209, 232, 255)">View Case
+              Studies</h2>
           </div>
-        </nav>
-
-        <div class="banner">
-          <img src="src/Banner-Image.svg" alt="Banner" class="banner-img rellax" data-rellax-speed="11">
-          <div class="banner-text rellax" data-rellax-speed="2">
-            <h1>RAZA</h1>
-            <h2 style="
-            font-size: 1.85rem;">Shabih-ul-Hassan</h2>
-            <h4 style="
-            font-weight: bold">UI/UX Designer & Graphic Designer</h4>
+          <div class="screen-to-portable-1">
+            <iframe src="src/card-ux-experiment.html" scrolling="no"></iframe>
+          </div>
+          <div class="screen-to-portable-2">
+            <img src="src/mobile-card-ux-experiment.svg" alt="Vancouver Tool Library Tile">
           </div>
         </div>
-      </header>
+      </a>
+      <a href="gotchi-project.html" style="pointer-events:all;">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA">
+            <h1 style="color: rgb(255, 255, 255)">Gotchi</h1>
+            <p style="color: rgb(83, 83, 83)">A speculative user experience project with the purpose of helping users
+              manage electronic waste.</p>
+            <h2 style="background:rgb(233, 144, 180); color:rgb(255, 255, 255)">View
+              Case Study</h2>
+          </div>
+          <div class="containerB"></div>
+          <div class="screen-to-portable-1">
+            <iframe src="src/card-gotchi.html" scrolling="no"></iframe>
+          </div>
+          <div class="screen-to-portable-2">
+            <img src="src/mobile-card-gotchi.svg" alt="Gotchi Tile">
+          </div>
+        </div>
+      </a>
 
-      <div class="content-grid"> <!--For aligning content in the middle of the screen-->
-        <div class="emptybox1"></div>
-        <div class="process-content">
-          <div  class="span-content">
-            <h1>Vancouver Tool Library (In Progress)</h1>
-          </div>
-          <div>
-            <h4>Type:</h4> <p>Group Project</p>
-            <h4>Credits</h4> <p>Parampreet Sran, Mubarak Adebowale</p>
-            <h4>Role:</h4> <p>UX Researcher, Prototyper, Interviewer, Copywriter, UI Designer, Visual Designer, Graphic Designer</p>
-            <h4>Tools:</h4> <p>Figma, Discord, Adobe Illustrator</p>
-            <h4>Duration:</h4> <p>12 weeks</p>
-          </div>
-          <div>
-            <p>The Vancouver Tool Library (VTL) is a sustainable, community-driven organization that provides customers with rental tools for home improvement, gardening, maintenance and more. They educate and engage their members through workshops on tool-related skills and projects. Their garage sales also allow members to purchase affordable tools they need. <br> The team aimed to solve efficiency related problems in the Tool Library. Eliminating potential lengthy wait times caused by short-staffing or disorganization were an obvious points of focus. The team believed a faster experience in Tool Library would greatly improve the user experience.
+      <a href="tavern-buddies.html" style="pointer-events:all;">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA"></div>
+          <div class="containerB">
+            <h1 style="color: rgb(255, 203, 203)">Tavern Buddies</h1>
+            <p style="color: rgb(1, 0, 0)">A mobile app that connects Dungeon and Dragons (DnD) players in your area.
             </p>
-          </div>  
-          <div class="span-content">
-            <h2>
-              Personas
-            </h2>
-            <p>Before ideating on a solution, the team wanted to figure out the needs of the individual users of VTL. For this purpose, user personas were created from various walks of life. After establishing their needs and background, triangular diagrams were crafted to group them in terms of technological know-how, experience with tools, and support network for their crafts. This allowed the team to understand where potential users came from and how to accomodate for their idiosyncratic needs.</p>
+            <h2 style="background:rgb(39, 13, 13); color:rgb(255, 203, 203)">View Case
+              Study</h2>
           </div>
-          <div class="gotchi-misc span-content">
-            <div  class="zoom col txtover">
-              <img src="src/vtl/persona1.png" alt="poster" width="2104"   height="3163">     
-              <figcaption>Figure.1(a): Stakeholder Persona</figcaption>  
-            </div>
-            <div class="zoom col txtover">
-              <img src="src/vtl/persona2.png" alt="Mobile UI mock-up" width="1644" height="2584">
-              <figcaption>Figure.1(b): New User Persona</figcaption>
-            </div>
-            <div class="zoom col txtover">
-              <img src="src/vtl/persona3.png" alt="emotes" width="2530" height="2596">
-              <figcaption>Figure.1(c): Frequent User Persona</figcaption>
-            </div>
-          </div>  
-          <div class="span-content">
-            <h2>
-              Experience Map
-            </h2>
-            <p>The next order of business was to visit VTL and get a first hand experience of user interactions with their services. The team met the volunteers who talked about the areas of improvement that VTL needed to work on. Taking all those facts into account, the team created a User Journey Map of the sign-up and check out process. This map outlined what worked with the user journey, area of improvement, and painpoints that the team could actively build upon.</p>
+          <div class="screen-to-portable-1">
+            <iframe src="src/card-tavern-buddy.html" scrolling="no"></iframe>
           </div>
-          <div class="span-content zoom txtover">
-            <img src="src/vtl/journeymap1.png" width="100%" height="100%">
-            <figcaption>Figure.2(a): New User's Journey</figcaption>
+          <div class="screen-to-portable-2">
+            <img src="src/mobile-card-tavern-buddy.svg" alt="Tavern Buddy Tile">
           </div>
-          <div class="span-content">
-            <p>Two pain points were noted: Mainly that the user was overwhelmed by the sheer variety of tools on display, which made the process of finding their own tool very confusing and stress inducing. Additionally, the sign up process was laborious and had too many steps. The user had to fill out a physical sign up form and the volunteer had to add them in the organization's data server.</p>
-sign          </div>
-          <div class="span-content zoom txtover">
-            <img src="src/vtl/journeymap2.png" width="100%" height="100%">
-            <figcaption>Figure.2(b): Frequent User's Journey</figcaption>
-          </div>
-          <div class="span-content">
-            <p>Frequent users of VTL did not have the same problem with sytem logging as they were already signed in. However, they also had concerns regarding VTL's draconic filing system. From these insights, the path moving forward was much clearer.</p>
-          </div>
-          <div class="span-content">
-            <h2>Participatory Workshop</h2>
-            <p>With initial ideas patched together, the team reached out to VTL to get greater insight into the problems that were being tackled. To this end, VTL's general manager was contacted and a meeting was set up where he would perform various activities devised by the team that would get him to extrapolate further on his painpoints. The following activities were conducted in the span of 1 hour.</p>
-            <h4>Survey</h4>
-              <p>The introdoctory activity, the participant was asked to answer a variety of question to gain a more diverse palette of perspectives</p>
-              <h4>Rose, Bud, Thorn</h4>
-            <p>The participant wrote his thoughts on a number of prompts pertaining to scenarios in the VTL, for aspects that are currently positive (rose), problematic (thorn), or have potential to improve (bud).</p>
-          </div>
-          <div  class="span-content"><h4>Priority Matrix</h4>
-            <p>The Participant takes 5 minutes to plot the best ideas on a chart with x-axis representing usefulness and y-axis stating difficulty of implementation.</p>
-          </div>
-          <div class="span-content carousel">
-            <h2>
-              Final Design Concept
-            </h2>
-            <h4>Stortboards</h4>
-            <p>The following storyboards were created to present to VTL stakeholders.</p>
-            <div class="carousel__item">
-              <img src="src/vtl/storyboard1.png" width="1200" height="900" alt="Storyboard">
-            </div>
-            <div class="carousel__item">
-              <img src="src/vtl/storyboard2.png" width="1200" height="900" alt="Storyboard">
-            </div>
-            <div class="carousel__item">
-              <img src="src/vtl/storyboard3.png" width="1200" height="900" alt="Storyboard">
-            </div>
-          </div>
-          <div  class="span-content"><h4>Design Artifacts</h4>
-            <p>Many high fidelity mockups were designed and prototyped for presentation. The following are the most pertinent of them all.</p>
-          </div>
-          <div class="zoom txtover">
-            <img src="src/vtl/mockup1.png" width="100%" height="100%">
-            <figcaption>Figure.3(a): Updated Website</figcaption>
-          </div>
-          <div class="zoom txtover">
-            <img src="src/vtl/mockup2.png" width="100%" height="100%">
-            <figcaption>Figure.3(b): Kiosk Mockup</figcaption>
-          </div>
-          <div class="span-content">
-            <h2>Reflection</h2>
-            <p>While the team was pleased with the final iteration of the project, it was agreed that the process would have been significantly expedited if the participatory workshop was done first. Certain insights regarding VTL's restructuring efforts were made which would have been particularly helpful if the team knew about them before hand. Nonetheless, the final iteration was completed and polished with great anticipation. Currently, Vancouver Tool Library's short staff has made is difficult for the team to pitch the design concept in the near future. Once an appointment with the stakeholders can be made, this article will be updated to share results.</p>
-          </div>
-        </div>
         </div>
         <div class="emptybox2"></div>
-      </div>
+      </a>
+    </div>
+  </div>
 
-      <div class="footer-container">
-        <div class="emptybox1"></div>
-        <div class="footer">
-          <div class="footer-contacts">
-            <h4>Contact</h4>
-            <img  class="icon"  src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon"> 
-            <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br> <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
-            <img  class="icon"  src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
-            <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
-            <img  class="icon"  src="src/Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
-            <a href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">@shabih-ul-hassanraza</a>
-          </div>
-          <div class="footer-links">
-            <h4>Useful Links</h4>
-            <a href="#top">Back to Top</a><br>
-            <a href="src/Resume.pdf" target="_blank">Resume</a><br>
-            <a href="index.html">Home</a>
-          </div>
-        </div>
-        <div class="emptybox2"></div>
+  <div class="footer-container">
+    <div class="emptybox1"></div>
+    <div class="footer">
+      <div class="footer-contacts">
+        <h4>Contact</h4>
+        <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
+        <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+        <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
+        <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
+        <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
+        <img class="icon" src="src/Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
+        <a href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">@shabih-ul-hassanraza</a>
       </div>
-      <script src="js/rellax.min.js"></script> <!--For parallax effect-->
-      <script>
-        var rellax = new Rellax('.rellax');
-      </script>
-      <script> /*Animation message learned from https://www.youtube.com/watch?v=l1iOjH544K4&ab_channel=Tech%26TravelwithRiz*/
-        $('#sweetalert2').on('click',function(){
-          Swal.fire({
-            icon: 'success',
-            title: 'Copied!',
-            showConfirmButton: false,
-            timer: 1500
-        })
-      })
-    </script>
-  </body>
+      <div class="footer-links">
+        <h4>Useful Links</h4>
+        <a href="#top">Back to Top ▲</a><br>
+        <a href="src/Resume.pdf" target="_blank">Resume</a><br>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+    <div class="emptybox2"></div>
+  </div>
+  <script src="js/sweetalert.js"></script> <!--For copy message-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/rellax.min.js"></script> <!--For parallax effect-->
+  <script>var rellax = new Rellax('.rellax');</script>
+  <script>AOS.init();</script>
+  <script src="js/darkModeIconSwitch.js"></script>
+  <script src="js/darkModeElementSwitch.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+
 </html>
