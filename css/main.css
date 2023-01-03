@@ -73,6 +73,10 @@ h3 {
     font-size: medium;
 }
 
+.mobile h3 {
+    line-height: 2rem;
+}
+
 h4 {
     font-weight: normal;
     color: var(--primary-color2);
