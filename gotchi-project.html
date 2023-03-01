@@ -19,6 +19,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;1,8..144,100;1,8..144,200;1,8..144,300&family=Varela+Round&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -38,17 +39,17 @@
       </div>
       <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
+    <div id="light-mode-element">
+      <div class="rellax" data-rellax-speed="11">
+        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+      </div>
+    </div>
+    <div id="dark-mode-element" class="hidden">
+      <div class="rellax" data-rellax-speed="11">
+        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+      </div>
+    </div>
     <div class="banner">
-      <div id="light-mode-element">
-        <div class="rellax" data-rellax-speed="11">
-          <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
-        </div>
-      </div>
-      <div id="dark-mode-element" class="hidden">
-        <div class="rellax" data-rellax-speed="11">
-          <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
-        </div>
-      </div>
       <div class="banner-text" data-rellax-speed="2" style="transform: translate3d(0px, -19px, 0px);">
         <h1>RAZA</h1>
         <h2>SHABIH-UL-HASSAN</h2>
@@ -69,15 +70,15 @@
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
         <h4>Type:</h4>
-        <p data-aos="fade-right" data-aos-delay="100">Academic Project</p>
+        <p>Academic Project</p>
         <h4>Credits:</h4>
-        <p data-aos="fade-right" data-aos-delay="100">Vania Amer, Mahyar Ghorbandaiy, Stacey Wu</p>
+        <p>Vania Amer, Mahyar Ghorbandaiy, Stacey Wu</p>
         <h4>Role:</h4>
-        <p data-aos="fade-right" data-aos-delay="100">Concept Art, Visual Deisgn, UX Design</p>
+        <p>Concept Art, Visual Deisgn, UX Design</p>
         <h4>Tools:</h4>
-        <p data-aos="fade-right" data-aos-delay="100">Adobe Photoshop, Adobe Illustrator, figma</p>
+        <p>Adobe Photoshop, Adobe Illustrator, figma</p>
         <h4>Duration:</h4>
-        <p data-aos="fade-right" data-aos-delay="100">1 week</p>
+        <p>1 week</p>
         <p>GOTCHI is a speculative design project made to incentivize a prolonged state of play via a quirky interaction
           method that encourages the user to manage their electronic footprint on their cellphone or computer.</p>
         <p>We carry more digital waste than ever before (outdated pictures, documents, videos, etc). This hoarding of
@@ -93,7 +94,7 @@
         </a>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
-        <h2 data-aos="fade-right" data-aos-delay="100">IDEATION</h2>
+        <h2>IDEATION</h2>
         <p>My team and I began the preliminary design stage on the online platform Figma. We wanted to create a design
           that tackled themes of consumption and waste. This topic branched out into conversations regarding the
           management of physical waste and digital waste.</p>
@@ -101,14 +102,14 @@
           design. I pitched the idea of combining it with a smart trashcan idea that we ideated over previously. This
           was where the idea of Gotchi originated.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="zoom txtover">
+      <div data-aos="fade-left" data-aos-delay="100" class="txtover">
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="550" height="450"
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5Yq4YEGWnuMxyOEJdrkKHD%2FTEAM-B-Ludic-Design-Mini-Project%3Fnode-id%3D0%253A1"
           allowfullscreen></iframe>
         <figcaption>Figure.3: Figma Board</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
-        <h2 data-aos="fade-right" data-aos-delay="100">MOODBOARD</h2>
+        <h2>MOODBOARD</h2>
         <p> I was charged with the task of creating the design of GOTCHI. I created a mood board consisting of the
           conventionally adorable characters used in animation or marketing towards children. The idea of the 'Kawaii'
           aesthetic from Japanese culture came up frequently in conversations regarding GOTCHI's overall appearance.</p>
@@ -120,7 +121,7 @@
         <figcaption>Figure.4: Moodboard</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
-        <h2 data-aos="fade-right" data-aos-delay="100">DESIGNING GOTCHI</h2>
+        <h2>DESIGNING GOTCHI</h2>
         <p>My team decided that the target audience for GOTCHI was going to be young adults who don't like to clean up
           trash data. We wanted to instill a sense of nostalgia; simulating the feeling of taking care of a Tamagotchi
           when they were children. The design aims to encourage these young adults to throw away unnecessary files and
@@ -134,7 +135,7 @@
         <figcaption>Figure.5: Concept Art</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
-        <h2 data-aos="fade-right" data-aos-delay="100">INTERACTION</h2>
+        <h2>INTERACTION</h2>
         <p>My team also decided to ideate how the interactions with GOTCHI worked. GOTCHI is a bring-along device that
           can connect to digital devices using Bluetooth and acts as a digital trash can. To appeal to the younger
           generation, its design mimics a digital pet that users can hold dear and take care of by feeding it
@@ -146,7 +147,7 @@
         <figcaption>Figure.6: Brochure</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
-        <h2 data-aos="fade-right" data-aos-delay="100">3D MODELING</h2>
+        <h2>3D MODELING</h2>
         <p>Finally, I assisted a hypothetical marketing campaign with billboard ads, and instruction manuals showcasing
           how GOTCHI worked. I created a 3D model of GOTCHI on Autodesk Maya to place it within one of the several
           marketing materials we made.</p>
@@ -158,7 +159,7 @@
         <figcaption>Figure.7: 3D Model</figcaption>
       </div>
       <div data-aos="fade-up" data-aos-delay="100" class="span-content">
-        <h2 data-aos="fade-right" data-aos-delay="100">REFLECTION</h2>
+        <h2>REFLECTION</h2>
         <p>This project had many moving parts. We had a diverse range of ideas we wanted to show off. Our team synergy
           was particularly high here and we kept on coming up with more ideas as the project evolved. However, we
           learned quickly that we needed to quell our ambitions to deliver a good product. In addition to this, I was
@@ -190,7 +191,7 @@
   <div id="projects" class="content-grid" style="background-color: transparent;">
     <!--Top Page Button-->
     <div class="emptybox1"></div>
-    <h1 class="heading" data-aos="fade-right" style="margin-bottom: 0rem;">ALSO CHECK OUT</h1>
+    <h1 class="heading" data-aos="fade-right" style="margin-bottom: 2rem;">ALSO CHECK OUT</h1>
     <div class="emptybox2">
     </div>
     <!--Cards-->
@@ -200,8 +201,8 @@
         <div class="project-card" data-aos="fade-up" data-aos-delay="100">
           <div class="containerA"></div>
           <div class="containerB">
-            <h1 style="color: rgb(209, 232, 255)">UX Experiments</h1>
-            <p style="color: rgb(49, 66, 83)">I like to play with design tools to create interesting solutions.</p>
+            <h1 style="color: rgb(209, 232, 255)">UX EXPERIMENTS</h1>
+            <p style="color: rgb(255, 255, 255)">I like to play with design tools to create interesting solutions.</p>
             <h2 style="background:rgb(49, 66, 83); color:rgb(209, 232, 255)">View Case
               Studies</h2>
           </div>
@@ -232,13 +233,13 @@
           </div>
         </div>
       </a>
-
+      
       <a href="tavern-buddies.html" style="pointer-events:all;">
         <div class="project-card" data-aos="fade-up" data-aos-delay="100">
           <div class="containerA"></div>
           <div class="containerB">
             <h1 style="color: rgb(255, 203, 203)">Tavern Buddies</h1>
-            <p style="color: rgb(1, 0, 0)">A mobile app that connects Dungeon and Dragons (DnD) players in your area.
+            <p style="color: rgb(255, 255, 255)">A mobile app that connects Dungeon and Dragons (DnD) players in your area.
             </p>
             <h2 style="background:rgb(39, 13, 13); color:rgb(255, 203, 203)">View Case
               Study</h2>

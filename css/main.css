@@ -13,8 +13,8 @@
     --secondary-color2: rgb(255, 219, 57);
     --primary-color3: rgb(40, 25, 66);
     --secondary-color3: rgb(255, 249, 225);
-    ;
 }
+
 
 #darkmode {
     width: 20px;
@@ -25,7 +25,7 @@
 }
 
 .dark-theme {
-    --primary-color1: black;
+    --primary-color1: #171717;
     --secondary-color1: white;
     --primary-color2: rgb(255, 219, 57);
     --secondary-color2: rgb(99, 63, 167);
@@ -39,25 +39,27 @@
 
 body {
     position: relative;
-    font-family: "Helvetica", sans-serif;
+    font-family: 'Fragment Mono', monospace;
     background: var(--primary-color1);
     color: var(--secondary-color1);
     line-height: 2rem;
 }
 
+nav a { 
+    font-family: 'Mukta', sans-serif;
+}
+
 h1 {
-    font-family: "Helvetica", sans-serif;
+    font-family: 'Mukta', sans-serif;
     color: var(--primary-color2);
     line-height: 1.3rem;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-    font-weight: bold;
+    padding-top: 3rem;
     letter-spacing: 3px;
 }
 
 h2 {
+    font-family: 'Mukta', sans-serif;
     color: var(--primary-color2);
-    font-weight: bold;
     font-size: large;
 }
 
@@ -205,13 +207,14 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
 }
 
 /*Banner Set-up*/
+
 .brand-title {
     position: absolute;
     top: 12px;
     left: 12px;
     font-size: 1.5rem;
     color: rgb(255, 219, 57);
-    font-family: 'Righteous';
+    font-family: 'Righteous','Mukta', sans-serif;
 }
 
 .brand-title:hover {
@@ -219,10 +222,6 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     color: white;
 }
 
-#landing-banner {
-    margin-bottom: -6rem;
-    z-index: 1
-}
 
 .banner-img {
     position: absolute;
@@ -230,48 +229,40 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     z-index: 1;
 }
 
-#landing-banner iframe {
-    display: flex;
-    -webkit-overflow-scrolling: touch;
-    border: none;
-    overflow: auto;
-    justify-content: space-around;
-    width: 75%;
-    height: 53rem;
-    margin-top: -9%;
-    margin-left: 20%;
-    margin-bottom: 5rem;
-}
-
 .banner-text {
-    padding: 2rem 0 0.8rem;
     text-align: center;
     position: relative;
     overflow: hidden;
-    z-index: 2;
     margin-bottom: 2rem;
 }
 
+.banner-text img {
+    margin-left:-5rem;
+    margin-bottom: -10rem;
+    width: 110vw; 
+    height: 110vh;
+}
+
 .banner-text h1 {
-    font-family: 'Righteous';
-    margin-top: 6rem;
+    font-family: 'Righteous','Mukta', sans-serif;
+    margin-top: 8rem;
     font-size: 10rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
     letter-spacing: 1rem;
     color: var(--primary-color3);
 }
 
 .banner-text h2 {
-    font-family: 'Righteous';
+    font-family: 'Mukta', sans-serif;
     font-size: 1.5rem;
-    letter-spacing: 14.2px;
+    letter-spacing: 16px;
     margin-top: 15px;
 }
 
 .banner-text h4 {
     font-weight: bold;
     font-size: 1.1rem;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.4rem;
     color: var(--primary-color3);
 }
 
@@ -288,8 +279,6 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 #card-content,
 .secondary-card-content {
     width: 75vw;
-    margin: auto;
-    gap: 2rem;
 }
 
 .secondary-card-content {
@@ -302,7 +291,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     position: relative;
     max-width: 250px;
     border-radius: 30px;
-    margin-bottom: 0rem;
+    margin-bottom: 5rem;
     height: 29rem;
     text-align: center;
     display: block;
@@ -330,7 +319,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 .secondary-card-content .card figcaption {
     position: absolute;
     color: var(--secondary-color2);
-    padding: 5rem 1rem 1rem 1rem;
+    padding: 3rem 1rem 1rem 1rem;
     display: none;
 }
 
@@ -339,11 +328,18 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     transition: 0.3s;
 }
 
-.secondary-card-content .card:hover img {
-    opacity: 0.15;
-    transition: 0.3s;
+.card .smartwatch:hover img {
+    opacity: 1;
 }
 
+.secondary-card-content .card:hover img .smartwatch {
+    opacity: 0;
+}
+
+
+.secondary-card-content .smartwatch :hover img {
+    opacity: 100;
+}
 
 .secondary-card-content .card h2 {
     padding-left: 0px;
@@ -386,7 +382,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    font-family: "Helvetica", sans-serif;
+    font-family: 'Mukta', sans-serif;
 }
 
 .project-card {
@@ -432,6 +428,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 .containerA h1,
 .containerB h1 {
     line-height: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -453,19 +450,18 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 .containerB h2 {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     margin-bottom: 4rem;
-    margin-right: 9rem;
     padding: 1rem;
     border-radius: 10px;
 }
 
 .containerB h2 {
-    margin-right: 4rem;
+    margin-left: 5rem;
 }
 
 .containerA h2 {
-    margin-right: 10rem;
+    margin-left: 3rem;
 }
 
 .containerA h2:hover,
@@ -536,6 +532,11 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     color: var(--primary-color3);
 }
 
+
+#about-content h1 {
+    margin-bottom: 2rem;
+}
+
 /*Set up process for different projects*/
 .process-content {
     width: 75vw;
@@ -576,6 +577,11 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 .process-content p {
     margin-bottom: 1.5rem;
 }
+
+.process-content h1 {
+    padding-bottom: 2rem;
+}
+
 
 /*Menus for illustration*/
 .sub-menu .info {
@@ -780,12 +786,13 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     top: 5px;
     left: 5px;
     margin-left: 20px;
-    font-family: 'Righteous';
+    margin-right: 20px;
+    font-family: 'Righteous','Mukta', sans-serif;
 }
 
 #project-title {
     text-align: center;
-    line-height: 2rem;
+    
 }
 
 .prototype-link {
@@ -841,7 +848,6 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  background:  var(--primary-color3);
 }
 
 /* Position the "next button" to the right */

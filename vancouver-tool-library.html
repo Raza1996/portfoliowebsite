@@ -19,6 +19,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;1,8..144,100;1,8..144,200;1,8..144,300&family=Varela+Round&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -38,17 +39,17 @@
       </div>
       <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
+    <div id="light-mode-element">
+      <div class="rellax" data-rellax-speed="11">
+        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+      </div>
+    </div>
+    <div id="dark-mode-element" class="hidden">
+      <div class="rellax" data-rellax-speed="11">
+        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+      </div>
+    </div>
     <div class="banner">
-      <div id="light-mode-element">
-        <div class="rellax" data-rellax-speed="11">
-          <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
-        </div>
-      </div>
-      <div id="dark-mode-element" class="hidden">
-        <div class="rellax" data-rellax-speed="11">
-          <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
-        </div>
-      </div>
       <div class="banner-text" data-rellax-speed="2" style="transform: translate3d(0px, -19px, 0px);">
         <h1>RAZA</h1>
         <h2>SHABIH-UL-HASSAN</h2>
@@ -87,16 +88,16 @@
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
         <h4>Type:</h4>
-        <p data-aos="fade-right" data-aos-delay="100">Group Project</p>
+        <p>Group Project</p>
         <h4>Credits</h4>
-        <p data-aos="fade-right" data-aos-delay="100">Parampreet Sran, Mubarak Adebowale, Soraya Elchehimi, Fathima Tabassim</p>
+        <p>Parampreet Sran, Mubarak Adebowale, Soraya Elchehimi, Fathima Tabassim</p>
         <h4>Role:</h4>
-        <p data-aos="fade-right" data-aos-delay="100">UX Researcher, Prototyper, Interviewer, Copywriter, UI Designer,
+        <p>UX Researcher, Prototyper, Interviewer, Copywriter, UI Designer,
           Visual Designer, Graphic Designer</p>
         <h4>Tools:</h4>
-        <p data-aos="fade-right" data-aos-delay="100">Figma, Discord, Adobe Illustrator</p>
+        <p>Figma, Discord, Adobe Illustrator</p>
         <h4>Duration:</h4>
-        <p data-aos="fade-right" data-aos-delay="100">12 weeks</p>
+        <p>12 weeks</p>
       </div>
       <div data-aos="fade-left" data-aos-delay="100">
         <p>The Vancouver Tool Library (VTL) is a sustainable, community-driven organization that provides customers with
@@ -107,8 +108,8 @@
           focus. The team believed a faster experience in Tool Library would greatly improve the user experience.
         </p>
       </div>
-      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
-        <h2 data-aos="fade-right" data-aos-delay="100">
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content">
+        <h2>
           Personas
         </h2>
         <p>Before ideating on a solution, the team wanted to figure out the needs of the individual users of VTL. For
@@ -131,8 +132,8 @@
           <figcaption>Figure.1(c): Frequent User Persona</figcaption>
         </div>
       </div>
-      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
-        <h2 data-aos="fade-right" data-aos-delay="100">Experience Map</h2>
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content">
+        <h2>Experience Map</h2>
         <p>The next order of business was to visit VTL and get a first hand experience of user interactions with their
           services. The team met the volunteers who talked about the areas of improvement that VTL needed to work on.
           Taking all those facts into account, the team created a User Journey Map of the sign-up and check out process.
@@ -143,7 +144,7 @@
         <img src="src/vtl/journeymap1.png" width="100%" height="100%" alt="Journey Map 1">
         <figcaption>Figure.2(a): New User's Journey</figcaption>
       </div>
-      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content">
         <p>Two pain points were noted: Mainly that the user was overwhelmed by the sheer variety of tools on display,
           which made the process of finding their own tool very confusing and stress inducing. Additionally, the sign up
           process was laborious and had too many steps. The user had to fill out a physical sign up form and the
@@ -153,34 +154,32 @@
         <img src="src/vtl/journeymap2.png" width="100%" height="100%" alt="Journey Map 2">
         <figcaption>Figure.2(b): Frequent User's Journey</figcaption>
       </div>
-      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content">
         <p>Frequent users of VTL did not have the same problem with sytem logging as they were already signed in.
           However, they also had concerns regarding VTL's draconic filing system. From these insights, the path moving
           forward was much clearer.</p>
       </div>
-      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
-        <h2 data-aos="fade-right" data-aos-delay="100">Participatory Workshop</h2>
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content">
+        <h2>Participatory Workshop</h2>
         <p>With initial ideas patched together, the team reached out to VTL to get greater insight into the problems
           that were being tackled. To this end, VTL's general manager was contacted and a meeting was set up where he
           would perform various activities devised by the team that would get him to extrapolate further on his
           painpoints. The following activities were conducted in the span of 1 hour.</p>
-        <h4 data-aos="fade-right" data-aos-delay="100">Survey</h4>
+        <h4>Survey</h4>
         <p>The introdoctory activity, the participant was asked to answer a variety of question to gain a more diverse
           palette of perspectives</p>
-        <h4 data-aos="fade-right" data-aos-delay="100">Rose, Bud, Thorn</h4>
+        <h4>Rose, Bud, Thorn</h4>
         <p>The participant wrote his thoughts on a number of prompts pertaining to scenarios in the VTL, for aspects
           that are currently positive (rose), problematic (thorn), or have potential to improve (bud).</p>
+          <h4>Priority Matrix</h4>
+          <p>The Participant takes 5 minutes to plot the best ideas on a chart with x-axis representing usefulness and
+            y-axis stating difficulty of implementation.</p>
       </div>
-      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
-        <h4 data-aos="fade-right" data-aos-delay="100">Priority Matrix</h4>
-        <p>The Participant takes 5 minutes to plot the best ideas on a chart with x-axis representing usefulness and
-          y-axis stating difficulty of implementation.</p>
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content">
+        <h2 >Final Design Concept</h2>
       </div>
-      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
-        <h2 data-aos="fade-right" data-aos-delay="100">Final Design Concept</h2>
-      </div>
-      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
-        <h4 data-aos="fade-right" data-aos-delay="100">Storyboards</h4>
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content">
+        <h4>Storyboards</h4>
         <p>The following storyboards were created to present to VTL stakeholders.</p>
       </div>
       <!-- Slideshow container -->
@@ -215,14 +214,14 @@
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
 
-      <div class="span-content" data-aos="fade-right" data-aos-delay="100">
-        <h4 data-aos="fade-right" data-aos-delay="100">Design Artifacts</h4>
+      <div class="span-content" data-aos="fade-up" data-aos-delay="100">
+        <h4>Design Artifacts</h4>
         <p>Many high fidelity mockups were designed and prototyped for presentation. The following are the most
           pertinent of them all.</p>
         <button onclick="window.scrollTo(0, 0)">CHECK THEM OUT AT THE TOP</button>
       </div>
 
-      <div data-aos="fade-right" data-aos-delay="100" class="zoom txtover">
+      <div data-aos="fade-up" data-aos-delay="100" class="zoom txtover">
         <img src="src/vtl/mockup3.png" width="100%" height="100%" alt="website sample 1">
         <figcaption>Figure.3(a): Updated Website 1</figcaption>
       </div>
@@ -234,8 +233,8 @@
 
       <div class="zoom txtover"></div>
 
-      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
-        <h2 data-aos="fade-right" data-aos-delay="100">Reflection</h2>
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content">
+        <h2>Reflection</h2>
         <p>While the team was pleased with the final iteration of the project, it was agreed that the process would have
           been significantly expedited if the participatory workshop was done first. Certain insights regarding VTL's
           restructuring efforts were made which would have been particularly helpful if the team knew about them before
@@ -256,7 +255,7 @@
   <div id="projects" class="content-grid" style="background-color: transparent;">
     <!--Top Page Button-->
     <div class="emptybox1"></div>
-    <h1 class="heading" data-aos="fade-right" style="margin-bottom: 0rem;">ALSO CHECK OUT</h1>
+    <h1 class="heading" data-aos="fade-right" style="margin-bottom: 2rem;">ALSO CHECK OUT</h1>
     <div class="emptybox2"></div>
     <!--Cards-->
     <div class="emptybox1"></div>
@@ -265,8 +264,8 @@
         <div class="project-card" data-aos="fade-up" data-aos-delay="100">
           <div class="containerA"></div>
           <div class="containerB">
-            <h1 style="color: rgb(209, 232, 255)">UX Experiments</h1>
-            <p style="color: rgb(49, 66, 83)">I like to play with design tools to create interesting solutions.</p>
+            <h1 style="color: rgb(209, 232, 255)">UX EXPERIMENTS</h1>
+            <p style="color: rgb(255, 255, 255)">I like to play with design tools to create interesting solutions.</p>
             <h2 style="background:rgb(49, 66, 83); color:rgb(209, 232, 255)">View Case
               Studies</h2>
           </div>
@@ -278,13 +277,14 @@
           </div>
         </div>
       </a>
+
       <a href="gotchi-project.html" style="pointer-events:all;">
         <div class="project-card" data-aos="fade-up" data-aos-delay="100">
           <div class="containerA">
-            <h1 style="color: rgb(255, 255, 255)">Gotchi</h1>
+            <h1 style="color: rgb(255, 255, 255)">GOTCHI</h1>
             <p style="color: rgb(83, 83, 83)">A speculative user experience project with the purpose of helping users
               manage electronic waste.</p>
-            <h2 style="background:rgb(233, 144, 180); color:rgb(255, 255, 255)">View
+            <h2 style="background:rgb(255, 101, 163); color:rgb(255, 255, 255)">View
               Case Study</h2>
           </div>
           <div class="containerB"></div>
@@ -301,8 +301,8 @@
         <div class="project-card" data-aos="fade-up" data-aos-delay="100">
           <div class="containerA"></div>
           <div class="containerB">
-            <h1 style="color: rgb(255, 203, 203)">Tavern Buddies</h1>
-            <p style="color: rgb(1, 0, 0)">A mobile app that connects Dungeon and Dragons (DnD) players in your area.
+            <h1 style="color: rgb(255, 203, 203)">TAVERN BUDDIES</h1>
+            <p style="color: rgb(255, 255, 255)">A mobile app that connects Dungeon and Dragons (DnD) players in your area.
             </p>
             <h2 style="background:rgb(39, 13, 13); color:rgb(255, 203, 203)">View Case
               Study</h2>
@@ -314,7 +314,6 @@
             <img src="src/mobile-card-tavern-buddy.svg" alt="Tavern Buddy Tile">
           </div>
         </div>
-        <div class="emptybox2"></div>
       </a>
     </div>
   </div>

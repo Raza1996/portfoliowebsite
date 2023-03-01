@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Asana Branches</title>
+  <title>Asana Feature</title>
   <script src="js/clicktocopy.js" defer></script>
   <script src="js/carousel.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -19,6 +19,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;1,8..144,100;1,8..144,200;1,8..144,300&family=Varela+Round&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -38,23 +39,24 @@
       </div>
       <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
+    <div id="light-mode-element">
+      <div class="rellax" data-rellax-speed="11">
+        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+      </div>
+    </div>
+    <div id="dark-mode-element" class="hidden">
+      <div class="rellax" data-rellax-speed="11">
+        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+      </div>
+    </div>
     <div class="banner">
-      <div id="light-mode-element">
-        <div class="rellax" data-rellax-speed="11">
-          <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
-        </div>
-      </div>
-      <div id="dark-mode-element" class="hidden">
-        <div class="rellax" data-rellax-speed="11">
-          <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
-        </div>
-      </div>
       <div class="banner-text" data-rellax-speed="2" style="transform: translate3d(0px, -19px, 0px);">
         <h1>RAZA</h1>
         <h2>SHABIH-UL-HASSAN</h2>
         <h4 style="font-weight: bold">UX Designer & Media Artist</h4>
       </div>
     </div>
+  </header>
   </header>
 
   <div class="process content-grid"> <!--For aligning content in the middle of the screen-->
@@ -140,6 +142,7 @@
 
     
     </div>
+    
     <div class="emptybox2">
       <a id="top-page">
         <img src="src/Top-screen-arrow.svg" onclick="window.scrollTo(0, 0)" width="50" height="50"
@@ -151,7 +154,7 @@
   <div id="projects" class="content-grid" style="background-color: transparent;">
     <!--Top Page Button-->
     <div class="emptybox1"></div>
-    <h1 class="heading" data-aos="fade-right" style="margin-bottom: 0rem;">ALSO CHECK OUT</h1>
+    <h1 class="heading" data-aos="fade-right" style="margin-bottom: 2rem;">ALSO CHECK OUT</h1>
     <div class="emptybox2"></div>
     <!--Cards-->
     <div class="emptybox1"></div>
@@ -213,6 +216,7 @@
       </a>
     </div>
   </div>
+  
 
   <div class="footer-container">
     <div class="emptybox1"></div>

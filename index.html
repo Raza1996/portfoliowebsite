@@ -13,11 +13,10 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
-    rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css2?family=Helvetica' rel='stylesheet'>
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +29,7 @@
         <ul>
           <li class="swap1"><a href="#projects">Projects</a></li>
           <li class="swap2"><a href="index.html">Projects</a></li>
-          <li class="swap1"><a href="#about">About Me</a></li>
+          <li class="swap1"><a href="#about-teleport">About Me</a></li>
           <li class="swap2"><a href="about-me.html">About Me</a></li>
           <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
         </ul>
@@ -39,194 +38,196 @@
     </nav>
 
     <div class="emptybox1"></div>
-    <div id="landing-banner">
+    <div id="landing-banner" data-aos="fade-left" data-aos-delay="200">
       <div class="mobile-logo">RAZA</div>
       <div id="light-mode-element">
-        <div class="rellax" data-rellax-speed="11">
-          <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+        <div class="rellax" data-rellax-speed="11" style="transform: translate3d(0px, 0px, 0px);">
+          <img src="src/banner-image-light.svg" class="banner-img index-banner" alt="Banner">
         </div>
-        <div class="banner-text rellax" data-rellax-speed="2">
-          <iframe data-aos="fade-up" data-aos-delay="100" src="src/portfolio-avatar-light.html"></iframe>
+        <div class="banner-text rellax" data-rellax-speed="2" style="transform: translate3d(0px, 0px, 0px);">
+          <img src="src/portfolio-avatar-light.svg" width="1939" height="1802" alt="Stallion Illustration">
           <!--Banner Animation-->
         </div>
       </div>
       <div id="dark-mode-element" class="hidden">
-        <div class="rellax" data-rellax-speed="11">
-          <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+        <div class="rellax" data-rellax-speed="11" style="transform: translate3d(0px, 0px, 0px);">
+          <img src="src/banner-image-dark.svg" class="banner-img index-banner" alt="Banner">
         </div>
-        <div class="banner-text rellax" data-rellax-speed="2">
-          <iframe data-aos="fade-up" data-aos-delay="100" src="src/portfolio-avatar-dark.html"></iframe>
+        <div class="banner-text rellax" data-rellax-speed="2" style="transform: translate3d(0px, 0px, 0px);">
+          <img src="src/portfolio-avatar-dark.svg" width="1939" height="1802"  alt="Stallion Illustration">
           <!--Banner Animation-->
         </div>
       </div>
     </div>
     <div class="emptybox2"></div>
   </header>
+  
+   <!--About Section--> 
+   
+   <div id="about-content">
+   <h1 class="about-me" id="about-teleport">ABOUT ME</h1>
+   
+   <div class="emptybox"></div>
+     <img src="src/portfolio-portrait.jpg" 
+       alt="A suave looking fellow in a suit." width="500" height="500"  data-aos="fade-up">
+     <div class="about-text" id="about" data-aos="fade-up" data-aos-delay="100">
+       <h2 style="display: inline;">Hi, I'm </h2>
+       <h2 style="display: inline; font-family: Righteous;">RAZA</h2>
+       <h2 style="display: inline;">!✌</h2>
+       <p>I'm a UX Designer & Media Artist pursuing a degree in Media Arts &
+         Design. I am currently working as a freelance UX designer.</p>
+       <p>For me, The thrill of UX design lies in crafting elegant and
+         <b>inclusive</b> design solutions that encourage frictionless user interaction. It is my priority to
+         understand and empathize with people in each step of the design process to create a true <b>user-centered</b>
+         product.
+       </p>
+       <p>I spend my leisure hours honing my various crafts and spending time
+         with friends in <b>Vancouver</b>.</p>
+       <p style="display: inline;">Let's <a
+           id="sweetalert2" onclick="copy(this)">get in touch!</a></p>
+       <h2 style="display: inline;">🤙</h2>
+     </div>
+     
+   </div>
 
   <div id="projects" class="content-grid" style="background-color: transparent;">
     <!--Mobile Banner-->
     <div class="mobile emptybox1"></div>
     <div class="mobile" style="margin-top: 1rem;">
-      <h2 style="line-height: 1.5;">I craft crisp & meaningful</h2>
+      <h2 style="line-height: 1.5; margin-top: 2rem;">I craft crisp & meaningful</h2>
       <h2 style="margin-bottom: 2rem;">online experiences.</h2>
       <h3 style="margin-bottom: 1rem;"><strong>I'm a UX Designer & Media Artist.</strong></h3>
     </div>
     <div class="mobile emptybox2"></div>
-    <!--Top Page Button-->
+    
+
+    <!--Cards-->
     <div class="emptybox1"></div>
-    <h1 class="heading" data-aos="fade-right" style="margin-bottom: 0rem;">WORK</h1>
+    <h1 class="heading" style="margin-bottom: 2rem;">WORK</h1>
+    <div class="emptybox2"></div>
+    <div class="emptybox1"></div>
+      <div id="card-content" style="margin-bottom: 2rem;">
+
+        <a href="vancouver-tool-library.html" style="pointer-events:all;">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="containerA">
+              <h1 style="color: rgb(255, 255, 255)">VANCOUVER TOOL LIBRARY</h1>
+              <p  style="color: rgb(119, 102, 24)">Redesigning website and improving self-checkout to reduce work load on
+                staff.</p>
+              <h2 style="background:rgb(119, 102, 24); color:rgb(255, 255, 255)">View Case
+                Study</h2>
+            </div>
+            <div class="containerB"></div>
+            <div class="screen-to-portable-1">
+              <iframe style="overflow: hidden;" src="src/card-vancouver-tool-library.html" scrolling="no"></iframe>
+            </div>
+            <div class="screen-to-portable-2">
+              <img src="src/mobile-card-vancouver-tool-library.svg" alt="Vancouver Tool Library Tile">
+            </div>
+          </div>
+        </a>
+
+        <a href="tavern-buddies.html" style="pointer-events:all;">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="containerA"></div>
+            <div class="containerB">
+              <h1 style="color: rgb(255, 203, 203)">TAVERN BUDDIES</h1>
+              <p style="color: rgb(255, 255, 255)">A mobile app that connects Dungeon and Dragons (DnD) players in your area.
+              </p>
+              <h2 style="background:rgb(39, 13, 13); color:rgb(255, 203, 203)">View Case
+                Study</h2>
+            </div>
+            <div class="screen-to-portable-1">
+              <iframe src="src/card-tavern-buddy.html" scrolling="no"></iframe>
+            </div>
+            <div class="screen-to-portable-2">
+              <img src="src/mobile-card-tavern-buddy.svg" alt="Tavern Buddy Tile">
+            </div>
+          </div>
+        </a>
+
+        <a href="gotchi-project.html" style="pointer-events:all;">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="containerA">
+              <h1 class="gotchi-h1" style="color: rgb(255, 255, 255)">GOTCHI</h1>
+              <p style="color: rgb(83, 83, 83)">A speculative user experience project with the purpose of helping users
+                manage electronic waste.</p>
+              <h2 style="background:rgb(255, 101, 163); color:rgb(255, 255, 255)">View
+                Case Study</h2>
+            </div>
+            <div class="containerB"></div>
+            <div class="screen-to-portable-1">
+              <iframe src="src/card-gotchi.html" scrolling="no"></iframe>
+            </div>
+            <div class="screen-to-portable-2">
+              <img src="src/mobile-card-gotchi.svg" alt="Gotchi Tile">
+            </div>
+          </div>
+        </a>
+
+        <a href="ux-experiments.html" style="pointer-events:all;">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="containerA"></div>
+            <div class="containerB">
+              <h1 style="color: rgb(209, 232, 255)">UX EXPERIMENTS</h1>
+              <p style="color: rgb(255, 255, 255)">I like to play with design tools to create interesting solutions.</p>
+              <h2 style="background:rgb(49, 66, 83); color:rgb(209, 232, 255)">View Case
+                Studies</h2>
+            </div>
+            <div class="screen-to-portable-1">
+              <iframe src="src/card-ux-experiment.html" scrolling="no"></iframe>
+            </div>
+            <div class="screen-to-portable-2">
+              <img src="src/mobile-card-ux-experiment.svg" alt="Vancouver Tool Library Tile">
+            </div>
+          </div>
+        </a>
+
+        <a href="media-arts.html" style="pointer-events:all;">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="containerA">
+              <h1 style="color: rgb(196, 255, 198)">MEDIA ARTS</h1>
+              <p style="color: rgb(255, 255, 255)">A sampling of my expertise in several digital and traditional art mediums.
+              </p>
+              <h2 style="background:rgb(14, 57, 16); color:rgb(196, 255, 198)">View Media
+                Work</h2>
+            </div>
+            <div class="containerB"></div>
+            <div class="screen-to-portable-1">
+              <iframe src="src/card-media-arts.html" scrolling="no"></iframe>
+            </div>
+            <div class="screen-to-portable-2">
+              <img src="src/mobile-card-media-arts.svg" alt="Media Arts tile">
+            </div>
+          </div>
+        </a>
+      </div>
     <div class="emptybox2">
       <a id="top-page">
         <img src="src/Top-screen-arrow.svg" onclick="window.scrollTo(0, 0)" width="50" height="50"
           alt="Button that brings you to top of page">
       </a>
     </div>
-    <!--Cards-->
-    <div class="emptybox1"></div>
-    <div id="card-content" style="margin-bottom: 2rem;">
-
-      <a href="vancouver-tool-library.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA">
-            <h1 style="color: rgb(255, 255, 255)">VANCOUVER TOOL LIBRARY</h1>
-            <p style="color: rgb(119, 102, 24)">Redesigning website and improving self-checkout to reduce work load on
-              staff.</p>
-            <h2 style="background:rgb(119, 102, 24); color:rgb(255, 255, 255)">View Case
-              Study</h2>
-          </div>
-          <div class="containerB"></div>
-          <div class="screen-to-portable-1">
-            <iframe style="overflow: hidden;" src="src/card-vancouver-tool-library.html" scrolling="no"></iframe>
-          </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-vancouver-tool-library.svg" alt="Vancouver Tool Library Tile">
-          </div>
-        </div>
-      </a>
-
-      <a href="tavern-buddies.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA"></div>
-          <div class="containerB">
-            <h1 style="color: rgb(255, 203, 203)">TAVERN BUDDIES</h1>
-            <p style="color: rgb(1, 0, 0)">A mobile app that connects Dungeon and Dragons (DnD) players in your area.
-            </p>
-            <h2 style="background:rgb(39, 13, 13); color:rgb(255, 203, 203)">View Case
-              Study</h2>
-          </div>
-          <div class="screen-to-portable-1">
-            <iframe src="src/card-tavern-buddy.html" scrolling="no"></iframe>
-          </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-tavern-buddy.svg" alt="Tavern Buddy Tile">
-          </div>
-        </div>
-      </a>
-
-      <a href="gotchi-project.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA">
-            <h1 style="color: rgb(255, 255, 255)">GOTCHI</h1>
-            <p style="color: rgb(83, 83, 83)">A speculative user experience project with the purpose of helping users
-              manage electronic waste.</p>
-            <h2 style="background:rgb(233, 144, 180); color:rgb(255, 255, 255)">View
-              Case Study</h2>
-          </div>
-          <div class="containerB"></div>
-          <div class="screen-to-portable-1">
-            <iframe src="src/card-gotchi.html" scrolling="no"></iframe>
-          </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-gotchi.svg" alt="Gotchi Tile">
-          </div>
-        </div>
-      </a>
-
-      <a href="ux-experiments.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA"></div>
-          <div class="containerB">
-            <h1 style="color: rgb(209, 232, 255)">UX EXPERIMENTS</h1>
-            <p style="color: rgb(49, 66, 83)">I like to play with design tools to create interesting solutions.</p>
-            <h2 style="background:rgb(49, 66, 83); color:rgb(209, 232, 255)">View Case
-              Studies</h2>
-          </div>
-          <div class="screen-to-portable-1">
-            <iframe src="src/card-ux-experiment.html" scrolling="no"></iframe>
-          </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-ux-experiment.svg" alt="Vancouver Tool Library Tile">
-          </div>
-        </div>
-      </a>
-
-      <a href="media-arts.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA">
-            <h1 style="color: rgb(196, 255, 198)">MEDIA ARTS</h1>
-            <p style="color: rgb(14, 57, 16)">A sampling of my expertise in several digital and traditional art mediums.
-            </p>
-            <h2 style="background:rgb(14, 57, 16); color:rgb(196, 255, 198)">View Media
-              Work</h2>
-          </div>
-          <div class="containerB"></div>
-          <div class="screen-to-portable-1">
-            <iframe src="src/card-media-arts.html" scrolling="no"></iframe>
-          </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-media-arts.svg" alt="Media Arts tile">
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="emptybox2"></div>
-    <!--About Section-->
-    <div class="emptybox1"></div>
-    <h1 class="heading about-me" data-aos="fade-right">ABOUT ME</h1>
-    <div class="emptybox2"></div>
-    <div class="emptybox1"></div>
-    <div id="about-content">
-      <img src="src/portfolio-portrait.jpg" data-aos="fade-right" data-aos-delay="200"
-        alt="A suave looking fellow in a suit." width="500" height="500">
-      <div class="about-text" id="about">
-        <h2 style="display: inline;" data-aos="fade-up">Hi, I'm </h2>
-        <h2 style="display: inline; font-family: Righteous;" data-aos="fade-up" data-aos-delay="50">RAZA</h2>
-        <h2 style="display: inline;" data-aos="fade-up">!✌</h2>
-        <p data-aos="fade-up" data-aos-delay="100">I’m a UX Designer & Media Artist pursuing a degree in Media Arts &
-          Design. I am currently working as a freelance UX designer.</p>
-        <p data-aos="fade-up" data-aos-delay="150">For me, The thrill of UX design lies in crafting elegant and
-          <b>inclusive</b> design solutions that encourage frictionless user interaction. It is my priority to
-          understand and empathize with people in each step of the design process to create a true <b>user-centered</b>
-          product.
-        </p>
-        <p data-aos="fade-up" data-aos-delay="200">I spend my leisure hours honing my various crafts and spending time
-          with friends in <b>Vancouver</b>.</p>
-        <p style="display: inline;" data-aos="fade-up" data-aos-delay="300">Let’s <a
-            href="mailto:raza1996.go@gmail.com">get in touch!</a></p>
-        <h2 style="display: inline;" data-aos="fade-left" data-aos-delay="350">🤙</h2>
-      </div>
-    </div>
-    <div class="emptybox2">
-    </div>
+   
   </div>
 
-  <div class="footer-container">
+  <div class="footer-container" style="margin-top: 4rem;">
     <div class="emptybox1"></div>
     <div class="footer">
       <div class="footer-contacts">
         <h4>Contact</h4>
         <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
-        <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+        <a class="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
         <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
         <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
         <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
         <img class="icon" src="src/Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
         <a href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">@shabih-ul-hassanraza</a>
       </div>
-      <div class="swap1 footer-links">
+      <div class="footer-links">
         <h4>Useful Links</h4>
         <a href="#top">Back to Top ▲</a><br>
-        <a href="src/resume.pdf" target="_blank">Resume</a><br>
+        <a href="src/Resume.pdf" target="_blank">Resume</a><br>
         <a href="index.html">Home</a>
       </div>
     </div>
@@ -239,6 +240,7 @@
   <script>AOS.init();</script>
   <script src="js/darkModeIconSwitch.js"></script>
   <script src="js/darkModeElementSwitch.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 
 </html>
