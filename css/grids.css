@@ -501,6 +501,10 @@
 	.project-card h2 {
 		display: flex;
 	}	
+
+	#top-page {
+		display: none;
+	}
 }
 
 @media (max-width: 960px) {
@@ -509,6 +513,9 @@
 		margin-right: 12%;
 	}
 
+	#top-page {
+		display: none;
+	}
 }
 
 @media (max-width: 660px) {
@@ -520,5 +527,15 @@
 		font-size: 1rem;
 	}
 
+	.footer-links {
+		display: none;
+	}
 	
+	.project-card h2 {
+		display: none;
+	}
+
+	#top-page {
+		display: none;
+	}
 }
