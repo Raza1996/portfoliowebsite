@@ -16,7 +16,6 @@
 		margin-right: 13%;
 	}
 
-
 	.mobile {
 		display: none;
 	}
@@ -113,7 +112,6 @@
 	.project-card {
 		border: 1rem;
 	}
-
 }
 
 @media (min-width: 811px) and (max-width: 960px) {
@@ -155,6 +153,8 @@
 	.secondary-card-content {
 		grid-template-columns: 1fr 1fr;
 	}
+
+	
 
 	.index-banner {
 		display: none;
@@ -248,7 +248,12 @@
 
 	.banner-text img {
 		margin-left: 1rem;
+		padding-right: 6rem;
 		margin-top: -2rem;
+	}
+
+	.banner-text img {
+		margin-bottom:1rem;
 	}
 }
 
@@ -301,6 +306,10 @@
 	#process-cards,
 	.secondary-card-content {
 		grid-template-columns: 1fr;
+	}
+
+	#card-content {
+		gap: 1rem;
 	}
 
 	.process-content {
@@ -398,10 +407,16 @@
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
+	#card-content {
+		gap: 1rem;
+	}
+
+
 	.screen-to-portable-2 img {
 		width: 25vw;
 		height: auto;
 	}
+
 
 	.project-card h1 {
 		padding-top: 1rem;
