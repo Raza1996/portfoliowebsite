@@ -29,7 +29,7 @@
         <ul>
           <li class="swap1"><a href="#projects">Projects</a></li>
           <li class="swap2"><a href="index.html">Projects</a></li>
-          <li class="swap1"><a href="#about-teleport">About</a></li>
+          <li class="swap1"><a href="index.html#about-teleport">About</a></li>
           <li class="swap2"><a href="about-me.html">About</a></li>
           <li><a href="src/Resume.pdf" target="_blank" style="color: rgb(255, 219, 57);">Resume</a></li>
         </ul>
@@ -38,12 +38,12 @@
     </nav>
     <div id="light-mode-element">
       <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
       </div>
     </div>
     <div id="dark-mode-element" class="hidden">
       <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
       </div>
     </div>
     <div class="banner">
@@ -60,51 +60,40 @@
       <h1 data-aos="fade-down" data-aos-delay="100" id="project-title">MEDIA ARTS</h1>
       
       
-    <div class="emptybox2">
-      
-      <a id="top-page">
-        <img src="src/Top-screen-arrow.svg" onclick="window.scrollTo(0, 0)" width="50" height="50"
-          alt="Button that brings you to top of page">
-      </a>
-    </div>
+      <div class="emptybox2">
+        <a id="top-page">
+          <button class="circle-button"  onclick="window.scrollTo(0, 0)">
+            <span class="triangle"></span>
+          </button>
+        </a>
+      </div>
     
     <div class="emptybox1"></div>
     
     <div class="secondary-card-content" style="margin-bottom: 2rem;">  
       <p data-aos="fade-right" data-aos-delay="100"  class="span-full-content">My work in multiple forms of media from digital editing software to traditional ink material. Find my latest work in my <a href="https://www.instagram.com/unravelingraza/">Instagram</a><br></p>
-    
+  
+
       <div class="card" data-aos="fade-up" data-aos-delay="100">
-        <a href="education-summit.html">
-          <h2>Education Summit</h2>
-          <figcaption>An animated video advertising an academic event.</figcaption>
-          <img src="src/Alhambra-Icon.svg" alt="An education certificate" width="250" height="250">
-          <p>Video Editing,</p>
-          <p>Illustration,</p>
+        <a href="fallenlondon.html">
+          <h2>Interface Study</h2>
+          <figcaption>Creating a hypothetical social media interface for a text-based browser game.</figcaption>
+          <img src="src/FL-Icon.svg" alt="An education certificate" width="250" height="250">
           <p>Sketching,</p>
-          <p>Video Production</p>
+          <p>Illustration,</p>
+          <p>Figma</p>
         </a>
       </div>
 
       <div class="card" data-aos="fade-up" data-aos-delay="200">
-        <a href="pavilion.html">
-          <h2>Holland Park Pavilion</h2>
-          <figcaption>A promotional video for a hypothetical pavilion in Holland Park.</figcaption>
-          <img src="src/Pavilion-Icon.svg" width="250" height="250" alt="Illustration Icon">
+        <a href="education-summit.html">
+          <h2>Education Summit Animation</h2>
+          <figcaption>An animated video advertising an academic event.</figcaption>
+          <img src="src/Alhambra-Icon.svg" width="250" height="250" alt="Illustration Icon">
           <p>Adobe After Effects,</p>
+          <p>Adobe Illustrator,</p>
           <p>Storyboarding,</p>
           <p>Video Editing</p>
-        </a>
-      </div>
-
-      <div class="card" data-aos="fade-up">
-        <a href="reaching-out.html">
-          <h2>Reaching Out</h2>
-          <figcaption>A hand-drawn video, detailing a friend's experiences of the first year of the COVID-19 pandemic.</figcaption>
-          <img src="src/Reaching-Out-Icon.svg" width="250" height="250" alt="Illustration Icon">
-          <p>Adobe After Effects,</p>
-          <p>Video Production,</p>
-          <p>Video Shooting,</p>
-          <p>Storyboarding</p>
         </a>
       </div>
 
@@ -118,6 +107,19 @@
           <p>Graphic Design,</p>
         </a>
       </div>
+      
+      <div class="card" data-aos="fade-up">
+        <a href="reaching-out.html">
+          <h2>Reaching Out</h2>
+          <figcaption>A hand-drawn video, detailing a friend's experiences of the first year of the COVID-19 pandemic.</figcaption>
+          <img src="src/Reaching-Out-Icon.svg" width="250" height="250" alt="Illustration Icon">
+          <p>Adobe After Effects,</p>
+          <p>Video Production,</p>
+          <p>Video Shooting,</p>
+          <p>Storyboarding</p>
+        </a>
+      </div>
+      
       <div class="card" data-aos="fade-up">
         <a href="illustrations-trad.html">
           <h2>Traditional Drawings</h2>
@@ -144,13 +146,13 @@
     <div class="emptybox2"></div>
   </div>
 
-  <div class="footer-container">
+  <div class="footer-container" style="margin-top: 4rem;">
     <div class="emptybox1"></div>
     <div class="footer">
       <div class="footer-contacts">
         <h4>Contact</h4>
         <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
-        <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+        <a class="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
         <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
         <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
         <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
@@ -174,6 +176,9 @@
   <script src="js/darkModeIconSwitch.js"></script>
   <script src="js/darkModeElementSwitch.js"></script>
   <script src="js/carousel.js"></script>
-</body>
-
+  <script src="js/hitherTither.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
+  </body>
 </html>
+  

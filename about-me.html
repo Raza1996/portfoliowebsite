@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>Raza, Shabih-ul-Hassan</title>
   <meta charset="utf-8">
+  <title>Raza, Shabih-ul-Hassan</title>
   <link rel="icon" type="image/svg" href="src/tab-logo.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
@@ -13,12 +13,12 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
-    rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css2?family=Helvetica' rel='stylesheet'>
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
+ 
 
 <body>
   <header>
@@ -36,46 +36,30 @@
       </div>
       <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
-
-    <div class="emptybox1"></div>
-    <div id="landing-banner">
-      <div class="mobile-logo">RAZA</div>
-      <div id="light-mode-element">
-        <div class="rellax" data-rellax-speed="11">
-          <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
-        </div>
-      </div>
-      <div id="dark-mode-element" class="hidden">
-        <div class="rellax" data-rellax-speed="11">
-          <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
-        </div>
-      </div>
-    </div>
-    <div class="emptybox2"></div>
   </header>
 
   <div class="content-grid" style="background-color:transparent;">
     <!--For aligning content in the middle of the screen-->
     <div class="emptybox1"></div>
     <div class="mobile-about-content">
-      <img src="src/portfolio-portrait.jpg" data-aos="fade-right" data-aos-delay="200"
-        alt="A suave looking fellow in a suit." width="300" height="300">
-      <div class="about-text" id="about">
-        <h2 style="display: inline;" data-aos="fade-up">Hi, I'm </h2>
-        <h2 style="display: inline; font-family: Righteous;" data-aos="fade-up" data-aos-delay="50">RAZA</h2>
-        <h2 style="display: inline;" data-aos="fade-up">!✌</h2>
-        <p data-aos="fade-up" data-aos-delay="100">I’m a UX Designer & Media Artist pursuing a degree in Media Arts &
-          Design. I am currently working as a freelance UX designer.</p>
-        <p data-aos="fade-up" data-aos-delay="150">For me, the thrill of UX design lies in crafting elegant and
-          <b>inclusive</b> design solutions that allow frictionless interaction with the interface. It is my priority to
-          understand and empathize with people in each step of the design process in order to synthesize a true
-          <b>user-centered</b> product.
+      <img src="src/portfolio-portrait.jpg" 
+      alt="A suave looking fellow in a suit." width="500" height="500" data-aos="fade-up">
+    
+      <div class="about-text" id="about" data-aos="fade-up" data-aos-delay="100">
+        <h2 style="display: inline;">Hi, I'm </h2>
+        <h2 style="display: inline; font-family: Righteous;">RAZA</h2>
+        <h2 style="display: inline;">!✌</h2>
+        <p>I'm a UX Designer & Media Artist finishing my degree in Interactive Arts & Technology. I currently work as a freelance visual designer.</p>
+        <p>For me, the satisfaction of UX design lies in crafting elegant and
+          <b>inclusive</b> design solutions that encourage frictionless user interaction. It is my priority to understand and empathize with client wants and needs 
+          in every step of the design process to produce a truly <b>user-centered</b>
+          product.
         </p>
-        <p data-aos="fade-up" data-aos-delay="200">I spend my leisure hours honing my various crafts and spending time
+        <p>I spend my leisure hours honing my various crafts and spending time
           with friends in <b>Vancouver</b>.</p>
-        <p style="display: inline;" data-aos="fade-up" data-aos-delay="300">Let’s <a
-            href="mailto:raza1996.go@gmail.com">get in touch!</a></p>
-        <h2 style="display: inline;" data-aos="fade-left" data-aos-delay="400">🤙</h2>
+        <p style="display: inline;">Let's <a
+          class="sweetalert2" onclick="copy(this)">get in touch!</a></p>
+        <h2 style="display: inline;">🤙</h2>
       </div>
     </div>
     <div class="emptybox2"></div>

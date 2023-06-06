@@ -7,11 +7,4 @@ $('.sweetalert2').on('click',function(){
   })
 })
 
-$('#sweetalert2').on('click',function(){
-  Swal.fire({
-    icon: 'success',
-    title: 'Email Copied!',
-    showConfirmButton: false,
-    timer: 1500
-})
-})
+

@@ -6,27 +6,24 @@
     scroll-behavior: smooth;
 }
 
-:root {
-    --primary-color1: white;
+.dark-theme {
+    --primary-color1: rgb(244, 244, 244);
     --secondary-color1: black;
     --primary-color2: rgb(99, 63, 167);
     --secondary-color2: rgb(255, 219, 57);
     --primary-color3: rgb(40, 25, 66);
-    --secondary-color3: rgb(255, 249, 225);
+    --secondary-color3: rgb(255, 246, 210);
     --primary-color4: rgb(70, 42, 119);
     --secondary-color4: rgb(255, 242, 189);
+    --primary-color5: rgb(216, 216, 216);
+    --secondary-color5:  black;
+    --primary-color6: rgb(40, 25, 66);
+    --secondary-color6:  white;
+    --primary-color7: rgb(99, 63, 167);
+    --secondary-color7: #FF8DDF;
 }
 
-
-#darkmode {
-    width: 20px;
-    cursor: pointer;
-    display: inline;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.dark-theme {
+:root {
     --primary-color1: #171717;
     --secondary-color1: white;
     --primary-color2: rgb(255, 219, 57);
@@ -34,7 +31,21 @@
     --primary-color3: rgb(255, 249, 225);
     --secondary-color3: rgb(40, 25, 66);
     --primary-color4: rgb(255, 242, 189);
-    --secondary-color4: rgb(70, 42, 119);
+    --secondary-color4: rgb(70, 42, 119);    
+    --primary-color5:  black;
+    --secondary-color5: rgb(216, 216, 216);   
+    --primary-color6:  white; 
+    --secondary-color6: rgb(40, 25, 66);
+    --primary-color7: rgb(99, 63, 167);
+    --secondary-color7: #71F0DA;
+}
+
+#darkmode {
+    width: 20px;
+    cursor: pointer;
+    display: inline;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .hidden {
@@ -57,13 +68,12 @@ h1 {
     font-family: 'Mukta', sans-serif;
     color: var(--primary-color2);
     line-height: 2rem;
-    padding-top: 3rem;
-    letter-spacing: 3px;
+    padding-top: 2rem;
+    letter-spacing: 1px;
 }
 
 h2 {
     font-family: 'Mukta', sans-serif;
-    color: var(--primary-color2);
     font-size: large;
 }
 
@@ -92,13 +102,18 @@ li {
     margin-bottom: 2rem;
 }
 
-.about-text a {
-    color: var(--primary-color2);
+#ttcaption figcaption {
+    transform: translate(0%, 0%);
+
+}
+
+a {
+    color: var(--primary-color7);
 }
 
 a:hover {
     transition: 0.2s;
-    color: var(--secondary-color2);
+    color: var(--secondary-color7);
 }
 
 button {
@@ -109,6 +124,7 @@ button {
     transition: 0.3s;
     border-radius: 30px;
     padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
@@ -152,9 +168,12 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp*/
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(99, 63, 167);
+    background-color: rgb(40, 25, 66);
 }
 
+::-webkit-scrollbar-track {
+    background-color: var(--primary-color5);
+}
 /* Navbar learned from
 https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
 .navbar {
@@ -210,6 +229,43 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     width: 70%;
 }
 
+/*pull-quote*/
+
+.pull-quote {
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    font-style: italic;
+    margin: 20px 0;
+  }
+  
+  .pull-quote p {
+    margin: 0;
+  }
+  
+  .pull-quote footer {
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+  
+  .pull-quote::before,
+  .pull-quote::after {
+    content: '"';
+    position: absolute;
+    font-size: 2em;
+    color: var(--primary-color2);
+  }
+  
+  .pull-quote::before {
+    top: -10px;
+    left: -20px;
+  }
+  
+  .pull-quote::after {
+    display: none;
+  }
+
 /*Banner Set-up*/
 
 .brand-title {
@@ -240,10 +296,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     margin-bottom: 2rem;
 }
 
-
-
 .banner-text img {
-    
     margin-top: -0.5rem;
     margin-left:-5rem;
     margin-bottom: -10rem;
@@ -281,13 +334,102 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     z-index: 1;
 }
 
+
+/*Hero*/
+.hero {
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img{
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.hero h1{   
+    font-size: 3.5rem;
+    line-height: 4rem;
+    color: var(--primary-color6);
+}
+
+.hero .text {
+    position: absolute;
+    top: 15vh;
+    left: 20vh;
+}
+
+.hero p {
+    padding-top: 3rem; 
+    padding-bottom: 0.5rem;
+}
+
+/*Button Animation*/
+.btn {
+    position: relative;
+    display: inline-flex;
+    padding: 10px 30px;
+    background:rgb(40, 25, 66);
+    color:#fff;
+    overflow: hidden; 
+    z-index: 1;
+    border-radius: 0.5rem;  
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-family: 'Mukta', sans-serif;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+
+.tough-titties::before {
+    background: #F0B2E6;
+}
+
+.tavern-buddies::before {
+    background: #620000;
+}
+
+.vancouver-tool-library::before {
+    background: #F6D854;
+}
+
+.btn:hover::before {
+    width: 500px;
+    height: 500px;
+}
+
+.hero a:hover {
+    color:#fff;
+}
+
 /*Card styling learned from 
 https://www.w3schools.com/howto/howto_css_cards.asp*/
 
-#card-content,
+#card-content,  
 .secondary-card-content {
     width: 75vw;
-    gap: 1rem
+}
+
+.card-margin {
+    gap: 1rem; 
+    padding-bottom: 2rem;
 }
 
 .secondary-card-content {
@@ -304,14 +446,13 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     height: 29rem;
     text-align: center;
     display: block;
-    box-shadow: 0 8px 5px rgba(128, 128, 128, 0.5);
-    background-color: var(--primary-color3);
+    background-color: rgb(70, 42, 119);
 }
 
 .secondary-card-content .ux-card {
     height: 22rem;
 }
-
+  
 .secondary-card-content .card img {
     width: 100%;
     height: auto;
@@ -322,12 +463,12 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 .secondary-card-content .card p {
     padding-top: 0.4rem;
     text-decoration: none;
-    color: var(--secondary-color3);
+    color: white;
 }
 
 .secondary-card-content .card figcaption {
     position: absolute;
-    color: var(--secondary-color2);
+    color: white;
     padding: 3rem 1rem 1rem 1rem;
     display: none;
 }
@@ -345,14 +486,13 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     opacity: 0;
 }
 
-
 .secondary-card-content .smartwatch :hover img {
     opacity: 100;
 }
 
 .secondary-card-content .card h2 {
     padding-left: 0px;
-    color: var(--secondary-color3);
+    color: white;
     top: 50%;
 }
 
@@ -396,6 +536,14 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 
 .project-card {
     position: relative;
+    border-radius: 15px;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.15);
+}
+
+.project-card2{
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.15);
 }
 
 #card-content iframe {
@@ -460,28 +608,31 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     position: absolute;
     bottom: 0;
     left: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     padding: 1rem;
     border-radius: 10px;
 }
 
 .containerB h2 {
     margin-left: 5rem;
+    opacity: 0.7;
 }
 
 .containerA h2 {
     margin-left: 3rem;
+    opacity: 0.7;
+
 }
 
 .containerA h2:hover,
 .containerB h2:hover {
-    opacity: 0.5;
+    opacity: 1;
+    transition-duration: 0.2s;
 }
-
 
 /*set up footer elements here*/
 .footer-container {
-    background: var(--secondary-color3);
+    background: var(--primary-color5);
     padding: 1rem 0rem 2rem;
     display: flex;
     position: relative;
@@ -502,7 +653,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 }
 
 .footer-container a:hover {
-    color: rgb(255, 199, 59);
+    color: var(--secondary-color7);
 }
 
 .footer-contacts {
@@ -528,25 +679,39 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 
 /*Set up about section*/
 
+.mobile-about-content,
+#about-content {
+    width: 75vw;  
+}
+
 .mobile-about-content img,
-#about-content img {
+#about-layout img {
     width: 25rem;
     height: 25rem;
-    border-radius: 25px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.15);
+}
+
+.mobile-about-content img {
+    width: 75vw;
+    height: auto;
+    margin-top: 2rem;
 }
 
 .mobile-about-content p,
 #about-content p {
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
-#about-content h2 {
+#about-layout h2 {
     font-size: 2rem;
     color: var(--primary-color3);
 }
 
 
-#about-content h1 {
+#about-layout h1 {
     margin-bottom: 2rem;
 }
 
@@ -584,7 +749,6 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     height: 100%;
     width: 100%;
     object-fit: contain;
-    box-shadow: 0 5px 20px rgb(228, 228, 228);
 }
 
 .process-content p {
@@ -717,7 +881,6 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     text-align: center;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    box-shadow: 0 0 10px rgba(255, 233, 143, 1);
 }
 
 .mobile-card p {
@@ -790,6 +953,37 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     margin-top: 10rem;
     margin-bottom: -157rem;
 }
+
+.circle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(40, 25, 66);
+    color: #fff;
+    
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.15);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .circle-button:hover {
+    transform: scale(1.2);
+    background-color: rgb(40, 25, 66);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid #fff;
+    margin-bottom: 3px;
+  }
 
 .mobile-logo {
     color: var(--primary-color2);
@@ -880,7 +1074,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 0; 
 }
 
 /* The dots/bullets/indicators */
@@ -895,6 +1089,10 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
   transition: background-color 0.6s ease;
 }
 
+.breadcrumb-center {
+    justify-self: center;
+}
+ 
 .active, .dot:hover {
   background-color: var(--secondary-color2);
 }
@@ -908,4 +1106,45 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* Loader */
+.loader {    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+}   
+
+.loader::after {  
+    content: "";
+    width: 75px;
+    height: 75px;
+    background: rgb(70, 42, 119);
+    animation: loader 1s infinite;
+    animation-direction: alternate;
+}
+
+.loader-active {
+    z-index: 5;
+    display: flex;
+}
+
+@keyframes loader {
+    from {
+        transform: rotate(0deg);
+        border-radius: 50%;
+        background: rgb(255, 219, 57);
+        box-shadow: 0px 0px 10px rgb(255, 230, 129);
+    }
+
+    to {
+        transform: rotate(720deg);
+        border-radius: 0%; 
+     }
 }

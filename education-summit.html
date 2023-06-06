@@ -29,7 +29,7 @@
         <ul>
           <li class="swap1"><a href="#projects">Projects</a></li>
           <li class="swap2"><a href="index.html">Projects</a></li>
-          <li class="swap1"><a href="#about-teleport">About</a></li>
+          <li class="swap1"><a href="index.html#about-teleport">About</a></li>
           <li class="swap2"><a href="about-me.html">About</a></li>
           <li><a href="src/Resume.pdf" target="_blank" style="color: rgb(255, 219, 57);">Resume</a></li>
         </ul>
@@ -38,12 +38,12 @@
     </nav>
     <div id="light-mode-element">
       <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
       </div>
     </div>
     <div id="dark-mode-element" class="hidden">
       <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
       </div>
     </div>
     <div class="banner">
@@ -54,7 +54,6 @@
       </div>
     </div>
   </header>
-
   <div class="process content-grid"> <!--For aligning content in the middle of the screen-->
     <div class="emptybox1"></div>
     <div class="process-content">
@@ -78,47 +77,117 @@
             <p>No storyboarding was needed for this project as the message was relatively straightforward. I began by plotting ideas for various prospective students from different Middle Eastern countries. I had to do much research here to ensure that cultural sensitivity was prioritized while portraying a contemporary forward-looking style.</p>
             <p>It was decided that the text would be synchronized with royalty-free music.</p>
           </div>
-          <div data-aos="fade-left"  class="txtover">
+          <div data-aos="fade-left">
             <img src="src/education-summit/ES-sketches.jpg" alt="Sketches" width="771" height="1200">
-            <figcaption>Figure.1: Initial Concept Sketches</figcaption>
+            <figcaption style="margin-top: -1rem;">Figure.1: Initial Concept Sketches</figcaption>
           </div>
           <div data-aos="fade-right" data-aos-delay="100">
             <h2>PRODUCTION</h2>
             <p>Next was a matter of actually creating all the assets for the video. Vectors of the drawings were created via Adobe Illustrator and later ported to Adobe After Effects for future use.</p>
             <p>The color scheme was inspired by Alhambra US chamber's branding color pallete. It worked well with creating the fashion direction of the characters.</p>
           </div>
-          <div data-aos="fade-left" class="txtover">
+          <div data-aos="fade-left">
             <img src="src/education-summit/characters.svg" alt="characters">
-            <figcaption>Figure.2: Vector Graphics</figcaption>
+            <figcaption style="margin-top: -3rem;">Figure.2: Vector Graphics</figcaption>
           </div>
           <div data-aos="fade-right" data-aos-delay="100">
             <h2>EDITING</h2>
             <p>This part took multiple iterations to complete. Staff at Alhambra came up with several minor and major changes to the script with each new version. I was fortunate enough to be able to accommodate for them..</p>
           </div>
-          <div data-aos="fade-left" class="zoom txtover">
+          <div data-aos="fade-left" class="zoom">
             <img src="src/education-summit/screen-capture.png" alt="After Effects screen" width="2256" height="1379">
-            <figcaption>Figure.3: Process on After Effects</figcaption>
+            <figcaption style="margin-top: -1rem;">Figure.3: Process on After Effects</figcaption>
           </div>
           <div data-aos="fade-up" data-aos-delay="100" class="span-content">
             <p>Even though storyboarding was not needed for this project as I had a clear vision of how to accomplish the motion graphic, on further reflection I conclude that it would have benefited the staff if I did create a short script for them. Regardless, I was proud of my punctuality with each iteration and was excited to have the motion graphic advertised for all to see.</p>
           </div>
         </div>
         <div class="emptybox2">
-           
-      <a id="top-page">
-        <img src="src/Top-screen-arrow.svg" onclick="window.scrollTo(0, 0)" width="50" height="50"
-          alt="Button that brings you to top of page">
-      </a>
+          <a id="top-page">
+            <button class="circle-button"  onclick="window.scrollTo(0, 0)">
+              <span class="triangle"></span>
+            </button>
+          </a>
         </div>
       </div>
-
-      <div class="footer-container">
+      <div id="projects" class="content-grid" style="background-color: transparent;">
+        <!--Top Page Button-->
+        <div class="emptybox1"></div>
+        <h1 class="heading" data-aos="fade-right" style="margin-bottom: 2rem;">ALSO CHECK OUT</h1>
+        <div class="emptybox2">
+        </div>
+        <!--Cards-->
+        <div class="emptybox1"></div>
+        <div id="card-content" style="margin-bottom: 2rem;">
+    
+          <a class="card-margin" href="tough-titties.html" style="pointer-events:all;">
+            <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+              <div class="containerA">
+                <h1 style="color: rgb(255, 228, 253)">TOUGH TITTIES REDESIGN</h1>
+                <p style="color: rgb(125, 53, 124)">Redesigning a brand focusing on breast cancer awareness. This website became a finalist at the Eunoia UX Hackathon.</p>
+                <h2 style="background:rgb(117, 56, 103); color:rgb(245, 245, 245)">View Case
+                  Studies</h2>
+              </div>
+              <div class="containerB"></div> 
+              <div class="screen-to-portable-1">
+                <img src="src/tough-titties/tt-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+                
+              </div>
+              <div class="screen-to-portable-2">
+                <img src="src/mobile-card-tough-titties.png" alt="Vancouver Tool Library Tile">
+              </div>
+            </div>
+          </a>
+    
+          <a class="card-margin" href="tavern-buddies.html" style="pointer-events:all;">
+            <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+              <div class="containerA"></div>
+              <div class="containerB">              
+                <h1 style="color: rgb(255, 203, 203);">TAVERN BUDDIES</h1>
+                <p style="color: rgb(255, 255, 255);">A mobile app that connects Dungeon and Dragons (DnD) players in your area.</p>
+                <h2 style="background:rgb(39, 13, 13); color:rgb(245, 245, 245);">View Case
+                  Studies</h2>
+                </div> 
+              <div class="screen-to-portable-1">
+                <img src="src/tavernbuddies/tb-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+                
+              </div>
+              <div class="screen-to-portable-2">
+                <img src="src/mobile-card-tavern-buddy.svg" alt="Vancouver Tool Library Tile">
+              </div>
+            </div>
+          </a>
+    
+          <a class="card-margin" href="vancouver-tool-library.html" style="pointer-events:all;">
+            <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+              <div class="containerA">
+                <h1 style="color: rgb(255, 255, 255);">VANCOUVER TOOL LIBRARY</h1>
+                <p style="color: rgb(119, 102, 24);">Redesigning website and improving self-checkout to reduce work load on
+                  staff.</p>
+                <h2 style="background:rgb(119, 102, 24); color:rgb(245, 245, 245);">View Case
+                  Studies</h2>
+              </div>
+              <div class="containerB"></div> 
+              <div class="screen-to-portable-1">
+                <img src="src/vtl/vtl-screen-card.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+                
+              </div>
+              <div class="screen-to-portable-2">
+                <img src="src/mobile-card-vancouver-tool-library.svg" alt="Vancouver Tool Library Tile">
+              </div>
+            </div>
+          </a>
+    
+        </div>
+        <div class="emptybox2"></div>
+      </div>
+      <div class="footer-container" style="margin-top: 4rem;">
         <div class="emptybox1"></div>
         <div class="footer">
           <div class="footer-contacts">
             <h4>Contact</h4>
             <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
-            <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+            <a class="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
             <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
             <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
             <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
@@ -141,6 +210,13 @@
       <script>AOS.init();</script>
       <script src="js/darkModeIconSwitch.js"></script>
       <script src="js/darkModeElementSwitch.js"></script>
-    </body>
+      <script src="js/carousel.js"></script>
+      <script src="js/hitherTither.js"></script>
+      <script src="js/loader.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
+      </body>
+    </html>
+      
     
     </html>
+    

@@ -1,17 +1,17 @@
 <svg width="2811" height="4396" viewBox="0 0 2811 4396" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_185_14251)">
 <path d="M0 -401C0 -456.228 44.7715 -501 100 -501H2713C2768.23 -501 2813 -456.228 2813 -401V4296C2813 4351.23 2768.23 4396 2713 4396H100C44.7715 4396 0 4351.23 0 4296V-401Z" fill="#702323"/>
-<rect x="-79" y="-313.709" width="2965" height="2818.87" fill="url(#pattern0)"/>
-<path d="M1328.31 1094.45C1328.31 1187.91 1218.72 1156.9 1236.56 1094.45C1220.42 1178.14 1124.42 1128.44 1160.09 1061.75" stroke="white" stroke-width="23" stroke-linecap="round"/>
-<circle cx="1069.62" cy="917.318" r="142.728" fill="white"/>
-<circle cx="1483.36" cy="1003.12" r="142.728" fill="white"/>
-<circle cx="1069.62" cy="917.318" r="115.542" fill="#421111"/>
-<circle cx="1483.36" cy="1003.13" r="115.542" fill="#421111"/>
-<circle cx="1128.24" cy="877.388" r="56.9212" fill="white"/>
-<circle cx="1541.98" cy="963.195" r="56.9212" fill="white"/>
-<circle cx="1236.99" cy="1093.18" r="9.34527" fill="white"/>
-<path d="M1105.72 1060.47L1006.32 785.635C888.236 862.096 929.156 969.95 951.954 999.726C998.462 1060.47 1053.05 1060.47 1105.72 1060.47Z" fill="#F9B189" fill-opacity="0.4"/>
-<rect y="2255" width="2813" height="2141" fill="#E2E2E2"/>
+<rect x="-61" y="-274" width="2871.52" height="2730" fill="url(#pattern0)"/>
+<path d="M1301.94 1089.77C1301.94 1180.27 1195.81 1150.24 1213.08 1089.77C1197.45 1170.81 1104.48 1122.68 1139.03 1058.09" stroke="white" stroke-width="23" stroke-linecap="round"/>
+<circle cx="1051.4" cy="918.214" r="138.228" fill="white"/>
+<circle cx="1452.1" cy="1001.32" r="138.228" fill="white"/>
+<circle cx="1051.41" cy="918.215" r="111.899" fill="#421111"/>
+<circle cx="1452.1" cy="1001.32" r="111.899" fill="#421111"/>
+<circle cx="1108.18" cy="879.543" r="55.1266" fill="white"/>
+<circle cx="1508.87" cy="962.645" r="55.1266" fill="white"/>
+<circle cx="1213.49" cy="1088.53" r="9.05063" fill="white"/>
+<path d="M1086.37 1056.85L990.107 790.684C875.741 864.734 915.371 969.188 937.45 998.025C982.492 1056.85 1035.36 1056.85 1086.37 1056.85Z" fill="#F9B189" fill-opacity="0.4"/>
+<rect y="2255" width="2813" height="2141" fill="#B4B4B4"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

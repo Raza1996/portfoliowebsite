@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Media Arts</title>
+  <title>Raza, Shabih-ul-Hassan</title>
   <link rel="icon" type="image/svg" href="src/tab-logo.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
@@ -18,8 +18,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
-
-<body>
+ 
+<body> 
+ <!-- <div class="loader loader-active "></div> -->
+ <div class="loader loader-active"></div>
+ 
   <header>
     <nav class="navbar"> <!-- Element for Website Navigation-->
       <a href="index.html">
@@ -36,50 +39,28 @@
       </div>
       <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
-    <div id="light-mode-element">
-      <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+    <div class="hero">
+      <img src="src/hero-image/vtl-hero.png" >
+      <div class="text" style="position: absolute;">
+        <h1>VANCOUVER<br>TOOL<br>LIBRARY</h1>
+        <div class="screen-to-portable-1">
+        <p>Website Redesign and Kiosk:</p>
+          <a target="_blank" class="btn vancouver-tool-library" href="https://www.figma.com/proto/iCubNfyVoRzsSUOoVgelwZ/IAT-333---Vancouver-Tool-Library?page-id=259%3A22&node-id=326-23&viewport=-8247%2C-11194%2C0.27&scaling=contain&starting-point-node-id=326%3A23&show-proto-sidebar=1"><span>PROTOTYPE</span></a>
+        </div>
       </div>
     </div>
-    <div id="dark-mode-element" class="hidden">
-      <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
-      </div>
-    </div>
-    <div class="banner">
-      <div class="banner-text" data-rellax-speed="2" style="transform: translate3d(0px, -19px, 0px);">
-        <h1>RAZA</h1>
-        <h2>SHABIH-UL-HASSAN</h2>
-        <h4 style="font-weight: bold">UX Designer & Media Artist</h4>
-      </div>
-    </div>
+  </header>
 
   <div class="process content-grid"> <!--For aligning content in the middle of the screen-->
     <div class="emptybox1"></div>
     <div class="process-content">
-      <div class="span-content">
-        <h1 data-aos="fade-down" id="project-title">VANCOUVER TOOL LIBRARY</h1>
-      </div>
-      <div data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 1rem;" class="txtover">
-        <img src="src/vtl/mockup1.png" width="100%" height="100%" alt="Mock-up 1">
-        <figcaption>Updated Website</figcaption>
-      </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="prototype-link">
-        <p>Check out website</p>
-        <a target="_blank"
-          href="https://www.figma.com/proto/iCubNfyVoRzsSUOoVgelwZ/Ethnography-Poster?page-id=259%3A22&node-id=326%3A23&viewport=-8247%2C-11194%2C0.27&scaling=contain&starting-point-node-id=326%3A23&show-proto-sidebar=1">
-          <h3>PROTOTYPE</h3>
-        </a>
-      </div>
-      <div data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 1rem;" class="txtover">
-        <img src="src/vtl/mockup2.png" width="100%" height="100%" alt="Mock-up 2">
-        <figcaption>Kiosk Mockup</figcaption>
-      </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="prototype-link">
-        <p>Check out kiosk</p>
-        <a target="_blank"
-          href="https://www.figma.com/proto/iCubNfyVoRzsSUOoVgelwZ/Ethnography-Poster?page-id=259%3A22&node-id=294%3A204&viewport=-545%2C-1080%2C0.03&scaling=contain&starting-point-node-id=294%3A204&show-proto-sidebar=1">
-          <h3>PROTOTYPE</h3>
+      <div data-aos="fade-left" data-aos-delay="100" class="prototype-link span-content" style="
+      display: flex;
+      justify-content: center;
+      align-items: center;">
+        <a target="_blank" class="screen-to-portable-2"
+          href="https://www.figma.com/proto/iCubNfyVoRzsSUOoVgelwZ/IAT-333---Vancouver-Tool-Library?page-id=259%3A22&node-id=326-23&viewport=-8247%2C-11194%2C0.27&scaling=contain&starting-point-node-id=326%3A23&show-proto-sidebar=1">
+          <h3>Check it Out</h3>
         </a>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
@@ -115,17 +96,17 @@
           from and how to accomodate for their idiosyncratic needs.</p>
       </div>
       <div class="gotchi-misc span-content">
-        <div data-aos="fade-up" data-aos-delay="100" class="zoom col txtover">
+        <div data-aos="fade-up" data-aos-delay="100" class="zoom col">
           <img src="src/vtl/persona1.png" alt="poster" width="2104" height="3163">
-          <figcaption>Figure.1(a): Stakeholder Persona</figcaption>
+          <figcaption  style="margin-top: -1rem;">Figure.1(a): Stakeholder Persona</figcaption>
         </div>
-        <div data-aos="fade-up" data-aos-delay="200" class="zoom col txtover">
+        <div data-aos="fade-up" data-aos-delay="200" class="zoom col">
           <img src="src/vtl/persona2.png" alt="Mobile UI mock-up" width="1644" height="2584">
-          <figcaption>Figure.1(b): New User Persona</figcaption>
+          <figcaption  style="margin-top: -1rem;">Figure.1(b): New User Persona</figcaption>
         </div>
-        <div data-aos="fade-up" data-aos-delay="300" class="zoom col txtover">
+        <div data-aos="fade-up" data-aos-delay="300" class="zoom col">
           <img src="src/vtl/persona3.png" alt="emotes" width="2530" height="2596">
-          <figcaption>Figure.1(c): Frequent User Persona</figcaption>
+          <figcaption  style="margin-top: -1rem;">Figure.1(c): Frequent User Persona</figcaption>
         </div>
       </div>
       <div data-aos="fade-up" data-aos-delay="100" class="span-content">
@@ -136,9 +117,9 @@
           This map outlined what worked with the user journey, area of improvement, and painpoints that the team could
           actively build upon.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content zoom txtover">
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content zoom">
         <img src="src/vtl/journeymap1.png" width="100%" height="100%" alt="Journey Map 1">
-        <figcaption>Figure.2(a): New User's Journey</figcaption>
+        <figcaption  style="margin-top: -1rem;">Figure.2(a): New User's Journey</figcaption>
       </div>
       <div data-aos="fade-up" data-aos-delay="100" class="span-content">
         <p>Two pain points were noted: Mainly that the user was overwhelmed by the sheer variety of tools on display,
@@ -146,9 +127,9 @@
           process was laborious and had too many steps. The user had to fill out a physical sign up form and the
           volunteer had to add them in the organization's data server.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content zoom txtover">
+      <div data-aos="fade-up" data-aos-delay="100" class="span-content zoom">
         <img src="src/vtl/journeymap2.png" width="100%" height="100%" alt="Journey Map 2">
-        <figcaption>Figure.2(b): Frequent User's Journey</figcaption>
+        <figcaption  style="margin-top: -1rem;">Figure.2(b): Frequent User's Journey</figcaption>
       </div>
       <div data-aos="fade-up" data-aos-delay="100" class="span-content">
         <p>Frequent users of VTL did not have the same problem with sytem logging as they were already signed in.
@@ -201,10 +182,10 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <br>
+
 
       <!-- The dots/circles -->
-      <div>
+      <div class="span-content breadcrumb-center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
@@ -217,17 +198,17 @@
         <button onclick="window.scrollTo(0, 0)">CHECK THEM OUT AT THE TOP</button>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="100" class="zoom txtover">
+      <div data-aos="fade-up" data-aos-delay="100" class="zoom">
         <img src="src/vtl/mockup3.png" width="100%" height="100%" alt="website sample 1">
-        <figcaption>Figure.3(a): Updated Website 1</figcaption>
+        <figcaption style="margin-top: -1rem;">Figure.3(a): Updated Website 1</figcaption>
       </div>
 
-      <div data-aos="fade-left" data-aos-delay="100" class="zoom txtover">
+      <div data-aos="fade-left" data-aos-delay="100" class="zoom">
         <img src="src/vtl/mockup4.png" width="100%" height="100%" alt="website sample 2">
-        <figcaption>Figure.3(b): Updated Website 2</figcaption>
+        <figcaption style="margin-top: -1rem;">Figure.3(b): Updated Website 2</figcaption>
       </div>
 
-      <div class="zoom txtover"></div>
+      <div class="zoom"></div>
 
       <div data-aos="fade-up" data-aos-delay="100" class="span-content">
         <h2>Reflection</h2>
@@ -242,8 +223,9 @@
     </div>
     <div class="emptybox2">
       <a id="top-page">
-        <img src="src/Top-screen-arrow.svg" onclick="window.scrollTo(0, 0)" width="50" height="50"
-          alt="Button that brings you to top of page">
+        <button class="circle-button"  onclick="window.scrollTo(0, 0)">
+          <span class="triangle"></span>
+        </button>
       </a>
     </div>
   </div>
@@ -256,36 +238,38 @@
     <!--Cards-->
     <div class="emptybox1"></div>
     <div id="card-content" style="margin-bottom: 2rem;">
-      <a href="ux-experiments.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+    
+      <a class="card-margin" href="tavern-buddies.html" style="pointer-events:all;">
+        <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
           <div class="containerA"></div>
-          <div class="containerB">
-            <h1 style="color: rgb(209, 232, 255)">UX EXPERIMENTS</h1>
-            <p style="color: rgb(255, 255, 255)">I like to play with design tools to create interesting solutions.</p>
-            <h2 style="background:rgb(49, 66, 83); color:rgb(209, 232, 255)">View Case
+          <div class="containerB">              
+            <h1 style="color: rgb(255, 203, 203);">TAVERN BUDDIES</h1>
+            <p style="color: rgb(255, 255, 255);">A mobile app that connects Dungeon and Dragons (DnD) players in your area.</p>
+            <h2 style="background:rgb(39, 13, 13); color:rgb(245, 245, 245);">View Case
               Studies</h2>
-          </div>
+            </div> 
           <div class="screen-to-portable-1">
-            <iframe src="src/card-ux-experiment.html" scrolling="no"></iframe>
+            <img src="src/tavernbuddies/tb-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+            
           </div>
           <div class="screen-to-portable-2">
-            <img src="src/mobile-card-ux-experiment.svg" alt="Vancouver Tool Library Tile">
+            <img src="src/mobile-card-tavern-buddy.svg" alt="Vancouver Tool Library Tile">
           </div>
         </div>
       </a>
 
-      <a href="gotchi-project.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA">
-            <h1 style="color: rgb(255, 255, 255)">GOTCHI</h1>
-            <p style="color: rgb(83, 83, 83)">A speculative user experience project with the purpose of helping users
-              manage electronic waste.</p>
+      <a class="card-margin" href="gotchi-project.html" style="pointer-events:all;">
+        <div class="project-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA"></div>
+          <div class="containerB">
+            <h1 class="gotchi-h1" style="color: rgb(255, 255, 255)">GOTCHI</h1>
+            <p style="color: rgb(83, 83, 83)">A speculative UX project with the purpose of helping users
+              manage electronic waste via a cute computer accessory.</p>
             <h2 style="background:rgb(255, 101, 163); color:rgb(255, 255, 255)">View
               Case Study</h2>
-          </div>
-          <div class="containerB"></div>
+            </div>
           <div class="screen-to-portable-1">
-            <iframe src="src/card-gotchi.html" scrolling="no"></iframe>
+            <img src="src/gotchi/gotchi-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
           </div>
           <div class="screen-to-portable-2">
             <img src="src/mobile-card-gotchi.svg" alt="Gotchi Tile">
@@ -293,34 +277,35 @@
         </div>
       </a>
 
-      <a href="tavern-buddies.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA"></div>
-          <div class="containerB">
-            <h1 style="color: rgb(255, 203, 203)">TAVERN BUDDIES</h1>
-            <p style="color: rgb(255, 255, 255)">A mobile app that connects Dungeon and Dragons (DnD) players in your area.
-            </p>
-            <h2 style="background:rgb(39, 13, 13); color:rgb(255, 203, 203)">View Case
-              Study</h2>
+      <a class="card-margin" href="tough-titties.html" style="pointer-events:all;">
+        <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA">
+            <h1 style="color: rgb(255, 228, 253)">TOUGH TITTIES REDESIGN</h1>
+            <p style="color: rgb(125, 53, 124)">Redesigning a brand focusing on breast cancer awareness. This website became a finalist at the Eunoia UX Hackathon.</p>
+            <h2 style="background:rgb(117, 56, 103); color:rgb(245, 245, 245)">View Case
+              Studies</h2>
           </div>
+          <div class="containerB"></div> 
           <div class="screen-to-portable-1">
-            <iframe src="src/card-tavern-buddy.html" scrolling="no"></iframe>
+            <img src="src/tough-titties/tt-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+            
           </div>
           <div class="screen-to-portable-2">
-            <img src="src/mobile-card-tavern-buddy.svg" alt="Tavern Buddy Tile">
+            <img src="src/mobile-card-tough-titties.png" alt="Vancouver Tool Library Tile">
           </div>
         </div>
       </a>
+
     </div>
   </div>
 
-  <div class="footer-container">
+  <div class="footer-container" style="margin-top: 4rem;">
     <div class="emptybox1"></div>
     <div class="footer">
       <div class="footer-contacts">
         <h4>Contact</h4>
         <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
-        <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+        <a class="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
         <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
         <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
         <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
@@ -344,6 +329,11 @@
   <script src="js/darkModeIconSwitch.js"></script>
   <script src="js/darkModeElementSwitch.js"></script>
   <script src="js/carousel.js"></script>
-</body>
+  <script src="js/hitherTither.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
+  </body>
+</html>
+  
 
 </html>

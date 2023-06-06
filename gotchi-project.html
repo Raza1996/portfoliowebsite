@@ -29,51 +29,33 @@
         <ul>
           <li class="swap1"><a href="#projects">Projects</a></li>
           <li class="swap2"><a href="index.html">Projects</a></li>
-          <li class="swap1"><a href="#about-teleport">About</a></li>
+          <li class="swap1"><a href="index.html#about-teleport">About</a></li>
           <li class="swap2"><a href="about-me.html">About</a></li>
           <li><a href="src/Resume.pdf" target="_blank" style="color: rgb(255, 219, 57);">Resume</a></li>
         </ul>
       </div>
       <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
-    <div id="light-mode-element">
-      <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
-      </div>
-    </div>
-    <div id="dark-mode-element" class="hidden">
-      <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
-      </div>
-    </div>
-    <div class="banner">
-      <div class="banner-text" data-rellax-speed="2" style="transform: translate3d(0px, -19px, 0px);">
-        <h1>RAZA</h1>
-        <h2>SHABIH-UL-HASSAN</h2>
-        <h4 style="font-weight: bold">UX Designer & Media Artist</h4>
-      </div>
-    </div>
-  </header>
 
+  </header>
+  <div class="span-content">
+    <div data-aos="fade-up" data-aos-delay="100">
+      <img src="src/gotchi/billboard.png" alt="billboard" width="100%" height="100%">
+    </div>
+  </div>
   <div class="process content-grid"> <!--For aligning content in the middle of the screen-->
     <div class="emptybox1"></div>
     <div class="process-content">
-      <div class="span-content">
-        <h1  data-aos="fade-down" id="project-title">GOTCHI</h1>
-        <div data-aos="fade-up" data-aos-delay="100" class="txtover">
-          <img src="src/gotchi/billboard.png" alt="billboard" style="margin-top: 2rem;" width="100%" height="100%">
-          <figcaption>Figure.1: Billboard</figcaption>
-        </div>
-      </div>
+
       <div data-aos="fade-right" data-aos-delay="100">
         <h4>Type:</h4>
         <p>Academic Project</p>
         <h4>Credits:</h4>
         <p>Vania Amer, Mahyar Ghorbandaiy, Stacey Wu</p>
         <h4>Role:</h4>
-        <p>Concept Art, Visual Deisgn, UX Design</p>
+        <p>Concept Art, Interaction Designer, UX Design</p>
         <h4>Tools:</h4>
-        <p>Adobe Photoshop, Adobe Illustrator, figma</p>
+        <p>Adobe Photoshop, Adobe Illustrator, Figma</p>
         <h4>Duration:</h4>
         <p>1 week</p>
         <p>GOTCHI is a speculative design project made to incentivize a prolonged state of play via a quirky interaction
@@ -83,14 +65,16 @@
         <p>Enter GOTCHI, a homage to the traditional Japanese game Tamagotchi. He incentivizes the user to periodically
           delete data from their devices. By feeding GOTCHI digital clutter, the user is forced to brush through their
           data to decide what files to delete.</p>
+
+          <p>Check out the video advert edited by Stacey <a href="https://www.youtube.com/watch?v=fSdQAxRu1ZQ&ab_channel=krispy">here</a>.</p>
       </div>
-      <div class="txtover" data-aos="fade-left" data-aos-delay="100">
+      <div data-aos="fade-left" data-aos-delay="100">
         <a href="https://www.youtube.com/watch?v=fSdQAxRu1ZQ&ab_channel=krispy">
-          <img src="src/gotchi/video-link.png" alt="image of Banner ad with video link" width="100%" height="100%">
-          <figcaption>Figure.2: Online Ad</figcaption>
+          <img src="src/gotchi/video-link.png" alt="image of Banner ad with video link" width="100%" height="100%"  style="box-shadow: none;">
         </a>
+        
       </div>
-      <div data-aos="fade-right" data-aos-delay="100">
+      <div data-aos="fade-right" data-aos-delay="100" class="span-content">
         <h2>IDEATION</h2>
         <p>My team and I began the preliminary design stage on the online platform Figma. We wanted to create a design
           that tackled themes of consumption and waste. This topic branched out into conversations regarding the
@@ -99,11 +83,10 @@
           design. I pitched the idea of combining it with a smart trashcan idea that we ideated over previously. This
           was where the idea of Gotchi originated.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="txtover">
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="550" height="450"
+      <div data-aos="fade-left" data-aos-delay="100"  class="span-content">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width:100%;" width="550" height="450"
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5Yq4YEGWnuMxyOEJdrkKHD%2FTEAM-B-Ludic-Design-Mini-Project%3Fnode-id%3D0%253A1"
           allowfullscreen></iframe>
-        <figcaption>Figure.3: Figma Board</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
         <h2>MOODBOARD</h2>
@@ -113,9 +96,8 @@
         <p>We wanted a design that was easy to remember. This came with the added benefit of GOTCHI's emotions being
           more expressive.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="zoom txtover">
+      <div data-aos="fade-left" data-aos-delay="100" class="zoom">
         <img src="src/gotchi/moodboard.png" alt="moodboard" width="843" height="785">
-        <figcaption>Figure.4: Moodboard</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
         <h2>DESIGNING GOTCHI</h2>
@@ -127,9 +109,8 @@
           astronaut. But we decided to simplify the form factor further. The end result looked like a red blob that
           lived in a pink house with a dome for a window.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="txtover">
+      <div data-aos="fade-left" data-aos-delay="100">
         <img src="src/gotchi/concept.png" alt="concept sketches of gotchi design" width="2000" height="2579">
-        <figcaption>Figure.5: Concept Art</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
         <h2>INTERACTION</h2>
@@ -139,9 +120,8 @@
           no-longer-needed digital files. Users could put it on their desk next to the computer as it reminds them to
           regularly clean up their digital space.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="zoom txtover">
+      <div data-aos="fade-left" data-aos-delay="100" class="zoom">
         <img src="src/gotchi/brochure.png" alt="brochure" width="4848" height="3636">
-        <figcaption>Figure.6: Brochure</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
         <h2>3D MODELING</h2>
@@ -151,9 +131,8 @@
         <p>The final product was received quite well from the class. This project was awarded best-in-class for its
           creativity, execution, and critique.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="txtover">
+      <div data-aos="fade-left" data-aos-delay="100">
         <img src="src/gotchi/3D-model.png" alt="3D model" width="2091" height="1988">
-        <figcaption>Figure.7: 3D Model</figcaption>
       </div>
       <div data-aos="fade-up" data-aos-delay="100" class="span-content">
         <h2>REFLECTION</h2>
@@ -163,17 +142,17 @@
           glad I had an opportunity to hone my 3D modeling skills, a relatively seldom-used area of my expertise.</p>
       </div>
       <div class="gotchi-misc span-content">
-        <div class="zoom col txtover" data-aos="fade-up" data-aos-delay="100">
+        <div class="zoom col" data-aos="fade-up" data-aos-delay="100">
           <img src="src/gotchi/poster.png" alt="poster" width="2104" height="3163">
-          <figcaption>Figure.8: Poster</figcaption>
+
         </div>
-        <div class="zoom col txtover" data-aos="fade-up" data-aos-delay="200">
+        <div class="zoom col" data-aos="fade-up" data-aos-delay="200">
           <img src="src/gotchi/mobile-UI.png" alt="Mobile UI mock-up" width="1644" height="2584">
-          <figcaption>Figure.9: Mobile Ad</figcaption>
+
         </div>
-        <div class="zoom col txtover" data-aos="fade-up" data-aos-delay="300">
+        <div class="zoom col" data-aos="fade-up" data-aos-delay="300">
           <img src="src/gotchi/emotes.png" alt="emotes" width="2530" height="2596">
-          <figcaption>Figure.10: Gotchi Emotes</figcaption>
+
         </div>
       </div>
     </div>
@@ -194,72 +173,75 @@
     <!--Cards-->
     <div class="emptybox1"></div>
     <div id="card-content" style="margin-bottom: 2rem;">
-      <a href="ux-experiments.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA"></div>
-          <div class="containerB">
-            <h1 style="color: rgb(209, 232, 255)">UX EXPERIMENTS</h1>
-            <p style="color: rgb(255, 255, 255)">I like to play with design tools to create interesting solutions.</p>
-            <h2 style="background:rgb(49, 66, 83); color:rgb(209, 232, 255)">View Case
+
+      <a class="card-margin" href="tough-titties.html" style="pointer-events:all;">
+        <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA">
+            <h1 style="color: rgb(255, 228, 253)">TOUGH TITTIES REDESIGN</h1>
+            <p style="color: rgb(125, 53, 124)">Redesigning a brand focusing on breast cancer awareness. This website became a finalist at the Eunoia UX Hackathon.</p>
+            <h2 style="background:rgb(117, 56, 103); color:rgb(245, 245, 245)">View Case
               Studies</h2>
           </div>
+          <div class="containerB"></div> 
           <div class="screen-to-portable-1">
-            <iframe src="src/card-ux-experiment.html" scrolling="no"></iframe>
+            <img src="src/tough-titties/tt-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+            
           </div>
           <div class="screen-to-portable-2">
-            <img src="src/mobile-card-ux-experiment.svg" alt="Vancouver Tool Library Tile">
+            <img src="src/mobile-card-tough-titties.png" alt="Vancouver Tool Library Tile">
           </div>
         </div>
       </a>
-      <a href="vancouver-tool-library.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA">
-            <h1 style="color: rgb(255, 255, 255)">Vancouver Tool Library</h1>
-            <p style="color: rgb(119, 102, 24)">Redesigning website and improving self-checkout to reduce work load on
-              staff.</p>
-            <h2 style="background:rgb(119, 102, 24); color:rgb(255, 255, 255)">View
-              Case
-              Study</h2>
-          </div>
-          <div class="containerB"></div>
+
+      <a class="card-margin" href="tavern-buddies.html" style="pointer-events:all;">
+        <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA"></div>
+          <div class="containerB">              
+            <h1 style="color: rgb(255, 203, 203);">TAVERN BUDDIES</h1>
+            <p style="color: rgb(255, 255, 255);">A mobile app that connects Dungeon and Dragons (DnD) players in your area.</p>
+            <h2 style="background:rgb(39, 13, 13); color:rgb(245, 245, 245);">View Case
+              Studies</h2>
+            </div> 
           <div class="screen-to-portable-1">
-            <iframe src="src/card-vancouver-tool-library.html" scrolling="no"></iframe>
+            <img src="src/tavernbuddies/tb-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+            
+          </div>
+          <div class="screen-to-portable-2">
+            <img src="src/mobile-card-tavern-buddy.svg" alt="Vancouver Tool Library Tile">
+          </div>
+        </div>
+      </a>
+
+      <a class="card-margin" href="vancouver-tool-library.html" style="pointer-events:all;">
+        <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA">
+            <h1 style="color: rgb(255, 255, 255);">VANCOUVER TOOL LIBRARY</h1>
+            <p style="color: rgb(119, 102, 24);">Redesigning website and improving self-checkout to reduce work load on
+              staff.</p>
+            <h2 style="background:rgb(119, 102, 24); color:rgb(245, 245, 245);">View Case
+              Studies</h2>
+          </div>
+          <div class="containerB"></div> 
+          <div class="screen-to-portable-1">
+            <img src="src/vtl/vtl-screen-card.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+            
           </div>
           <div class="screen-to-portable-2">
             <img src="src/mobile-card-vancouver-tool-library.svg" alt="Vancouver Tool Library Tile">
           </div>
         </div>
       </a>
-      
-      <a href="tavern-buddies.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA"></div>
-          <div class="containerB">
-            <h1 style="color: rgb(255, 203, 203)">Tavern Buddies</h1>
-            <p style="color: rgb(255, 255, 255)">A mobile app that connects Dungeon and Dragons (DnD) players in your area.
-            </p>
-            <h2 style="background:rgb(39, 13, 13); color:rgb(255, 203, 203)">View Case
-              Study</h2>
-          </div>
-          <div class="screen-to-portable-1">
-            <iframe src="src/card-tavern-buddy.html" scrolling="no"></iframe>
-          </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-tavern-buddy.svg" alt="Tavern Buddy Tile">
-          </div>
-        </div>
-        <div class="emptybox2"></div>
-      </a>
+
     </div>
   </div>
 
-  <div class="footer-container">
+  <div class="footer-container" style="margin-top: 4rem;">
     <div class="emptybox1"></div>
     <div class="footer">
       <div class="footer-contacts">
         <h4>Contact</h4>
         <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
-        <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+        <a class="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
         <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
         <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
         <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
@@ -282,6 +264,12 @@
   <script>AOS.init();</script>
   <script src="js/darkModeIconSwitch.js"></script>
   <script src="js/darkModeElementSwitch.js"></script>
-</body>
+  <script src="js/carousel.js"></script>
+  <script src="js/hitherTither.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
+  </body>
+</html>
+  
 
 </html>

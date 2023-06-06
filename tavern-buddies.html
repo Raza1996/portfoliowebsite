@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Tavern Buddies</title>
+  <title>Raza, Shabih-ul-Hassan</title>
   <link rel="icon" type="image/svg" href="src/tab-logo.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
@@ -18,8 +18,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
-
-<body>
+ 
+<body> 
+ <!-- <div class="loader loader-active "></div> -->
+ <div class="loader loader-active"></div>
+ 
   <header>
     <nav class="navbar"> <!-- Element for Website Navigation-->
       <a href="index.html">
@@ -36,21 +39,16 @@
       </div>
       <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
-    <div id="light-mode-element">
-      <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
-      </div>
-    </div>
-    <div id="dark-mode-element" class="hidden">
-      <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
-      </div>
-    </div>
-    <div class="banner">
-      <div class="banner-text" data-rellax-speed="2" style="transform: translate3d(0px, -19px, 0px);">
-        <h1>RAZA</h1>
-        <h2>SHABIH-UL-HASSAN</h2>
-        <h4 style="font-weight: bold">UX Designer & Media Artist</h4>
+    <div class="hero">
+       <img id="dark-mode-element" class="hidden" src="src/hero-image/tb-hero.png" style=" width: 100%; height: auto; box-shadow: none;" width="659" height="373">
+        <img id="light-mode-element" src="src/hero-image/tb-hero-dark.png" style=" width: 100%; height: auto; box-shadow: none;" width="659" height="373">
+      <img src="" >
+      <div class="text" style="position: absolute;">
+        <h1>TAVERN<br>BUDDIES</h1>
+        <div class="screen-to-portable-1">
+        <p>Check it out here:</p>
+          <a target="_blank" class="btn tavern-buddies" href="https://www.figma.com/proto/2NPCWP6RoxjqDHd0MHEVEj/Project-2%3A-Tavern-Buddies?page-id=229%3A523&node-id=271-934&viewport=270%2C634%2C0.3&scaling=min-zoom&starting-point-node-id=271%3A934&show-proto-sidebar=1"><span>PROTOTYPE</span></a>
+        </div>
       </div>
     </div>
   </header>
@@ -58,18 +56,13 @@
   <div class="process content-grid"> <!--For aligning content in the middle of the screen-->
     <div class="emptybox1"></div>
     <div class="process-content">
-      <div class="span-content">
-        <h1 data-aos="fade-down" data-aos-delay="100" id="project-title">TAVERN BUDDIES</h1>
-      </div>
-      <div data-aos="fade-right" data-aos-delay="100" class="txtover">
-        <img src="src/tavernbuddies/mockup.png" alt="billboard" style="margin-top: 2rem;" width="100%" height="100%">
-        <figcaption>Figure.1: App Mock Up</figcaption>
-      </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="prototype-link">
-        <p>Check out website</p>
-        <a target="_blank"
-          href="https://www.figma.com/proto/2NPCWP6RoxjqDHd0MHEVEj/Project-2%3A-Tavern-Buddies?page-id=229%3A523&node-id=271%3A934&viewport=270%2C634%2C0.3&scaling=min-zoom&starting-point-node-id=271%3A934&show-proto-sidebar=1">
-          <h3>PROTOTYPE</h3>
+      <div data-aos="fade-left" data-aos-delay="100" class="prototype-link span-content" style="
+      display: flex;
+      justify-content: center;
+      align-items: center;">
+        <a target="_blank" class="screen-to-portable-2"
+          href="https://www.figma.com/proto/2NPCWP6RoxjqDHd0MHEVEj/Project-2%3A-Tavern-Buddies?page-id=229%3A523&node-id=271-934&viewport=270%2C634%2C0.3&scaling=min-zoom&starting-point-node-id=271%3A934&show-proto-sidebar=1">
+          <h3>Check it Out</h3>
         </a>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
@@ -98,13 +91,13 @@
           that revolves around Dungeons & Dragons (DnD). After conducting several surveys (iterated throughout the
           developmental process), the team came across some pertinent conclusions:</p>
       </div>
-      <div data-aos="fade-right" data-aos-delay="100" class="txtover">
+      <div data-aos="fade-right" data-aos-delay="100">
         <img src="src/tavernbuddies/research1.png" alt="Research">
-        <figcaption>Figure.2a: DnD player preferences</figcaption>
+        <figcaption style="margin-top: -1rem;">Figure.2a: DnD player preferences</figcaption>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="txtover">
+      <div data-aos="fade-left" data-aos-delay="100">
         <img src="src/tavernbuddies/research2.png" alt="Research">
-        <figcaption>Figure.2b: DnD player demographics</figcaption>
+        <figcaption  style="margin-top: -2rem;">Figure.2b: DnD player demographics</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
         <p>
@@ -145,7 +138,7 @@
         </p>
         <p>In addition, a user scenario was crafted to further flesh out the needs of a new user.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="txtover">
+      <div data-aos="fade-left" data-aos-delay="100">
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2NPCWP6RoxjqDHd0MHEVEj%2FProject-2%253A-Tavern-Buddies%3Fnode-id%3D1274%253A3830"
           allowfullscreen></iframe>
@@ -161,11 +154,11 @@
             href="https://www.sfu.ca/siat/student_projects/iat339_2022_summer/mht6/projects/IAT334-TavernBuddies/index.html"
             target="_blank">website</a>.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="txtover">
+      <div data-aos="fade-left" data-aos-delay="100">
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2NPCWP6RoxjqDHd0MHEVEj%2FProject-2%253A-Tavern-Buddies%3Fnode-id%3D1367%253A3929"
           allowfullscreen></iframe>
-        <figcaption>Figure.4: Greyscale Mockup</figcaption>
+        <figcaption style="margin-top: -0.5rem;">Figure.4: Greyscale Mockup</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
         <h2>Visual Elements</h2>
@@ -175,9 +168,9 @@
           is DnD) used in the books they publish. Red with gold trims gave the app a subdued regal look that
           distinguished it from other apps.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="txtover">
+      <div data-aos="fade-left" data-aos-delay="100">
         <img src="src/tavernbuddies/visualbible.png" alt="tavern buddies visual bible">
-        <figcaption>Figure.5: Color Bible</figcaption>
+        <figcaption  style="margin-top: -2rem;">Figure.5: Color Bible</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
         <h2>Refinement</h2>
@@ -189,12 +182,12 @@
           accessing the map feature.</p>
       </div>
 
-      <div data-aos="fade-left" data-aos-delay="100" class="txtover">
+      <div data-aos="fade-left" data-aos-delay="100">
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2NPCWP6RoxjqDHd0MHEVEj%2FProject-2%253A-Tavern-Buddies%3Fnode-id%3D229%253A523"
           allowfullscreen></iframe>
 
-        <figcaption>Figure.5: Refined Prototype</figcaption>
+        <figcaption style="margin-top: -0.5rem;" >Figure.6: Refined Prototype</figcaption>
       </div>
 
       <div data-aos="fade-up" data-aos-delay="100" class="span-content">
@@ -208,8 +201,9 @@
     </div>
     <div class="emptybox2">
       <a id="top-page">
-        <img src="src/Top-screen-arrow.svg" onclick="window.scrollTo(0, 0)" width="50" height="50"
-          alt="Button that brings you to top of page">
+        <button class="circle-button"  onclick="window.scrollTo(0, 0)">
+          <span class="triangle"></span>
+        </button>
       </a>
     </div>
   </div>
@@ -222,35 +216,58 @@
     <!--Cards-->
     <div class="emptybox1"></div>
     <div id="card-content" style="margin-bottom: 2rem;">
-      <a href="ux-experiments.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA"></div>
-          <div class="containerB">
-            <h1 style="color: rgb(209, 232, 255)">UX EXPERIMENTS</h1>
-            <p style="color: rgb(255, 255, 255)">I like to play with design tools to create interesting solutions.</p>
-            <h2 style="background:rgb(49, 66, 83); color:rgb(209, 232, 255)">View Case
+
+      <a class="card-margin" href="tough-titties.html" style="pointer-events:all;">
+        <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA">
+            <h1 style="color: rgb(255, 228, 253)">TOUGH TITTIES REDESIGN</h1>
+            <p style="color: rgb(125, 53, 124)">Redesigning a brand focusing on breast cancer awareness. This website became a finalist at the Eunoia UX Hackathon.</p>
+            <h2 style="background:rgb(117, 56, 103); color:rgb(245, 245, 245)">View Case
               Studies</h2>
+            
           </div>
+          <div class="containerB"></div> 
           <div class="screen-to-portable-1">
-            <iframe src="src/card-ux-experiment.html" scrolling="no"></iframe>
+            <img src="src/tough-titties/tt-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
           </div>
           <div class="screen-to-portable-2">
-            <img src="src/mobile-card-ux-experiment.svg" alt="Vancouver Tool Library Tile">
+            <img src="src/mobile-card-tough-titties.png" alt="Vancouver Tool Library Tile">
           </div>
         </div>
       </a>
-      <a href="gotchi-project.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+
+      <a class="card-margin" href="vancouver-tool-library.html" style="pointer-events:all;">
+        <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
           <div class="containerA">
-            <h1 style="color: rgb(255, 255, 255)">GOTCHI</h1>
-            <p style="color: rgb(83, 83, 83)">A speculative user experience project with the purpose of helping users
-              manage electronic waste.</p>
-            <h2 style="background:rgb(233, 144, 180); color:rgb(255, 255, 255)">View
-              Case Study</h2>
+            <h1 style="color: rgb(255, 255, 255);">VANCOUVER TOOL LIBRARY</h1>
+            <p style="color: rgb(119, 102, 24);">Redesigning website and improving self-checkout to reduce work load on
+              staff.</p>
+            <h2 style="background:rgb(119, 102, 24); color:rgb(245, 245, 245);">View Case
+              Studies</h2>
           </div>
-          <div class="containerB"></div>
+          <div class="containerB"></div> 
           <div class="screen-to-portable-1">
-            <iframe src="src/card-gotchi.html" scrolling="no"></iframe>
+            <img src="src/vtl/vtl-screen-card.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+            
+          </div>
+          <div class="screen-to-portable-2">
+            <img src="src/mobile-card-vancouver-tool-library.svg" alt="Vancouver Tool Library Tile">
+          </div>
+        </div>
+      </a>
+
+      <a class="card-margin" href="gotchi-project.html" style="pointer-events:all;">
+        <div class="project-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA"></div>
+          <div class="containerB">
+            <h1 class="gotchi-h1" style="color: rgb(255, 255, 255)">GOTCHI</h1>
+            <p style="color: rgb(83, 83, 83)">A speculative UX project with the purpose of helping users
+              manage electronic waste via a cute computer accessory.</p>
+            <h2 style="background:rgb(255, 101, 163); color:rgb(255, 255, 255)">View
+              Case Study</h2>
+            </div>
+          <div class="screen-to-portable-1">
+            <img src="src/gotchi/gotchi-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
           </div>
           <div class="screen-to-portable-2">
             <img src="src/mobile-card-gotchi.svg" alt="Gotchi Tile">
@@ -258,35 +275,16 @@
         </div>
       </a>
 
-      <a href="vancouver-tool-library.html" style="pointer-events:all;">
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA">
-            <h1 style="color: rgb(255, 255, 255)">VANCOUVER TOOL LIBRARY</h1>
-            <p style="color: rgb(119, 102, 24)">Redesigning website and improving self-checkout to reduce work load on
-              staff.</p>
-            <h2 style="background:rgb(119, 102, 24); color:rgb(255, 255, 255)">View
-              Case
-              Study</h2>
-          </div>
-          <div class="containerB"></div>
-          <div class="screen-to-portable-1">
-            <iframe src="src/card-vancouver-tool-library.html" scrolling="no"></iframe>
-          </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-vancouver-tool-library.svg" alt="Vancouver Tool Library Tile">
-          </div>
-        </div>
-      </a>
     </div>
   </div>
 
-  <div class="footer-container">
+  <div class="footer-container" style="margin-top: 4rem;">
     <div class="emptybox1"></div>
     <div class="footer">
       <div class="footer-contacts">
         <h4>Contact</h4>
         <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
-        <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+        <a class="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
         <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
         <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
         <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
@@ -310,6 +308,11 @@
   <script src="js/darkModeIconSwitch.js"></script>
   <script src="js/darkModeElementSwitch.js"></script>
   <script src="js/carousel.js"></script>
-</body>
+  <script src="js/hitherTither.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
+  </body>
+</html>
+  
 
 </html>

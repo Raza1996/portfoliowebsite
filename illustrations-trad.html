@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Traditional Illustration</title>
+  <title> Traditional Illustration</title>
   <link rel="icon" type="image/svg" href="src/tab-logo.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
@@ -29,8 +29,8 @@
         <ul>
           <li class="swap1"><a href="#projects">Projects</a></li>
           <li class="swap2"><a href="index.html">Projects</a></li>
-          <li class="swap1"><a href="#about-teleport">About Me</a></li>
-          <li class="swap2"><a href="about-me.html">About Me</a></li>
+          <li class="swap1"><a href="index.html#about-teleport">About</a></li>
+          <li class="swap2"><a href="about-me.html">About</a></li>
           <li><a href="src/Resume.pdf" target="_blank" style="color: rgb(255, 219, 57);">Resume</a></li>
         </ul>
       </div>
@@ -38,12 +38,12 @@
     </nav>
     <div id="light-mode-element">
       <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
       </div>
     </div>
     <div id="dark-mode-element" class="hidden">
       <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
       </div>
     </div>
     <div class="banner">
@@ -509,11 +509,13 @@
               </div>
             </div> 
           </div>
-        <div class="emptybox2">
-          <a id="top-page">
-            <img src="src/Top-screen-arrow.svg" onclick="window.scrollTo(0, 0)" width="50" height="50"
-              alt="Button that brings you to top of page">
-          </a></div>   
+          <div class="emptybox2">
+            <a id="top-page">
+              <button class="circle-button"  onclick="window.scrollTo(0, 0)">
+                <span class="triangle"></span>
+              </button>
+            </a>
+          </div> 
       </div>
 
       <div class="footer-container" style="margin-top: 4rem;">
@@ -522,7 +524,7 @@
           <div class="footer-contacts">
             <h4>Contact</h4>
             <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
-            <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+            <a class="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
             <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
             <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
             <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
@@ -546,6 +548,9 @@
       <script src="js/darkModeIconSwitch.js"></script>
       <script src="js/darkModeElementSwitch.js"></script>
       <script src="js/carousel.js"></script>
-    </body>
-    
+      <script src="js/hitherTither.js"></script>
+      <script src="js/loader.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
+      </body>
     </html>
+      

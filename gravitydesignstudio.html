@@ -29,7 +29,7 @@
         <ul>
           <li class="swap1"><a href="#projects">Projects</a></li>
           <li class="swap2"><a href="index.html">Projects</a></li>
-          <li class="swap1"><a href="#about-teleport">About</a></li>
+          <li class="swap1"><a href="index.html#about-teleport">About</a></li>
           <li class="swap2"><a href="about-me.html">About</a></li>
           <li><a href="src/Resume.pdf" target="_blank" style="color: rgb(255, 219, 57);">Resume</a></li>
         </ul>
@@ -38,12 +38,12 @@
     </nav>
     <div id="light-mode-element">
       <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
+        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
       </div>
     </div>
     <div id="dark-mode-element" class="hidden">
       <div class="rellax" data-rellax-speed="11">
-        <img src="src/banner-image-dark.svg" class="banner-img" alt="Banner">
+        <img src="src/banner-image-light.svg" class="banner-img" alt="Banner">
       </div>
     </div>
     <div class="banner">
@@ -71,7 +71,7 @@
         <h4>Tools:</h4>
         <p>Adobe Indesign</p>
         <h4>Duration:</h4>
-        <p>3 days</p>
+        <p>3 days</p> 
       </div>
       <div data-aos="fade-left" data-aos-delay="100">
         <p>This is a musical booklet I made for the song 'Hotel California' by the Eagles. This booklet is dedicated to
@@ -87,9 +87,9 @@
           Therefore, orienting the text horizontally afforded the photos I used with all the space they needed while
           still leaving some healthy white space for the text to fit in.</p>
       </div>
-      <div data-aos="fade-left" class="txtover">
+      <div data-aos="fade-left">
         <img src="src/gds/ideation.jpg" alt="Rough Sketch">
-        <figcaption>Figure.1: Ideation Sketches</figcaption>
+        <figcaption style="margin-top: -1rem;">Figure.1: Ideation Sketches</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="100">
         <h2>PRODUCTION</h2>
@@ -99,17 +99,17 @@
         <p>The colors used were a straightforward decision. They matched the branding identity of the studio and simply
           looked really cool.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="txtover">
+      <div data-aos="fade-left" data-aos-delay="100">
         <img src="src/gds/closed.jpg" alt="Closed Brochure">
-        <figcaption>Figure.2: Closed Brochure</figcaption>
+        <figcaption style="margin-top: -1rem;">Figure.2: Closed Brochure</figcaption>
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="txtover">
+      <div data-aos="fade-up" data-aos-delay="100">
         <img src="src/gds/halffold.jpg" alt="Half-open Brocure">
-        <figcaption>Figure.3: Half-opened Brochure</figcaption>
+        <figcaption style="margin-top: -3rem;">Figure.3: Half-opened Brochure</figcaption>
       </div>
-      <div data-aos="fade-up" data-aos-delay="200" class="txtover">
+      <div data-aos="fade-up" data-aos-delay="200">
         <img src="src/gds/opened.jpg" alt="Opened Brocure">
-        <figcaption>Figure.4: Opened Brochure</figcaption>
+        <figcaption style="margin-top: -1rem;">Figure.4: Opened Brochure</figcaption>
       </div>
       <div data-aos="fade-up" data-aos-delay="100" class="span-content">
         <h2>REFLECTION</h2>
@@ -119,20 +119,94 @@
           publishing and printing from it as well.</p>
       </div>
     </div>
-    <div class="emptybox2"> 
+    <div class="emptybox2">
+    
       <a id="top-page">
-        <img src="src/Top-screen-arrow.svg" onclick="window.scrollTo(0, 0)" width="50" height="50"
-          alt="Button that brings you to top of page">
-      </a></div>
+        <button class="circle-button"  onclick="window.scrollTo(0, 0)">
+          <span class="triangle"></span>
+        </button>
+      </a>
+    </div>
+  </div>
+  <div id="projects" class="content-grid" style="background-color: transparent;">
+    <!--Top Page Button-->
+    <div class="emptybox1"></div>
+    <h1 class="heading" data-aos="fade-right" style="margin-bottom: 2rem;">ALSO CHECK OUT</h1>
+    <div class="emptybox2">
+    </div>
+    <!--Cards-->
+    <div class="emptybox1"></div>
+    <div id="card-content" style="margin-bottom: 2rem;">
+
+      <a class="card-margin" href="tough-titties.html" style="pointer-events:all;">
+        <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA">
+            <h1 style="color: rgb(255, 228, 253)">TOUGH TITTIES REDESIGN</h1>
+            <p style="color: rgb(125, 53, 124)">Redesigning a brand focusing on breast cancer awareness. This website became a finalist at the Eunoia UX Hackathon.</p>
+            <h2 style="background:rgb(117, 56, 103); color:rgb(245, 245, 245)">View Case
+              Studies</h2>
+          </div>
+          <div class="containerB"></div> 
+          <div class="screen-to-portable-1">
+            <img src="src/tough-titties/tt-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+            
+          </div>
+          <div class="screen-to-portable-2">
+            <img src="src/mobile-card-tough-titties.png" alt="Vancouver Tool Library Tile">
+          </div>
+        </div>
+      </a>
+
+      <a class="card-margin" href="tavern-buddies.html" style="pointer-events:all;">
+        <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA"></div>
+          <div class="containerB">              
+            <h1 style="color: rgb(255, 203, 203);">TAVERN BUDDIES</h1>
+            <p style="color: rgb(255, 255, 255);">A mobile app that connects Dungeon and Dragons (DnD) players in your area.</p>
+            <h2 style="background:rgb(39, 13, 13); color:rgb(245, 245, 245);">View Case
+              Studies</h2>
+            </div> 
+          <div class="screen-to-portable-1">
+            <img src="src/tavernbuddies/tb-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+            
+          </div>
+          <div class="screen-to-portable-2">
+            <img src="src/mobile-card-tavern-buddy.svg" alt="Vancouver Tool Library Tile">
+          </div>
+        </div>
+      </a>
+
+      <a class="card-margin" href="vancouver-tool-library.html" style="pointer-events:all;">
+        <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+          <div class="containerA">
+            <h1 style="color: rgb(255, 255, 255);">VANCOUVER TOOL LIBRARY</h1>
+            <p style="color: rgb(119, 102, 24);">Redesigning website and improving self-checkout to reduce work load on
+              staff.</p>
+            <h2 style="background:rgb(119, 102, 24); color:rgb(245, 245, 245);">View Case
+              Studies</h2>
+          </div>
+          <div class="containerB"></div> 
+          <div class="screen-to-portable-1">
+            <img src="src/vtl/vtl-screen-card.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+            
+          </div>
+          <div class="screen-to-portable-2">
+            <img src="src/mobile-card-vancouver-tool-library.svg" alt="Vancouver Tool Library Tile">
+          </div>
+        </div>
+      </a>
+
+    </div>
+    <div class="emptybox2"></div>
   </div>
 
-  <div class="footer-container">
+  <div class="footer-container" style="margin-top: 4rem;">
     <div class="emptybox1"></div>
     <div class="footer">
       <div class="footer-contacts">
         <h4>Contact</h4>
         <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
-        <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+        <a class="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
         <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
         <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
         <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
@@ -146,8 +220,7 @@
         <a href="index.html">Home</a>
       </div>
     </div>
-    <div class="emptybox2">
-    </div>
+    <div class="emptybox2"></div>
   </div>
   <script src="js/sweetalert.js"></script> <!--For copy message-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -157,6 +230,9 @@
   <script src="js/darkModeIconSwitch.js"></script>
   <script src="js/darkModeElementSwitch.js"></script>
   <script src="js/carousel.js"></script>
-</body>
-
+  <script src="js/hitherTither.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
+  </body>
 </html>
+  
