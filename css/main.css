@@ -1032,8 +1032,8 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     margin: 1rem;
     font-size: 2rem;
     font-weight: bold;
-    background: var(--primary-color3);
-    color: var(--secondary-color3);
+    background: rgb(40, 25, 66);
+    color: white;
     border-radius: 10px;
 }
 

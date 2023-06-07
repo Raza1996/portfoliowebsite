@@ -308,16 +308,14 @@
 
 @media (max-width: 810px) {
 	#contact-icons {    
-		position: fixed;
+		bottom: 0;
 		top: auto;
-		bottom: 19rem;
-		left: -0.6rem;
 		z-index: 60;
 	}
 
 	.h-i-common {
-		position: absolute;
-		left: 2.4rem;
+		position: fixed;
+		left: 0.5rem;
 		width: 40px; /* Adjust the desired width */
 		height: 40px;
 	}
@@ -327,11 +325,11 @@
 	}
 	
 	.hero-icon2 {
-		top: 7rem;
+		top: 6rem;
 	}
 	
 	.hero-icon3 {
-		top: 11rem;
+		top: 9.5rem;
 	}
 
 	.screen-to-portable-2 img {
@@ -384,6 +382,7 @@
 	}
 	
 	#navbar {
+		width: 100%;
         top: auto;
         bottom: 0;
 		justify-content: center;
