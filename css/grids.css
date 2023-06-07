@@ -309,8 +309,7 @@
 @media (max-width: 810px) {
 	#contact-icons {    
 		position: fixed;
-		top: 63%;
-		
+		top: 73%;
 		left: 87%;
 		z-index: 60;
 	}
@@ -477,6 +476,13 @@
 }
 
 @media (max-width: 660px) {
+	#contact-icons {    
+		position: fixed;
+		top: 73%;
+		left: 82%;
+		z-index: 60;
+	}
+
 	.project-card h1 {
 		padding-top: 1rem;
 		margin-bottom: 0rem;
