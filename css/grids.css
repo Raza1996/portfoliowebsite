@@ -31,9 +31,12 @@
 	#about-length {
 		width: 75vw;
 	}
+
+
 }
 
 @media (min-width: 961px) {
+
 	#card-content {
 		width: 75vw;
 	}
@@ -166,6 +169,7 @@
 	.prototype-link {
 		top: 0;
 	}
+	
 
 	.card p {
 		padding-left: 1.5rem;
@@ -303,6 +307,33 @@
 }
 
 @media (max-width: 810px) {
+	#contact-icons {    
+		position: fixed;
+		top: 63%;
+		
+		left: 87%;
+		z-index: 60;
+	}
+
+	.h-i-common {
+		position: absolute;
+		left: 2.4rem;
+		width: 40px; /* Adjust the desired width */
+		height: 40px;
+	}
+	
+	.hero-icon1 {
+		top: 3rem;
+	}
+	
+	.hero-icon2 {
+		top: 7rem;
+	}
+	
+	.hero-icon3 {
+		top: 11rem;
+	}
+
 	.screen-to-portable-2 img {
 		width: 100%;
 		height: flex;
@@ -352,6 +383,11 @@
 		grid-template-columns: 1fr;
 	}
 	
+	#navbar {
+		top: 95%;
+		justify-content: center;
+	}
+
 	.project-card {
 		border-radius: 20px;
 	}
@@ -372,11 +408,6 @@
 	.image-gallery .image-box:nth-child(7n+1) {
 		grid-column: unset;
 		grid-row: unset;
-	}
-
-	.navbar {
-		bottom: 0;
-		justify-content: center;
 	}
 
 	.brand-title {

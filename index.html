@@ -24,11 +24,11 @@
  <div class="loader loader-active"></div>
  
   <header> 
-    <nav class="navbar"> <!-- Element for Website Navigation-->
+    <nav id="navbar"> <!-- Element for Website Navigation-->
       <a href="index.html">
         <div class="brand-title">RAZA</div>
       </a>
-      <div class="navbar-links">
+      <div id="navbar-links">
         <ul>
           <li class="swap1"><a href="#projects">Projects</a></li>
           <li class="swap2"><a href="index.html">Projects</a></li>
@@ -39,10 +39,33 @@
       </div>
       <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
-    <div class="emptybox1"></div>
+
+    <div id="contact-icons">
+      <div class="hero-icon2 h-i-common">
+        <a target="_blank" href="https://www.instagram.com/unravelingraza/">
+          <img src="src/Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+        </a>
+      </div>
+
+      <a target="_blank" href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">
+        <div class="hero-icon3 h-i-common">  
+            <img src="src/Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+        </div>
+      </a>
+      <div class="hero-icon1 h-i-common">
+        <a class="sweetalert2" onclick="copy(this)">
+          <img src="src/Mail-Icon.svg" width="200" height="200" alt="mail icon">
+        </a>
+      </div>
+    </div>
+
+
+
+    
     <div id="landing-banner" data-aos="fade-left" data-aos-delay="200" class="aos-init aos-animate">
     </div>
     <div class="mobile-logo">RAZA</div>
+    
 
     <div id="dark-mode-element" class="hidden">
       <div class="rellax" data-rellax-speed="11">
@@ -344,7 +367,7 @@
       <div class="rellax" data-rellax-speed="11">
         <img src="src/banner-image-dark.svg" class="banner-img index-banner" alt="Banner">
       </div>
-      <div class="banner-text rellax" data-rellax-speed="2"  style="width: 80%; height: 80%; transform: translate(1%, -13%);">
+      <div class="banner-text rellax relative" data-rellax-speed="2"  style="width: 80%; height: 80%; transform: translate(1%, -13%);">
         <svg-animate trigger="visible">
           <svg viewBox="0 0 1822 1278" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:anim="http://www.w3.org/2000/anim" anim="" anim:transform-origin="50% 50%" anim:duration="3" anim:ease="power1.inOut">
             <g id="67a05931">
@@ -617,27 +640,20 @@
               </linearGradient>
             </defs>
           </svg>
+          
         </svg-animate>
-        <!--Banner Animation-->
-      </div>
     </div>
-<div class="emptybox2"></div>
 
   </header>
   
   <!--About Section--> 
-  
-
-            
     <div class="content-grid">
-      
     <div class="emptybox1"></div>
       <div id="about-length">
         <h1 class="heading" id="about-teleport" style="margin-bottom: 1rem;">ABOUT ME</h1>
         <div id="about-layout">
           <img src="src/portfolio-portrait.jpg" 
           alt="A suave looking fellow in a suit." width="500" height="500" style="margin-right: 2rem"  data-aos="fade-up">
-        
           <div class="about-text" id="about" data-aos="fade-up" data-aos-delay="100">
             <h2 style="display: inline;">Hi, I'm </h2>
             <h2 style="display: inline; font-family: Righteous;">RAZA</h2>
@@ -656,10 +672,8 @@
           </div>
 
         </div>
-        <div class="emptybox"></div>
+        <div class="emptybox2"></div>
       </div>
-
-    <div class="emptybox1"></div>
     </div>
   
 
@@ -830,6 +844,7 @@
         </a>
         
       </div>
+      
     <div class="emptybox2">
       <a id="top-page">
         <button class="circle-button"  onclick="window.scrollTo(0, 0)">

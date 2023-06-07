@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Raza, Shabih-ul-Hassan</title>
+  <title>Tavern Buddies</title>
   <link rel="icon" type="image/svg" href="src/tab-logo.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
@@ -23,12 +23,12 @@
  <!-- <div class="loader loader-active "></div> -->
  <div class="loader loader-active"></div>
  
-  <header>
-    <nav class="navbar"> <!-- Element for Website Navigation-->
+  <header> 
+    <nav id="navbar"> <!-- Element for Website Navigation-->
       <a href="index.html">
         <div class="brand-title">RAZA</div>
       </a>
-      <div class="navbar-links">
+      <div id="navbar-links">
         <ul>
           <li class="swap1"><a href="#projects">Projects</a></li>
           <li class="swap2"><a href="index.html">Projects</a></li>
@@ -37,8 +37,28 @@
           <li><a href="src/Resume.pdf" target="_blank" style="color: rgb(255, 219, 57);">Resume</a></li>
         </ul>
       </div>
-      <img onclick="switchMode()" src="src/sun.svg" alt="dark mode icon" class="mobile" id="darkmode">
+      <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
+
+    <div id="contact-icons">
+      <div class="hero-icon2 h-i-common">
+        <a target="_blank" href="https://www.instagram.com/unravelingraza/">
+          <img src="src/Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+        </a>
+      </div>
+
+      <a target="_blank" href="https://www.linkedin.com/in/shabih-ul-hassan-raza-a69107211/">
+        <div class="hero-icon3 h-i-common">  
+            <img src="src/Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+        </div>
+      </a>
+      <div class="hero-icon1 h-i-common">
+        <a class="sweetalert2" onclick="copy(this)">
+          <img src="src/Mail-Icon.svg" width="200" height="200" alt="mail icon">
+        </a>
+      </div>
+    </div>
+    
     <div class="hero">
        <img id="dark-mode-element" class="hidden" src="src/hero-image/tb-hero.png" style=" width: 100%; height: auto; box-shadow: none;" width="659" height="373">
         <img id="light-mode-element" src="src/hero-image/tb-hero-dark.png" style=" width: 100%; height: auto; box-shadow: none;" width="659" height="373">
@@ -305,8 +325,7 @@
   <script src="js/rellax.min.js"></script> <!--For parallax effect-->
   <script>var rellax = new Rellax('.rellax');</script>
   <script>AOS.init();</script>
-  <script src="js/darkModeIconSwitch.js"></script>  
-  <script src="js/buttonAnimation.js"></script>
+  <script src="js/darkModeIconSwitch.js"></script>
   <script src="js/darkModeElementSwitch.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/hitherTither.js"></script>
