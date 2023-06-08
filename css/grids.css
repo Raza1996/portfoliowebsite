@@ -279,7 +279,7 @@
 
 	.containerA,
 	.containerB {
-		transform: translateY(100%);
+		transform: translateY(90%);
 		width: 100%;
 		height: 50%;
 	}
@@ -426,7 +426,7 @@
 
 	.containerA,
 	.containerB {
-		transform: translateY(100%);
+		transform: translateY(90%);
 		width: 100%;
 		height: 50%;
 	}
@@ -447,7 +447,7 @@
 	}
 
 	.project-card h2 {
-		margin-bottom: 1.5rem;
+		margin-bottom: -1rem;
 		margin-left: 1rem;
 	}	
 	

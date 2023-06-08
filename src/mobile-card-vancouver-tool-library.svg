@@ -1,6 +1,6 @@
-<svg width="2811" height="4396" viewBox="0 0 2811 4396" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="2811" height="5000" viewBox="0 0 2811 5000" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_185_15644)">
-<rect width="2811" height="4396" rx="100" fill="url(#paint0_linear_185_15644)"/>
+<rect width="2811" height="5000" rx="100" fill="url(#paint0_linear_185_15644)"/>
 <rect x="141" y="673" width="1916" height="1124" rx="40" fill="url(#pattern0)"/>
 <g clip-path="url(#clip1_185_15644)">
 <rect x="1088" y="488" width="1615" height="1995" rx="40" fill="white"/>
@@ -87,12 +87,12 @@
 <path d="M1111.45 532.823H1133.3C1148.38 532.823 1160.61 545.07 1160.61 560.178V562.913" stroke="#0D264B" stroke-width="6.0217" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <rect x="730" y="673" width="358" height="1124" fill="url(#paint4_linear_185_15644)"/>
-<rect x="1" y="2255" width="2813" height="2141" fill="#FFDB39"/>
+<rect x="1" y="2255" width="2813" height="4656" fill="#FFDB39"/>
 <rect x="2703" y="1627" width="629" height="1615" transform="rotate(90 2703 1627)" fill="url(#paint5_linear_185_15644)"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_185_15644" transform="translate(-0.151367 -0.206522) scale(0.000488281 0.00083612)"/>
+<use xlink:href="#image0_185_15644" transform="matrix(0.000488281 0 0 0.00083612 -0.151367 -0.206522)"/>
 </pattern>
 <filter id="filter0_d_185_15644" x="1196.4" y="682.13" width="659.576" height="245.59" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -114,7 +114,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_185_15644"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_185_15644" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear_185_15644" x1="1405.5" y1="1206.5" x2="1405.5" y2="3583" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_185_15644" x1="1405.5" y1="1372.27" x2="1405.5" y2="4075.3" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FFDB39"/>
 <stop offset="1" stop-color="#B79600"/>
 </linearGradient>
@@ -139,7 +139,7 @@
 <stop offset="1" stop-color="#BB9900" stop-opacity="0"/>
 </linearGradient>
 <clipPath id="clip0_185_15644">
-<rect width="2811" height="4396" rx="100" fill="white"/>
+<rect width="2811" height="5000" rx="100" fill="white"/>
 </clipPath>
 <clipPath id="clip1_185_15644">
 <rect x="1088" y="488" width="1615" height="1995" rx="40" fill="white"/>

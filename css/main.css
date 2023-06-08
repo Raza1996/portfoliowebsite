@@ -974,8 +974,6 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     border-radius: 50%;
     background-color: rgb(40, 25, 66);
     color: #fff;
-    
-    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.15);
     border: none;
     outline: none;
     cursor: pointer;
@@ -996,8 +994,6 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     margin-bottom: 3px;
   }
   
-/* Hero Socials icons */
-
 
 .mobile-logo {
     color: var(--primary-color2);
@@ -1163,6 +1159,12 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
      }
 }
 
+
+/* Hero Socials icons */
+.hero-icon1 img:hover , .hero-icon2 img:hover , .hero-icon3 img:hover {
+    transform: scale(1.2); 
+    transition: all 0.2s ease-out;
+}
 
 .hero-icon1 img, .hero-icon2 img, .hero-icon3 img {
     width: 100%;
