@@ -316,8 +316,8 @@
 	.h-i-common {
 		position: fixed;
 		left: 0.5rem;
-		width: 40px; /* Adjust the desired width */
-		height: 40px;
+		width: 30px; /* Adjust the desired width */
+		height: 30px;
 	}
 	
 	.hero-icon1 {
