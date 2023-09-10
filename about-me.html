@@ -22,20 +22,21 @@
 
 <body>
   <header>
-    <nav class="navbar"> <!-- Element for Website Navigation-->
+    <nav id="navbar"> <!-- Element for Website Navigation-->
       <a href="index.html">
         <div class="brand-title">RAZA</div>
       </a>
-      <div class="navbar-links">
+      <div id="navbar-links">
         <ul>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li class="swap1"><a href="index.html#about">About</a></li>
+          <li class="swap1"><a href="#projects">Projects</a></li>
+          <li class="swap2"><a href="index.html">Projects</a></li>
+          <li class="swap1"><a href="#about-teleport">About</a></li>
           <li class="swap2"><a href="about-me.html">About</a></li>
-          <li><a href="src/Resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="src/Resume.pdf" target="_blank" style="color: var(--primary-color2);">Resume</a></li>
         </ul>
       </div>
-      <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
+
   </header>
 
   <div class="content-grid" style="background-color:transparent;">

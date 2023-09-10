@@ -30,14 +30,14 @@
       </a>
       <div id="navbar-links">
         <ul>
-          <li class="swap1"><a href="#projects">Projects</a></li>
+          <li class="swap1"><a href="index.html#projects">Projects</a></li>
           <li class="swap2"><a href="index.html">Projects</a></li>
-          <li class="swap1"><a href="#about-teleport">About</a></li>
+          <li class="swap1"><a href="index.html#about-teleport">About</a></li>
           <li class="swap2"><a href="about-me.html">About</a></li>
           <li><a href="src/Resume.pdf" target="_blank" style="color: rgb(255, 219, 57);">Resume</a></li>
         </ul>
       </div>
-      <img onclick="switchMode()" src="src/moon.svg" alt="dark mode icon" class="mobile" id="darkmode">
+      <img onclick="switchMode()" src="src/sun.svg" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
 
     <div id="contact-icons">
@@ -97,7 +97,7 @@
         <p>1 weeks</p>
       </div>
       <div data-aos="fade-left" data-aos-delay="100">
-        <p>Eunoia is an annual hackathon that pairs designers and clients from diverse backgrounds to create solutions to their unique business needs. The team was assigned to Tough Titties: an offshoot of local artist Emma Hands’s brand that she wanted to expand into its business venture. To this end, she needed a website to launch her new breast cancer-focused product line. Emma had already created a rudimentary website via Squarespace, but the Tough Titties product line required a professional touch that the team was happy to supply.
+        <p>Eunoia is an annual hackathon that pairs designers and clients from diverse backgrounds to create solutions to their unique business needs. The team was assigned to Tough Titties: an offshoot of local artist Emma Hands’s brand that she wanted to expand into its own business venture. To this end, she needed a website to launch her new breast cancer-focused product line. Emma had already created a rudimentary website via Squarespace, but the Tough Titties product line required a professional touch that the team was happy to supply.
         </p>
       </div>
 
@@ -202,7 +202,7 @@
     <div id="card-content" style="margin-bottom: 2rem;">
 
       <a class="card-margin" href="tavern-buddies.html" style="pointer-events:all;">
-        <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card hoverHither" data-aos="fade-up">
           <div class="containerA"></div>
           <div class="containerB">              
             <h1 style="color: rgb(255, 203, 203);">TAVERN BUDDIES</h1>
@@ -220,8 +220,27 @@
         </div>
       </a>
 
+      <a class="card-margin" href="gotchi-project.html" style="pointer-events:all;">
+        <div class="project-card aos-init aos-animate" data-aos="fade-up">
+          <div class="containerA"></div>
+          <div class="containerB">
+            <h1 class="gotchi-h1" style="color: rgb(255, 255, 255)">GOTCHI</h1>
+            <p style="color: rgb(83, 83, 83)">A speculative UX project with the purpose of helping users
+              manage electronic waste via a cute computer accessory.</p>
+            <h2 style="background:rgb(255, 101, 163); color:rgb(255, 255, 255)">View
+              Case Study</h2>
+            </div>
+          <div class="screen-to-portable-1">
+            <img src="src/gotchi/gotchi-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+          </div>
+          <div class="screen-to-portable-2">
+            <img src="src/mobile-card-gotchi.svg" alt="Gotchi Tile">
+          </div>
+        </div>
+      </a>
+
       <a class="card-margin" href="vancouver-tool-library.html" style="pointer-events:all;">
-        <div class="project-card hoverHither" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card hoverHither" data-aos="fade-up">
           <div class="containerA">
             <h1 style="color: rgb(255, 255, 255);">VANCOUVER TOOL LIBRARY</h1>
             <p style="color: rgb(119, 102, 24);">Redesigning website and improving self-checkout to reduce work load on
@@ -239,35 +258,16 @@
           </div>
         </div>
       </a>
-
-      <a class="card-margin" href="gotchi-project.html" style="pointer-events:all;">
-        <div class="project-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-          <div class="containerA"></div>
-          <div class="containerB">
-            <h1 class="gotchi-h1" style="color: rgb(255, 255, 255)">GOTCHI</h1>
-            <p style="color: rgb(83, 83, 83)">A speculative UX project with the purpose of helping users
-              manage electronic waste via a cute computer accessory.</p>
-            <h2 style="background:rgb(255, 101, 163); color:rgb(255, 255, 255)">View
-              Case Study</h2>
-            </div>
-          <div class="screen-to-portable-1">
-            <img src="src/gotchi/gotchi-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
-          </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-gotchi.svg" alt="Gotchi Tile">
-          </div>
-        </div>
-      </a>
     </div>
   </div>
 
-  <div class="footer-container">
+  <div class="footer-container" style="margin-top: 4rem;">
     <div class="emptybox1"></div>
     <div class="footer">
       <div class="footer-contacts">
         <h4>Contact</h4>
         <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
-        <a id="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
+        <a class="sweetalert2" onclick="copy(this)">raza1996.go@gmail.com</a><br>
         <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
         <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
         <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
@@ -283,8 +283,6 @@
     </div>
     <div class="emptybox2"></div>
   </div>
-
-  <script src="js/buttonAnimation.js"></script>
   <script src="js/sweetalert.js"></script> <!--For copy message-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/rellax.min.js"></script> <!--For parallax effect-->
@@ -296,6 +294,6 @@
   <script src="js/hitherTither.js"></script>
   <script src="js/loader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
-</body>
-
+  </body>
 </html>
+  

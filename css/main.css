@@ -17,7 +17,7 @@
     --secondary-color4: rgb(255, 242, 189);
     --primary-color5: rgb(216, 216, 216);
     --secondary-color5:  black;
-    --primary-color6: rgb(40, 25, 66);
+    --primary-color6: rgb(84, 54, 139);
     --secondary-color6:  white;
     --primary-color7: rgb(99, 63, 167);
     --secondary-color7: #FF8DDF;
@@ -35,7 +35,7 @@
     --primary-color5:  black;
     --secondary-color5: rgb(216, 216, 216);   
     --primary-color6:  white; 
-    --secondary-color6: rgb(40, 25, 66);
+    --secondary-color6: rgb(84, 54, 139);
     --primary-color7: rgb(99, 63, 167);
     --secondary-color7: #71F0DA;
 }
@@ -54,10 +54,13 @@
 
 body {
     position: relative;
-    font-family: 'Fragment Mono', monospace;
+    font-family: 'Lato', sans-serif;
+    font-weight: medium;
     background: var(--primary-color1);
     color: var(--secondary-color1);
     line-height: 2rem;
+    
+    font-size: large;
 }
 
 nav a { 
@@ -263,7 +266,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
   .pull-quote::after {
     content: '"';
     position: absolute;
-    font-size: 2em;
+    font-size: 3em;
     color: var(--primary-color2);
   }
   
@@ -696,8 +699,8 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 
 .mobile-about-content img,
 #about-layout img {
-    width: 25rem;
-    height: 25rem;
+    width: 90%;
+    height: auto;
     margin-bottom: 1rem;
     border-radius: 10px;
     box-shadow: 0 8px 5px rgba(0, 0, 0, 0.15);
@@ -982,7 +985,6 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
   .circle-button:hover {
     transform: scale(1.2);
     background-color: rgb(40, 25, 66);
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
   }
   
   .triangle {
@@ -1128,7 +1130,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     display: none;
     align-items: center;
     justify-content: center;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
 }   
 
 .loader::after {  

@@ -1,8 +1,10 @@
 function copy(that){
-var inp =document.createElement('input');
-document.body.appendChild(inp)
-inp.value =that.textContent
-inp.select();
-document.execCommand('copy',false);
-inp.remove();
+    var email = 'raza1996.go@gmail.com';
+
+    var inp = document.createElement('input');
+    document.body.appendChild(inp);
+    inp.value = email;
+    inp.select();
+    document.execCommand('copy');
+    inp.remove();
 }

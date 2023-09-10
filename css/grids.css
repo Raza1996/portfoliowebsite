@@ -31,8 +31,6 @@
 	#about-length {
 		width: 75vw;
 	}
-
-
 }
 
 @media (min-width: 961px) {
@@ -524,4 +522,48 @@
 	#top-page {
 		display: none;
 	}
+}
+
+/* TEXT SIZES */
+
+@media (min-width: 2560px) {
+	.project-card h2 {
+		font-size: 2rem;
+		padding: 2rem;
+		margin-bottom: 5rem;
+	}
+
+	a, p, .brand-title, h4, h2  {
+		font-size: 2rem;
+		line-height: 3.5rem;
+	}
+
+	p {
+		margin-top: 2rem;
+	}
+	
+	.brand-title {
+		margin-top: 0.5rem;
+	}
+
+	figcaption {
+		border-bottom: 3rem;
+		font-size: 2rem;
+	}
+
+	h2 {
+		margin-top: 3rem;
+		margin-bottom: 0rem;
+	}
+	
+	h1 {
+		margin-top: 2rem;
+		padding-bottom: 1.3rem;
+	}
+
+	#navbar {
+		height: 6rem;
+	}
+
+
 }
