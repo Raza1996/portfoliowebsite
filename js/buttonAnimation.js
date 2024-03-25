@@ -1,5 +1,6 @@
 const btn = document.querySelector('.btn');
-btn.onmousemove = function(e) {
+
+btn.addEventListener('mousemove', function(e) {
     const rect = btn.getBoundingClientRect();
     const btnWidth = btn.offsetWidth;
     const btnHeight = btn.offsetHeight;
@@ -9,4 +10,4 @@ btn.onmousemove = function(e) {
 
     btn.style.setProperty('--x', (x + btnWidth / 2) + 'px');
     btn.style.setProperty('--y', (y + btnHeight / 2) + 'px');
-}
+});

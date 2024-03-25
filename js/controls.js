@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
   if (!localStorage.getItem("messageDisplayed")) {
     var message = document.getElementById("message");
-    message.style.display = "block";
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "block";
     message.style.display = "block";
     localStorage.setItem("messageDisplayed", "true");
   }
@@ -9,8 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function closeMessage() {
   var message = document.getElementById("message");
-  message.style.display = "none";
-  overlay.style.display = "none";
+  message.classList.add("closed"); // Apply the 'closed' class to trigger the closing animation
+  setTimeout(function() {
+    overlay.style.display = "none";
+    message.style.display = "none";
+  }, 500); // Adjust the delay to match the duration of your closing animation
 }
 
 document.addEventListener("click", function() {

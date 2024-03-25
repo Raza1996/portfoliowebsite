@@ -446,7 +446,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 
 .card-margin {
     gap: 1rem; 
-    padding-bottom: 2rem;
+    margin-bottom: 3.0rem;
 }
 
 .secondary-card-content {
@@ -1207,30 +1207,37 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
   
   .message {
     display: none; /* Initially hidden */
+    border-radius: 5px;
     position: fixed;
     top: 50%;
     left: 50%;
+    color: black;
     transform: translate(-50%, -50%);
     background-color: #f0f0f0;
     padding: 20px;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 9999;
-    animation: popIn 2s ease forwards; /* Animation applied */
+    transition: opacity 0.1s ease-out; /* Animation applied */
   }
   
   .message p {
     margin: 0;
   }
   
+  @keyframes shrinkAndDisappear {
+    0% {
+      transform: translate(-50%, -50%) scale(1); /* Start with normal size */
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0); /* End with completely disappeared */
+      opacity: 0;
+    }
+  }
   
-  @keyframes popIn {
-    from {
-      transform: scale(0); /* Start with no scale */
-    }
-    to {
-      transform: scale(1); /* End with full scale */
-    }
+  .message.closed {
+    animation: shrinkAndDisappear 0.5s forwards; /* Apply the animation when closing */
   }
 
 /* Hero Socials icons */

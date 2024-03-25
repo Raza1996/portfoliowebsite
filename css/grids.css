@@ -311,7 +311,7 @@
 	}
 
 	.hero h1{   
-		font-size: 3.5rem;
+		font-size: 2rem;
 		line-height: 3.5rem;
 	}
 	
@@ -462,7 +462,7 @@
 	}
 
 	.hero h1{   
-		font-size: 3rem;
+		font-size: 2rem;
 		line-height: 3rem;
 	}
 	
@@ -559,16 +559,25 @@
 	h2 {
 		margin-top: 3rem;
 		margin-bottom: 0rem;
+		font-size: 3rem;
 	}
-	
+
 	h1 {
 		margin-top: 2rem;
 		padding-bottom: 1.3rem;
+		font-size: 4rem;
 	}
 
 	#navbar {
 		height: 6rem;
 	}
 
+	#about-layout h2 {
+		font-size: 4rem;
+	}
 
+	
+	#contact-icons {    
+		top: 7rem;
+	}
 }
