@@ -41,22 +41,43 @@
     </nav>
 
     <div id="contact-icons">
-      <div class="hero-icon2 h-i-common">
-        <a target="_blank" href="https://www.instagram.com/trace.raza">
-          <img src="src/Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+
+      <div id = "dark-contact-icon">
+        <div class="hero-icon2 h-i-common">
+          <a target="_blank" href="https://www.instagram.com/trace.raza">
+            <img src="src/Dark-Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+          </a>
+        </div>
+        <a target="_blank" href="https://www.linkedin.com/in/goraza/">
+          <div class="hero-icon3 h-i-common">  
+              <img src="src/Dark-Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+          </div>
         </a>
+        <div class="hero-icon1 h-i-common">
+          <a class="sweetalert2" onclick="copy(this)">
+            <img src="src/Dark-Mail-Icon.svg" width="200" height="200" alt="mail icon">
+          </a>
+        </div>
       </div>
 
-      <a target="_blank" href="https://www.linkedin.com/in/goraza/">
-        <div class="hero-icon3 h-i-common">  
-            <img src="src/Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+      <div id = "day-contact-icon">
+        <div class="hero-icon2 h-i-common">
+          <a target="_blank" href="https://www.instagram.com/trace.raza">
+            <img src="src/day-Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+          </a>
         </div>
-      </a>
-      <div class="hero-icon1 h-i-common">
-        <a class="sweetalert2" onclick="copy(this)">
-          <img src="src/Mail-Icon.svg" width="200" height="200" alt="mail icon">
+        <a target="_blank" href="https://www.linkedin.com/in/goraza/">
+          <div class="hero-icon3 h-i-common">  
+              <img src="src/day-Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+          </div>
         </a>
+        <div class="hero-icon1 h-i-common">
+          <a class="sweetalert2" onclick="copy(this)">
+            <img src="src/day-Mail-Icon.svg" width="200" height="200" alt="mail icon">
+          </a>
+        </div>
       </div>
+
     </div>
     
     <div id="landing-banner" class="aos-init aos-animate">
@@ -70,7 +91,7 @@
       </div>
       <div class="banner-text rellax" data-rellax-speed="2"  style="width: 80%; height: 80%; transform: translate(1%, -13%);">
         <svg-animate trigger="visible">
-  <svg viewBox="0 0 1880 1387" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:anim="http://www.w3.org/2000/anim" anim="" anim:transform-origin="50% 50%" anim:duration="3" anim:ease="power1.inOut">
+          <svg viewBox="0 0 1880 1387" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:anim="http://www.w3.org/2000/anim" anim="" anim:transform-origin="50% 50%" anim:duration="3" anim:ease="power1.inOut">
     <g id="b21e3561">
       <circle id="988f8fe5" cx="406.485" cy="406.485" r="406.485" transform="matrix(-0.956836 -0.290629 -0.290629 0.956836 1218.48 425.245)" fill="url(#paint0_radial_148_2932)"></circle>
       <g id="b18c6a69" anim="" anim:rotation="0|-360" anim:delay="0" anim:duration="5">
@@ -356,7 +377,7 @@
         <stop offset="1" stop-color="#AC739C" stop-opacity="0"></stop>
       </linearGradient>
     </defs>
-  </svg>
+          </svg>
         </svg-animate>
         <!--Banner Animation-->
       </div>
@@ -696,8 +717,8 @@
           <div class="project-card hoverHither">
             <div class="containerA"></div>
             <div class="containerB">              
-              <h1 style="color: rgb(255, 203, 203);">TAVERN BUDDIES</h1>
-              <p style="color: rgb(0, 0, 0);">A mobile app that connects Dungeon and Dragons (DnD) players in your area.</p>
+              <h1 style="color: rgb(255, 255, 255);">TAVERN BUDDIES</h1>
+              <p style="color: rgb(223, 199, 199);">A mobile app that connects Dungeon and Dragons (DnD) players in your area.</p>
               <h2 style="background:rgb(39, 13, 13); color:rgb(245, 245, 245);">View Case
                 Studies</h2>
               </div> 
@@ -882,6 +903,7 @@
   <script>var rellax = new Rellax('.rellax');</script>
   <script>AOS.init();</script>
   <script src="js/darkModeIconSwitch.js"></script>
+  <script src="js/darkModeContactSwitch.js"></script>
   <script src="js/darkModeElementSwitch.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/hitherTither.js"></script>

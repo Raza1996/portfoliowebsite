@@ -1,7 +1,7 @@
 let lightMode = true;
 $('#darkmode').on('click', function () {
-    let lightModeElement = document.getElementById('light-mode-element');
-    let darkModeElement = document.getElementById('dark-mode-element');
+    let lightModeElement = document.getElementById('day-contact-icon');
+    let darkModeElement = document.getElementById('dark-contact-icon');
     let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     console.log(lightMode);
     if (lightMode) {

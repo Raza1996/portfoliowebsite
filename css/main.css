@@ -24,7 +24,7 @@
 }
 
 :root {
-    --primary-color1: #171717;
+    --primary-color1: #0B1623;
     --secondary-color1: white;
     --primary-color2: rgb(255, 219, 57);
     --secondary-color2: rgb(99, 63, 167);
@@ -186,7 +186,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     height: 3.5rem;
     top: 0;
     justify-content: right;
-    background-color: rgb(40, 25, 66);
+    background-color: rgb(84, 54, 139);
     color: white;
     z-index: 61;
 }
