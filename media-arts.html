@@ -41,22 +41,43 @@
     </nav>
 
     <div id="contact-icons">
-      <div class="hero-icon2 h-i-common">
-        <a target="_blank" href="https://www.instagram.com/trace.raza">
-          <img src="src/Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+
+      <div id = "day-contact-icon">
+        <div class="hero-icon2 h-i-common">
+          <a target="_blank" href="https://www.instagram.com/trace.raza">
+            <img src="src/day-Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+          </a>
+        </div>
+        <a target="_blank" href="https://www.linkedin.com/in/goraza/">
+          <div class="hero-icon3 h-i-common">  
+              <img src="src/day-Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+          </div>
         </a>
+        <div class="hero-icon1 h-i-common">
+          <a class="sweetalert2" onclick="copy(this)">
+            <img src="src/day-Mail-Icon.svg" width="200" height="200" alt="mail icon">
+          </a>
+        </div>
       </div>
 
-      <a target="_blank" href="https://www.linkedin.com/in/goraza/">
-        <div class="hero-icon3 h-i-common">  
-            <img src="src/Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+      <div id = "dark-contact-icon">
+        <div class="hero-icon2 h-i-common">
+          <a target="_blank" href="https://www.instagram.com/trace.raza">
+            <img src="src/Dark-Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+          </a>
         </div>
-      </a>
-      <div class="hero-icon1 h-i-common">
-        <a class="sweetalert2" onclick="copy(this)">
-          <img src="src/Mail-Icon.svg" width="200" height="200" alt="mail icon">
+        <a target="_blank" href="https://www.linkedin.com/in/goraza/">
+          <div class="hero-icon3 h-i-common">  
+              <img src="src/Dark-Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+          </div>
         </a>
+        <div class="hero-icon1 h-i-common">
+          <a class="sweetalert2" onclick="copy(this)">
+            <img src="src/Dark-Mail-Icon.svg" width="200" height="200" alt="mail icon">
+          </a>
+        </div>
       </div>
+
     </div>
     
     <div id="light-mode-element">
@@ -140,7 +161,7 @@
             <p style="color: rgb(0, 0, 0);">An animated video advertising an academic event.</p>
             <h2 style="background:rgb(13, 39, 28); color:rgb(245, 245, 245);">View Case Studies</h2>
           </div> 
-            <img src="src/alhambra-card.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+            <img src="src/alhambra-card.png" href="" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
         </div>
       </a>
       <a class="secondary-card" href="reaching-out.html" style="pointer-events:all;" data-aos="fade-up" data-aos-once="true">
@@ -156,12 +177,6 @@
       </a>
     </div>
     <div class="emptybox2">
-      
-      <a id="top-page">
-        <button class="circle-button"  onclick="window.scrollTo(0, 0)">
-          <span class="triangle"></span>
-        </button>
-      </a>
     </div>
   </div>
 
@@ -170,14 +185,32 @@
     <div class="footer">
       <div class="footer-contacts">
         <h4>Contact</h4>
-        <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
-        <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
-        <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
-        <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
-        <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
-        <img class="icon" src="src/Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
-        <a href="https://www.linkedin.com/in/goraza/">@shabih-ul-hassanraza</a>
+        <div id="dark-contact-footer">
+          <img class="icon sweetalert2" src="src/Dark-Mail-Icon.svg" onclick="copy(this)" width="20" height="20" alt="mail icon">
+          <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
+          <a  href="https://www.instagram.com/trace.raza/">
+            <img class="icon"  src="src/Dark-Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
+          </a>
+          <a href="https://www.instagram.com/trace.raza/">trace.raza</a><br>
+          <a  href="https://www.linkedin.com/in/goraza/">
+            <img class="icon" src="src/Dark-Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
+          </a>
+          <a href="https://www.linkedin.com/in/goraza/">@shabih-ul-hassanraza</a>
+        </div>
+        <div id="day-contact-footer" class="hidden">
+          <img class="icon sweetalert2" src="src/Day-Mail-Icon.svg" onclick="copy(this)" width="20" height="20" alt="mail icon">
+          <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
+          <a  href="https://www.instagram.com/trace.raza/">
+            <img class="icon" src="src/Day-Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
+          </a>
+          <a href="https://www.instagram.com/trace.raza/">trace.raza</a><br>
+          <a  href="https://www.linkedin.com/in/goraza/">
+            <img class="icon" src="src/Day-Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
+          </a>
+          <a href="https://www.linkedin.com/in/goraza/">@shabih-ul-hassanraza</a>
+        </div>
       </div>
+
       <div class="footer-links">
         <h4>Useful Links</h4>
         <a href="#top">Back to Top ▲</a><br>
@@ -192,12 +225,13 @@
   <script src="js/rellax.min.js"></script> <!--For parallax effect-->
   <script>var rellax = new Rellax('.rellax');</script>
   <script>AOS.init();</script>
-  <script src="js/darkModeIconSwitch.js"></script>
+  
   <script src="js/darkModeElementSwitch.js"></script>
+  <script src="js/darkModeContactSwitch.js"></script>
+  <script src="js/darkModeIconSwitch.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/hitherTither.js"></script>
   <script src="js/loader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
   </body>
 </html>
-  

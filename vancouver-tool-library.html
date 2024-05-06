@@ -18,46 +18,68 @@
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
- 
+
 <body> 
- <!-- <div class="loader loader-active "></div> -->
- <div class="loader loader-active"></div>
+  <!-- <div class="loader loader-active "></div> -->
+  <div class="loader loader-active"></div>
+  
+   <header> 
+     <nav id="navbar"> <!-- Element for Website Navigation-->
+       <a href="index.html">
+         <div class="brand-title">RAZA</div>
+       </a>
+       <div id="navbar-links">
+         <ul>
+           <li class="swap1"><a href="index.html#projects">Projects</a></li>
+           <li class="swap2"><a href="index.html">Projects</a></li>
+           <li class="swap1"><a href="index.html#about-teleport">About</a></li>
+           <li class="swap2"><a href="about-me.html">About</a></li>
+           <li><a href="src/Resume.pdf" target="_blank" style="color: rgb(255, 219, 57);">Resume</a></li>
+         </ul>
+       </div>
+       <img onclick="switchMode()" src="src/sun.svg" alt="dark mode icon" class="mobile" id="darkmode">
+     </nav>
  
-  <header> 
-    <nav id="navbar"> <!-- Element for Website Navigation-->
-      <a href="index.html">
-        <div class="brand-title">RAZA</div>
-      </a>
-      <div id="navbar-links">
-        <ul>
-          <li class="swap1"><a href="index.html#projects">Projects</a></li>
-          <li class="swap2"><a href="index.html">Projects</a></li>
-          <li class="swap1"><a href="index.html#about-teleport">About</a></li>
-          <li class="swap2"><a href="about-me.html">About</a></li>
-          <li><a href="src/Resume.pdf" target="_blank" style="color: rgb(255, 219, 57);">Resume</a></li>
-        </ul>
-      </div>
-      <img onclick="switchMode()" src="src/sun.svg" alt="dark mode icon" class="mobile" id="darkmode">
-    </nav>
+     <div id="contact-icons">
 
-    <div id="contact-icons">
-      <div class="hero-icon2 h-i-common">
-        <a target="_blank" href="https://www.instagram.com/trace.raza">
-          <img src="src/Insta-Icon.svg" width="200" height="200" alt="instagram icon">
-        </a>
-      </div>
-
-      <a target="_blank" href="https://www.linkedin.com/in/goraza/">
-        <div class="hero-icon3 h-i-common">  
-            <img src="src/Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+      <div id = "day-contact-icon">
+        <div class="hero-icon2 h-i-common">
+          <a target="_blank" href="https://www.instagram.com/trace.raza">
+            <img src="src/day-Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+          </a>
         </div>
-      </a>
-      <div class="hero-icon1 h-i-common">
-        <a class="sweetalert2" onclick="copy(this)">
-          <img src="src/Mail-Icon.svg" width="200" height="200" alt="mail icon">
+        <a target="_blank" href="https://www.linkedin.com/in/goraza/">
+          <div class="hero-icon3 h-i-common">  
+              <img src="src/day-Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+          </div>
         </a>
+        <div class="hero-icon1 h-i-common">
+          <a class="sweetalert2" onclick="copy(this)">
+            <img src="src/day-Mail-Icon.svg" width="200" height="200" alt="mail icon">
+          </a>
+        </div>
       </div>
+
+      <div id = "dark-contact-icon">
+        <div class="hero-icon2 h-i-common">
+          <a target="_blank" href="https://www.instagram.com/trace.raza">
+            <img src="src/Dark-Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+          </a>
+        </div>
+        <a target="_blank" href="https://www.linkedin.com/in/goraza/">
+          <div class="hero-icon3 h-i-common">  
+              <img src="src/Dark-Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+          </div>
+        </a>
+        <div class="hero-icon1 h-i-common">
+          <a class="sweetalert2" onclick="copy(this)">
+            <img src="src/Dark-Mail-Icon.svg" width="200" height="200" alt="mail icon">
+          </a>
+        </div>
+      </div>
+
     </div>
+
     
     <div class="hero">
       <img src="src/hero-image/vtl-hero.png" >
@@ -72,9 +94,13 @@
   </header>
 
   <div class="process content-grid"> <!--For aligning content in the middle of the screen-->
-    <div class="emptybox1"></div>
+    <div class="emptybox1">
+        <img id="dark-mode-element" class="hidden" >
+        <img id="light-mode-element">
+    </div>
+    
     <div class="process-content">
-      <div data-aos="fade-left" data-aos-delay="100" data-aos-once="true" class="prototype-link span-content" style="
+      <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true" class="prototype-link span-content" style="
       display: flex;
       justify-content: center;
       align-items: center;">
@@ -83,7 +109,7 @@
           <h3>PROTOTYPE</h3>
         </a>
       </div>
-      <div data-aos="fade-right" data-aos-delay="100" data-aos-once="true">
+      <div data-aos="fade-right" data-aos-delay="50" data-aos-once="true">
         <h4>Type:</h4>
         <p>Group Project</p>
         <h4>Credits</h4>
@@ -96,7 +122,7 @@
         <h4>Duration:</h4>
         <p>12 weeks</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
         <p>The Vancouver Tool Library (VTL) is a sustainable, community-driven organization that provides customers with
           rental tools for home improvement, gardening, maintenance and more. They educate and engage their members
           through workshops on tool-related skills and projects. Their garage sales also allow members to purchase
@@ -105,7 +131,7 @@
           focus. The team believed a faster experience in Tool Library would greatly improve the user experience.
         </p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="span-content" data-aos-once="true">
         <h2>
           Personas
         </h2>
@@ -116,20 +142,20 @@
           from and how to accomodate for their idiosyncratic needs.</p>
       </div>
       <div class="gotchi-misc span-content">
-        <div data-aos="fade-up" data-aos-delay="100" class="zoom col" data-aos-once="true">
+        <div data-aos="fade-right" data-aos-delay="50" class="zoom col" data-aos-once="true">
           <img src="src/vtl/persona1.png" alt="poster" width="2104" height="3163">
           <figcaption  style="margin-top: -1rem;">Figure.1(a): Stakeholder Persona</figcaption>
         </div>
-        <div data-aos="fade-up" data-aos-delay="200" class="zoom col" data-aos-once="true">
+        <div data-aos="fade-right" data-aos-delay="50" class="zoom col" data-aos-once="true">
           <img src="src/vtl/persona2.png" alt="Mobile UI mock-up" width="1644" height="2584">
           <figcaption  style="margin-top: -1rem;">Figure.1(b): New User Persona</figcaption>
         </div>
-        <div data-aos="fade-up" data-aos-delay="300" class="zoom col">
+        <div data-aos="fade-right" data-aos-delay="50" class="zoom col">
           <img src="src/vtl/persona3.png" alt="emotes" width="2530" height="2596" data-aos-once="true">
           <figcaption  style="margin-top: -1rem;">Figure.1(c): Frequent User Persona</figcaption>
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="span-content" data-aos-once="true">
         <h2>Experience Map</h2>
         <p>The next order of business was to visit VTL and get a first hand experience of user interactions with their
           services. The team met the volunteers who talked about the areas of improvement that VTL needed to work on.
@@ -137,26 +163,26 @@
           This map outlined what worked with the user journey, area of improvement, and painpoints that the team could
           actively build upon.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content zoom" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="span-content zoom" data-aos-once="true">
         <img src="src/vtl/journeymap1.png" width="100%" height="100%" alt="Journey Map 1">
         <figcaption  style="margin-top: -1rem;">Figure.2(a): New User's Journey</figcaption>
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="span-content" data-aos-once="true">
         <p>Two pain points were noted: Mainly that the user was overwhelmed by the sheer variety of tools on display,
           which made the process of finding their own tool very confusing and stress inducing. Additionally, the sign up
           process was laborious and had too many steps. The user had to fill out a physical sign up form and the
           volunteer had to add them in the organization's data server.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content zoom" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="span-content zoom" data-aos-once="true">
         <img src="src/vtl/journeymap2.png" width="100%" height="100%" alt="Journey Map 2">
         <figcaption  style="margin-top: -1rem;">Figure.2(b): Frequent User's Journey</figcaption>
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="span-content" data-aos-once="true">
         <p>Frequent users of VTL did not have the same problem with sytem logging as they were already signed in.
           However, they also had concerns regarding VTL's draconic filing system. From these insights, the path moving
           forward was much clearer.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="span-content" data-aos-once="true">
         <h2>Participatory Workshop</h2>
         <p>With initial ideas patched together, the team reached out to VTL to get greater insight into the problems
           that were being tackled. To this end, VTL's general manager was contacted and a meeting was set up where he
@@ -172,15 +198,15 @@
           <p>The Participant takes 5 minutes to plot the best ideas on a chart with x-axis representing usefulness and
             y-axis stating difficulty of implementation.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="span-content" data-aos-once="true">
         <h2 >Final Design Concept</h2>
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="span-content" data-aos-once="true">
         <h4>Storyboards</h4>
         <p>The following storyboards were created to present to VTL stakeholders.</p>
       </div>
       <!-- Slideshow container -->
-      <div data-aos="fade-up" data-aos-delay="100" class="slideshow-container span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="slideshow-container span-content" data-aos-once="true">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
@@ -211,26 +237,26 @@
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
 
-      <div class="span-content" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+      <div class="span-content" data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
         <h4>Design Artifacts</h4>
         <p>Many high fidelity mockups were designed and prototyped for presentation. The following are the most
           pertinent of them all.</p>
         <button onclick="window.scrollTo(0, 0)">CHECK THEM OUT AT THE TOP</button>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="100" class="zoom" data-aos-once="true">
+      <div data-aos="fade-right" data-aos-delay="50" class="zoom" data-aos-once="true">
         <img src="src/vtl/mockup3.png" width="100%" height="100%" alt="website sample 1">
         <figcaption style="margin-top: -1rem;">Figure.3(a): Updated Website 1</figcaption>
       </div>
 
-      <div data-aos="fade-left" data-aos-delay="100" class="zoom" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="zoom" data-aos-once="true">
         <img src="src/vtl/mockup4.png" width="100%" height="100%" alt="website sample 2">
         <figcaption style="margin-top: -1rem;">Figure.3(b): Updated Website 2</figcaption>
       </div>
 
       <div class="zoom"></div>
 
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="span-content" data-aos-once="true">
         <h2>Reflection</h2>
         <p>While the team was pleased with the final iteration of the project, it was agreed that the process would have
           been significantly expedited if the participatory workshop was done first. Certain insights regarding VTL's
@@ -242,18 +268,13 @@
       </div>
     </div>
     <div class="emptybox2">
-      <a id="top-page">
-        <button class="circle-button"  onclick="window.scrollTo(0, 0)">
-          <span class="triangle"></span>
-        </button>
-      </a>
     </div>
   </div>
 
   <div id="projects" class="content-grid" style="background-color: transparent;">
     <!--Top Page Button-->
     <div class="emptybox1"></div>
-    <h1 class="heading" data-aos="fade-right" style="margin-bottom: 2rem;" data-aos-once="true">ALSO CHECK OUT</h1>
+    <h1 class="heading" style="margin-bottom: 2rem;">ALSO CHECK OUT</h1>
     <div class="emptybox2"></div>
     <!--Cards-->
     <div class="emptybox1"></div>
@@ -279,7 +300,7 @@
       </a>
 
       <a class="card-margin" href="gotchi-project.html" style="pointer-events:all;">
-        <div class="project-card aos-init aos-animate" data-aos="fade-up" data-aos-once="true">
+        <div class="project-card aos-init" data-aos="fade-up" data-aos-once="true">
           <div class="containerA"></div>
           <div class="containerB">
             <h1 class="gotchi-h1" style="color: rgb(255, 255, 255)">GOTCHI</h1>
@@ -324,14 +345,32 @@
     <div class="footer">
       <div class="footer-contacts">
         <h4>Contact</h4>
-        <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
-        <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
-        <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
-        <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
-        <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
-        <img class="icon" src="src/Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
-        <a href="https://www.linkedin.com/in/goraza/">@shabih-ul-hassanraza</a>
+        <div id="dark-contact-footer">
+          <img class="icon sweetalert2" src="src/Dark-Mail-Icon.svg" onclick="copy(this)" width="20" height="20" alt="mail icon">
+          <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
+          <a  href="https://www.instagram.com/trace.raza/">
+            <img class="icon"  src="src/Dark-Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
+          </a>
+          <a href="https://www.instagram.com/trace.raza/">trace.raza</a><br>
+          <a  href="https://www.linkedin.com/in/goraza/">
+            <img class="icon" src="src/Dark-Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
+          </a>
+          <a href="https://www.linkedin.com/in/goraza/">@shabih-ul-hassanraza</a>
+        </div>
+        <div id="day-contact-footer" class="hidden">
+          <img class="icon sweetalert2" src="src/Day-Mail-Icon.svg" onclick="copy(this)" width="20" height="20" alt="mail icon">
+          <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
+          <a  href="https://www.instagram.com/trace.raza/">
+            <img class="icon" src="src/Day-Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
+          </a>
+          <a href="https://www.instagram.com/trace.raza/">trace.raza</a><br>
+          <a  href="https://www.linkedin.com/in/goraza/">
+            <img class="icon" src="src/Day-Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
+          </a>
+          <a href="https://www.linkedin.com/in/goraza/">@shabih-ul-hassanraza</a>
+        </div>
       </div>
+
       <div class="footer-links">
         <h4>Useful Links</h4>
         <a href="#top">Back to Top ▲</a><br>
@@ -346,12 +385,13 @@
   <script src="js/rellax.min.js"></script> <!--For parallax effect-->
   <script>var rellax = new Rellax('.rellax');</script>
   <script>AOS.init();</script>
-  <script src="js/darkModeIconSwitch.js"></script>
+  
   <script src="js/darkModeElementSwitch.js"></script>
+  <script src="js/darkModeContactSwitch.js"></script>
+  <script src="js/darkModeIconSwitch.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/hitherTither.js"></script>
   <script src="js/loader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
   </body>
 </html>
-  

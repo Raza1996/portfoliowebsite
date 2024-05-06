@@ -21,6 +21,9 @@
     --secondary-color6:  white;
     --primary-color7: rgb(99, 63, 167);
     --secondary-color7: #FF8DDF;
+    --primary-color8: rgb(84, 54, 139);
+    --secondary-color8: white;;
+
 }
 
 :root {
@@ -30,14 +33,16 @@
     --secondary-color2: rgb(99, 63, 167);
     --primary-color3: rgb(255, 249, 225);
     --secondary-color3: rgb(40, 25, 66);
-    --primary-color4: rgb(255, 242, 189);
+    --primary-color4: #71F0DA;
     --secondary-color4: rgb(70, 42, 119);    
     --primary-color5:  black;
     --secondary-color5: rgb(216, 216, 216);   
     --primary-color6:  white; 
     --secondary-color6: rgb(84, 54, 139);
-    --primary-color7: rgb(99, 63, 167);
-    --secondary-color7: #71F0DA;
+    --primary-color7: #71F0DA;
+    --secondary-color7: rgb(255, 219, 57);
+    --primary-color8: #71F0DA;
+    --secondary-color8: #0B1623;
 }
 
 #darkmode {
@@ -186,14 +191,14 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     height: 3.5rem;
     top: 0;
     justify-content: right;
-    background-color: rgb(84, 54, 139);
+    background-color: rgb(32, 2, 88);
     color: white;
     z-index: 61;
 }
 
 #contact-icons {    
     position: fixed;
-    top: 3.7rem;
+    top: 35%;
     left: -1.6rem;
     z-index: 60;
 }
@@ -376,6 +381,11 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
 .hero p {
     padding-top: 3rem; 
     padding-bottom: 0.5rem;
+}
+
+.hero a {
+    background-color: var(--primary-color8);
+    color: var(--secondary-color8);
 }
 
 /*Button Animation*/
@@ -989,17 +999,8 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 }
 
 #top-page {
-    /* Button that scrolls top of page. */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 90%;
-    z-index: 1;
-    margin-top: 10rem;
-    margin-bottom: -157rem;
+    top: 10%;
 }
-
 
 .circle-button {
     display: flex;
@@ -1008,8 +1009,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgb(40, 25, 66);
-    color: #fff;
+    background-color: var(--primary-color8);
     border: none;
     outline: none;
     cursor: pointer;
@@ -1017,7 +1017,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 
   .circle-button:hover {
     transform: scale(1.2);
-    background-color: rgb(40, 25, 66);
+    background-color: var(--primary-color8);
   }
   
   .triangle {
@@ -1025,7 +1025,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 18px solid #fff;
+    border-bottom: 18px solid var(--secondary-color8);
     margin-bottom: 3px;
   }
   
@@ -1259,13 +1259,13 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 }
 
 .hero-icon1 {
-    top: 1rem;
+    top: 0.5rem;
 }
 
 .hero-icon2 {
-    top: 5.5rem;
+    top: 10.5rem;
 }
 
 .hero-icon3 {
-    top: 11rem;
+    top: 5.5rem;
 }

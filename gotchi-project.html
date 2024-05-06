@@ -41,35 +41,60 @@
     </nav>
 
     <div id="contact-icons">
-      <div class="hero-icon2 h-i-common">
-        <a target="_blank" href="https://www.instagram.com/trace.raza">
-          <img src="src/Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+
+      <div id = "day-contact-icon">
+        <div class="hero-icon2 h-i-common">
+          <a target="_blank" href="https://www.instagram.com/trace.raza">
+            <img src="src/Day-Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+          </a>
+        </div>
+        <a target="_blank" href="https://www.linkedin.com/in/goraza/">
+          <div class="hero-icon3 h-i-common">  
+              <img src="src/Day-Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+          </div>
         </a>
+        <div class="hero-icon1 h-i-common">
+          <a class="sweetalert2" onclick="copy(this)">
+            <img src="src/Day-Mail-Icon.svg" width="200" height="200" alt="mail icon">
+          </a>
+        </div>
       </div>
 
-      <a target="_blank" href="https://www.linkedin.com/in/goraza/">
-        <div class="hero-icon3 h-i-common">  
-            <img src="src/Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+      <div id = "dark-contact-icon">
+        <div class="hero-icon2 h-i-common">
+          <a target="_blank" href="https://www.instagram.com/trace.raza">
+            <img src="src/Dark-Insta-Icon.svg" width="200" height="200" alt="instagram icon">
+          </a>
         </div>
-      </a>
-      <div class="hero-icon1 h-i-common">
-        <a class="sweetalert2" onclick="copy(this)">
-          <img src="src/Mail-Icon.svg" width="200" height="200" alt="mail icon">
+        <a target="_blank" href="https://www.linkedin.com/in/goraza/">
+          <div class="hero-icon3 h-i-common">  
+              <img src="src/Dark-Linkedin-Icon.svg" width="200" height="200" alt="linkedin icon">
+          </div>
         </a>
+        <div class="hero-icon1 h-i-common">
+          <a class="sweetalert2" onclick="copy(this)">
+            <img src="src/Dark-Mail-Icon.svg" width="200" height="200" alt="mail icon">
+          </a>
+        </div>
       </div>
+
     </div>
     
   </header>
   <div class="span-content">
-    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" data-aos-once="true">
+    <div data-aos="fade-up" data-aos-delay="50" data-aos-once="true" data-aos-once="true">
       <img src="src/gotchi/billboard.png" alt="billboard" width="100%" height="100%">
     </div>
   </div>
   <div class="process content-grid"> <!--For aligning content in the middle of the screen-->
-    <div class="emptybox1"></div>
+    <div class="emptybox1">
+      
+        <img id="dark-mode-element" class="hidden" >
+        <img id="light-mode-element">
+    </div>
     <div class="process-content">
 
-      <div data-aos="fade-right" data-aos-delay="100" data-aos-once="true" data-aos-once="true">
+      <div data-aos="fade-right" data-aos-delay="50" data-aos-once="true" data-aos-once="true">
         <h4>Type:</h4>
         <p>Academic Project</p>
         <h4>Credits:</h4>
@@ -90,13 +115,13 @@
 
           <p>Check out the video advert edited by Stacey <a href="https://www.youtube.com/watch?v=fSdQAxRu1ZQ&ab_channel=krispy">here</a>.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" data-aos-once="true" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true" data-aos-once="true">
         <a href="https://www.youtube.com/watch?v=fSdQAxRu1ZQ&ab_channel=krispy">
           <img src="src/gotchi/video-link.png" alt="image of Banner ad with video link" width="100%" height="100%"  style="box-shadow: none;">
         </a>
         
       </div>
-      <div data-aos="fade-right" data-aos-delay="100" class="span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="span-content" data-aos-once="true">
         <h2>IDEATION</h2>
         <p>My team and I began the preliminary design stage on the online platform Figma. We wanted to create a design
           that tackled themes of consumption and waste. This topic branched out into conversations regarding the
@@ -105,7 +130,7 @@
           design. I pitched the idea of combining it with a smart trashcan idea that we ideated over previously. This
           was where the idea of Gotchi originated.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100"  class="span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50"  class="span-content" data-aos-once="true">
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width:100%;" width="550" height="450"
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5Yq4YEGWnuMxyOEJdrkKHD%2FTEAM-B-Ludic-Design-Mini-Project%3Fnode-id%3D0%253A1"
           allowfullscreen></iframe>
@@ -118,10 +143,10 @@
         <p>We wanted a design that was easy to remember. This came with the added benefit of GOTCHI's emotions being
           more expressive.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="zoom" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="zoom" data-aos-once="true">
         <img src="src/gotchi/moodboard.png" alt="moodboard" width="843" height="785">
       </div>
-      <div data-aos="fade-right" data-aos-delay="100" data-aos-once="true"> 
+      <div data-aos="fade-right" data-aos-delay="50" data-aos-once="true"> 
         <h2>DESIGNING GOTCHI</h2>
         <p>My team decided that the target audience for GOTCHI was going to be young adults who don't like to clean up
           trash data. We wanted to instill a sense of nostalgia; simulating the feeling of taking care of a Tamagotchi
@@ -131,7 +156,7 @@
           astronaut. But we decided to simplify the form factor further. The end result looked like a red blob that
           lived in a pink house with a dome for a window.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
         <img src="src/gotchi/concept.png" alt="concept sketches of gotchi design" width="2000" height="2579">
       </div>
       <div data-aos="fade-right" data-aos-delay="100" data-aos-once="true">
@@ -142,10 +167,10 @@
           no-longer-needed digital files. Users could put it on their desk next to the computer as it reminds them to
           regularly clean up their digital space.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" class="zoom" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" class="zoom" data-aos-once="true">
         <img src="src/gotchi/brochure.png" alt="brochure" width="4848" height="3636">
       </div>
-      <div data-aos="fade-right" data-aos-delay="100" data-aos-once="true">
+      <div data-aos="fade-right" data-aos-delay="50" data-aos-once="true">
         <h2>3D MODELING</h2>
         <p>Finally, I assisted a hypothetical marketing campaign with billboard ads, and instruction manuals showcasing
           how GOTCHI worked. I created a 3D model of GOTCHI on Autodesk Maya to place it within one of the several
@@ -153,10 +178,10 @@
         <p>The final product was received quite well from the class. This project was awarded best-in-class for its
           creativity, execution, and critique.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="100" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
         <img src="src/gotchi/3D-model.png" alt="3D model" width="2091" height="1988">
       </div>
-      <div data-aos="fade-up" data-aos-delay="100" class="span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="100" class="span-content" data-aos-once="true">
         <h2>REFLECTION</h2>
         <p>This project had many moving parts. We had a diverse range of ideas we wanted to show off. Our team synergy
           was particularly high here and we kept on coming up with more ideas as the project evolved. However, we
@@ -164,32 +189,28 @@
           glad I had an opportunity to hone my 3D modeling skills, a relatively seldom-used area of my expertise.</p>
       </div>
       <div class="gotchi-misc span-content">
-        <div class="zoom col" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+        <div class="zoom col" data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
           <img src="src/gotchi/poster.png" alt="poster" width="2104" height="3163">
 
         </div>
-        <div class="zoom col" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+        <div class="zoom col" data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
           <img src="src/gotchi/mobile-UI.png" alt="Mobile UI mock-up" width="1644" height="2584">
 
         </div>
-        <div class="zoom col" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
+        <div class="zoom col" data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
           <img src="src/gotchi/emotes.png" alt="emotes" width="2530" height="2596">
 
         </div>
       </div>
     </div>
     <div class="emptybox2">
-      <a id="top-page">
-        <img src="src/Top-screen-arrow.svg" onclick="window.scrollTo(0, 0)" width="50" height="50"
-          alt="Button that brings you to top of page">
-      </a>
     </div>
   </div>
 
   <div id="projects" class="content-grid" style="background-color: transparent;">
     <!--Top Page Button-->
     <div class="emptybox1"></div>
-    <h1 class="heading" data-aos="fade-right" style="margin-bottom: 2rem;" data-aos-once="true">ALSO CHECK OUT</h1>
+    <h1 class="heading" style="margin-bottom: 2rem;">ALSO CHECK OUT</h1>
     <div class="emptybox2">
     </div>
     <!--Cards-->
@@ -262,14 +283,32 @@
     <div class="footer">
       <div class="footer-contacts">
         <h4>Contact</h4>
-        <img class="icon" src="src/Mail-Icon.svg" width="20" height="20" alt="mail icon">
-        <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
-        <!--The user can copy the text by clicking it. Code learned from https://stackoverflow.com/questions/45071353/copy-text-string-on-click-->
-        <img class="icon" src="src/Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
-        <a href="https://www.instagram.com/unravelingraza/">@unravelingraza</a><br>
-        <img class="icon" src="src/Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
-        <a href="https://www.linkedin.com/in/goraza/">@shabih-ul-hassanraza</a>
+        <div id="dark-contact-footer">
+          <img class="icon sweetalert2" src="src/Dark-Mail-Icon.svg" onclick="copy(this)" width="20" height="20" alt="mail icon">
+          <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
+          <a  href="https://www.instagram.com/trace.raza/">
+            <img class="icon"  src="src/Dark-Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
+          </a>
+          <a href="https://www.instagram.com/trace.raza/">trace.raza</a><br>
+          <a  href="https://www.linkedin.com/in/goraza/">
+            <img class="icon" src="src/Dark-Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
+          </a>
+          <a href="https://www.linkedin.com/in/goraza/">@shabih-ul-hassanraza</a>
+        </div>
+        <div id="day-contact-footer" class="hidden">
+          <img class="icon sweetalert2" src="src/Day-Mail-Icon.svg" onclick="copy(this)" width="20" height="20" alt="mail icon">
+          <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
+          <a  href="https://www.instagram.com/trace.raza/">
+            <img class="icon" src="src/Day-Insta-Icon.svg" width="20" height="20" alt="intstagram icon">
+          </a>
+          <a href="https://www.instagram.com/trace.raza/">trace.raza</a><br>
+          <a  href="https://www.linkedin.com/in/goraza/">
+            <img class="icon" src="src/Day-Linkedin-Icon.svg" width="20" height="20" alt="linkedin icon">
+          </a>
+          <a href="https://www.linkedin.com/in/goraza/">@shabih-ul-hassanraza</a>
+        </div>
       </div>
+
       <div class="footer-links">
         <h4>Useful Links</h4>
         <a href="#top">Back to Top ▲</a><br>
@@ -284,12 +323,12 @@
   <script src="js/rellax.min.js"></script> <!--For parallax effect-->
   <script>var rellax = new Rellax('.rellax');</script>
   <script>AOS.init();</script>
-  <script src="js/darkModeIconSwitch.js"></script>
+  <script src="js/darkModeContactSwitch.js"></script>
   <script src="js/darkModeElementSwitch.js"></script>
+  <script src="js/darkModeIconSwitch.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/hitherTither.js"></script>
   <script src="js/loader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
   </body>
 </html>
-  
