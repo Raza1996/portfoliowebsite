@@ -97,6 +97,12 @@
 }
 
 
+#avatarPortrait {
+    vertical-align: middle;
+    border-top:10%;
+    width: 10%;
+    border-radius: 100%;
+}
 
 @keyframes moveDown {
     from {
@@ -513,6 +519,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     transition: all 0.5s ease-out;
     color: rgb(255, 219, 57);
 }
+
 
 
 .banner-img {
