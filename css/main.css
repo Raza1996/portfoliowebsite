@@ -139,7 +139,7 @@
         transform: translateX(17px); /* Adjust the value as needed */
     }
 }
-
+/*
 #hero:hover #s1{
     animation: moveUp 2s ease-in-out 1 forwards;
 }
@@ -156,6 +156,7 @@
 #hero:hover #s4 {
     animation:  moveRight 2s ease-in-out 1 forwards;
 } 
+*/
 
 #s1 { 
     opacity: 0.8;
