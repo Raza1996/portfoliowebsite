@@ -1,5 +1,5 @@
 function copy(that){
-    var email = 'contact@goraza.ca';
+    var email = 'h.raza.design@gmail.com';
 
     var inp = document.createElement('input');
     document.body.appendChild(inp);
